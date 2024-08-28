@@ -1,0 +1,103 @@
+     // <!-- Start Footer Section -->
+            <footer className="footer-section ">
+                {/*// <!--footer top start-->*/}
+                <div className="footer-top  text-white ">
+                    <div className="container">
+                        <div className="row justify-content-between">
+                            <div className="col-md-9 col-lg-4 mb-md-4 mb-lg-0">
+                                <div className="footer-single-col">
+                                    <div className="footer-single-col mb-4">
+                                        <img src={logoWhite} alt="logo" className="img-fluid w-75 "/>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur dipiscing elit eiusmod Lorem ipsum dolor sit amet, consectetur dipiscing
+                                    </p>
+                                    <hr className="footer-hr2"/>
+
+                                        <span>© 2023, Made with passion by Macber EG</span>
+
+                                </div>
+                            </div>
+                            <div className="col-md-12 col-lg-7 col-sm-12 mt-4 mt-md-0 mt-lg-0">
+                                <div className="row">
+                                    <div className="col-md-4 col-lg-3 col-sm-6 ">
+                                        <div className="footer-single-col">
+                                            <div className="mb-3">
+                                                <h3 className="text-center pb-4">Follow us</h3>
+                                                <div className="d-flex justify-content-between mb-3">
+                                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                    <a href="#" target="_blank">
+                                                        <img src={facebookWhite} alt="facebook"/>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <img src={twitterWhite} alt="twitter"/>
+                                                    </a>
+                                                    <a href="#" target="_blank">
+                                                        <img src={linkedinWhite} alt="linkedin"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="mt-3 text-center">
+                                                <h3 className="text-center m-0">Call us</h3>
+                                                <div >
+                                                    <a className="text-white m-0 " href="tel:+1 800 854-36-80">+1 800 854-36-80</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 col-lg-3 col-sm-6 ">
+                                        <div className="footer-single-col ">
+                                            <h3 className="text-center pb-4">Services</h3>
+                                            <ul className="list-unstyled footer-nav-list mb-lg-0 ">
+                                                <li><a href="#" className="text-decoration-none  nav-link">Membership</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Booking</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Community</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Events</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Gallery</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 col-lg-3 col-sm-6 ">
+                                        <div className="footer-single-col ">
+                                            <h3 className="text-center pb-4">Location</h3>
+                                            <ul className="list-unstyled footer-nav-list mb-lg-0 ">
+                                                <li><a href="#" className="text-decoration-none  nav-link">Giza -  sheikh Zayed</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Giza -  Gezira Club</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 col-lg-3 col-sm-6 ">
+                                        <div className="footer-single-col ">
+                                            <h3 className="text-center pb-4">Company</h3>
+                                            <ul className="list-unstyled footer-nav-list mb-lg-0 ">
+                                                <li><a href="#" className="text-decoration-none  nav-link">About Us</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Careers</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">FAQs</a></li>
+                                                <li><a href="#" className="text-decoration-none  nav-link">Contact Us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*// <!--footer top end-->*/}
+                {/*// <!--footer bottom start-->*/}
+                <div className="footer-bottom text-white">
+                    <div className="container">
+                        <div className="row justify-content-between align-items-center">
+                            <div className="col-md-12 col-lg-12">
+                                <div className="d-flex justify-content-start" >
+                                    <a href="#" target="_blank" className="px-3">Privacy Policy</a>
+                                    <a href="#" target="_blank" className="px-3">Terms of Use</a>
+                                    <a href="#" target="_blank" className="px-3">Accessibility</a>
+                                    <a href="#" target="_blank" className="px-3">Site Map</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/*// <!--footer bottom end-->*/}
+            </footer>
+            // <!-- End Footer Section -->

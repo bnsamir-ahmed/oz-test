@@ -1,0 +1,17 @@
+.content_overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000063;
+    opacity: 0;
+    height: 400px;
+    transition: all .3s ease-in-out;
+}
+.amenitiy_item:hover .content_overlay{
+    opacity: 1;
+}

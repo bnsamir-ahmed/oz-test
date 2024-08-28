@@ -1,0 +1,9 @@
+.contactus .head-content-left-shape .text-shape {
+    position: relative;
+    z-index: 99;
+}
+
+.contactus .btn-bg-white {
+    background-color: #fff;
+    border-radius: 0;
+}

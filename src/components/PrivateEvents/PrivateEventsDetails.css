@@ -1,0 +1,50 @@
+.private-events-details {
+    margin-top: 32px;
+}
+
+.private-events-details .places {
+    padding-left: 0;
+}
+
+.private-events-details .places .list-places {
+    color: var(--secondary-color2);
+    font-family: Questrial;
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+.private-events-details .places li.active {
+    color: var(--primary-color);
+}
+
+/*.private-events-details .places:active {*/
+/*    color: var(--primary-color);*/
+/*}*/
+
+/*.private-events-details .places .nonactive {*/
+/*    color: var(--secondary-color2);*/
+/*}*/
+
+/*.private-events-details .places li[data-active="true"] {*/
+/*    color: red;*/
+/*}*/
+
+/*.private-events-details .places li[data-active="false"] {*/
+/*    color: black;*/
+/*}*/
+
+.private-events-details .buttons-group {
+    margin-top: 36px;
+}
+
+.private-events-details .buttons-group .btn-pdf {
+    margin-left: 16px;
+}
+@media screen and (max-width: 425px) {
+    .private-events-details .buttons-group .btn-pdf {
+        margin-left: 6px;
+    }
+}

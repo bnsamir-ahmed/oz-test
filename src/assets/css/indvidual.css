@@ -1,0 +1,104 @@
+/*.bg-sliderImage .draggable .slick-track{*/
+/*    width: 100% !important;*/
+/*}*/
+/*.bg-sliderImage .image-sliderbg{*/
+/*    height: 100vh;*/
+/*}*/
+.become-member-slider .slider {
+    width: 100% !important;
+}
+.bg-sliderImage .slick-slide{
+    margin: 0;
+}
+.become-member-slider .slider{
+    margin: 0;
+}
+.become-member-slider .slick-slide{
+    margin: 0;
+}
+.become-member-slider .head-content{
+    position: absolute !important;
+    bottom: 100px;
+    padding-left: 2rem;
+    width: 50%;
+}
+.become-member-slider .head-content .hand-write{
+    color: var(--accent-color);
+    line-height: 120%;
+}
+
+.become-member-slider .large-head{
+    color: var(--neturals-color2);
+    line-height: 120%;
+}
+.become-member-slider .text-content{
+    color: var(--neturals-color2);
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+/*end*/
+.memberships-compared .large-head{
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-26);
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+.table-compared > :not(caption) > * > * {
+    padding: 1.5rem 1.5rem;
+}
+
+.table-head{
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-18);
+    line-height: 120%;
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+}
+.table-item{
+    font-family: questrial,sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-16);
+    line-height: 130%;
+    align-items: center;
+    color: var(--primary-color);
+}
+.table-compared .img-check , td{
+    text-align: center;
+}
+.buttons-apply td{
+    border: none;
+}
+
+/*end*/
+.what-get .bold-head{
+    font-size: var(--font-size-41);
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.what-get .text-content{
+    color: var(--secondary-color2);
+    font-size: 16px;
+}
+.features{
+    text-align: center;
+}
+.features .bold-head{
+    font-size: var(--font-size-23);
+}
+.features img{
+    width: 70px;
+}
+.membership-types .large-head{
+    font-size: var(--font-size-41);
+    margin-bottom: 35px;
+}

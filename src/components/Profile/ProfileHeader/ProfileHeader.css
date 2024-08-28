@@ -1,0 +1,31 @@
+.profile-header {
+    /* padding-top: 60px;
+    padding-bottom: 44px;
+    padding-left: 72px; */
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
+.profile-header .user-name {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    margin-bottom: 24px;
+}
+
+.profile-header .job-name {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-23);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 27.6px */
+}

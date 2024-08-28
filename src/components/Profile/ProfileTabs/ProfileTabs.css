@@ -1,0 +1,252 @@
+.profile-taps .nav-item {
+    padding: 2rem 0;
+    border-bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.explore_link_profile {
+    /* padding: 20px 58px 20px 24px; */
+    background-color: transparent;
+    color: var(--secondary-color2);
+    font-family: Couture;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.explore_link_profile.active {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 0;
+}
+.explore_link_profile.active svg path ,
+.explore_link_profile.active svg circle{
+    stroke: var(--primary-color);
+}
+.tabs-btns .nav-link:focus {
+    border: 0;
+}
+
+.tabs-btns .nav-link:hover {
+    border: 0;
+}
+.booking_nav .nav-item{
+    border-bottom: 1px solid var(--secondary-color2);
+}
+.booking_nav .nav-link{
+    border-radius: 0;
+    color: var(--secondary-color2);
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: capitalize; 
+}
+.booking_nav .nav-link.active, 
+.booking_nav .nav-pills .show>.nav-link{
+    background-color: transparent;
+    /* border-bottom: 1px solid var(--black-color); */
+    color: var(--black-color);
+    text-align: center;
+    font-weight: 600;
+}
+.booking_nav .nav-item:has(.nav-link.active){
+    border-bottom: 1px solid var(--black-color);
+}
+.card_event{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 0;
+    border: none;
+}
+.event_time{
+    width: 120px;
+    height: 136px;
+    background-color: #F0F2F4;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.event_time p{
+    color: var(--black-color);
+    font-family: Couture;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.card_event p.card-title{
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+}
+.card_event .list-option-item{
+    color: var(--secondary-color2);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%;
+    margin: auto 20px;
+}
+.card_event .price-hour{
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+}
+.service_catering{
+    color: var(--black-color);
+    font-family: Couture;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.going_event{
+    display: flex;
+    align-items: center;
+}
+.going_event .list-options{
+    list-style: none;
+}
+.going_event .list-option-item{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.going_event .grey-span{
+    margin: 0 !important;
+}
+.invited_person{
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 14px 0px rgba(65, 65, 65, 0.15);
+    border-radius: 0;
+    padding: 1rem;
+}
+.h2-description {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+}
+.modal-invites .modal-content{
+    background-color: #F0F2F4;
+    border-radius: 0;
+}
+.cancel_label{
+    color: var(--black-color);
+    font-family: Questrial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}
+.modal-invites .form-check-input {
+    width: 20px;
+    height: 20px;
+    border-color: var(--black-color);
+    border-radius: 0;
+    box-shadow: none;
+}
+.modal-invites .form-check-input:checked {
+    background-color: var(--lightBlack-color);
+    border-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.space-details .grey-span{
+    color:#BDBDBD;
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.space-details .progress_percentage{
+    color: #BDBDBD;
+    font-family: Couture;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.space-details .amenities{
+    color: #000;
+    font-family: Questrial;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.profile_tabs,
+.profile_content{
+    transition: all .3s ease-in-out;
+}
+/* .profile-taps{
+    position: absolute;
+} */
+.profile_tabs.profile_nav{
+    width: 100px;
+}
+
+.profile_tabs.profile_nav .nav-pills{
+    padding: .5rem !important;
+    align-items: center;
+}
+.profile_tabs.profile_nav .nav-item span{
+    display: none;
+}
+@media screen and (max-width: 575.5px) {
+    .btn_profile{
+        display: none;
+    }
+    .profile_tabs.profile_nav{
+        width: 70px;
+    }
+    .h2-description{
+        font-size: var(--font-size-20);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .profile_tabs.profile_nav{
+        width: 60px;
+    }
+    .list-options{
+        flex-direction: column;
+    }
+    .card_event p.card-title{
+        font-size: var(--font-size-19);
+    }
+    .card_event .price-hour{
+        font-size: var(--font-size-16);
+    }
+       
+}
+@media screen and (max-width: 360px) {
+    .profile_tabs.profile_nav{
+        width: 50px;
+    }
+}

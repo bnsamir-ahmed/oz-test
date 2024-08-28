@@ -1,0 +1,44 @@
+.community-header {
+    background-image: none;
+}
+
+.community-header .p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.community-header img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.com-events .p {
+    line-height: 1.5;
+    text-align: justify;
+    width: 75%;
+}
+
+.community-header .group-2 {
+    position: absolute;
+    width: 100%;
+    left: 35px;
+    bottom: 60px;
+    transform: translateY(-96px);
+
+}
+@media screen and (max-width: 1200px) {
+    .community .head_paragraph{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .community .change_dir{
+        flex-direction: column;
+    }
+    .community .head_paragraph {
+        font-size: 2rem;
+    }
+}

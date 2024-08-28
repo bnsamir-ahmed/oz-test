@@ -1,0 +1,11 @@
+.Individual-types .card{
+    box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;
+    border: none;
+}
+.Individual-types .card-img-top{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.Individual-types .card-title{
+    font-weight: var(--font-weight-bold);
+}

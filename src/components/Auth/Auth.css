@@ -1,0 +1,121 @@
+/*LOGIN FORM STYLE*/
+.login-card {
+    /* padding: 0 75px; */
+}
+.auth .img_float {
+    left: 0;
+}
+.login .btn-bg-white {
+    background-color: var(--color-white);
+    border-radius: 0;
+}
+.login-card .form-check-input {
+    width: 20px;
+    height: 20px;
+    border-color: var(--black-color);
+    border-width: 2px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.login-card .form-check-input:checked {
+    background-color: var(--lightBlack-color);
+    border-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.login-card .form-check-label{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.otp_container{
+    justify-content: center;
+
+}
+.otp_container input{
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 0.625rem;
+    color: var(--secondary-color1);
+    border: 1px solid var(--secondary-color2);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.otp_container input:focus{
+    outline: 1px solid var(--secondary-color1);
+}
+#phone::-webkit-inner-spin-button,
+#phone::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#phone {
+    appearance: textfield;
+}
+.phone_field{
+    width: 80%;
+}
+.country_code{
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+}
+.otp_resend{
+    color: var(--color-yellow);
+    font-family: var(--couture-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    flex-direction: row-reverse;
+}
+.otp_resend button{
+    background: none;
+    border: none;
+    color: var(--color-yellow);
+    font-family: var(--couture-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.otp_resend button:disabled{
+    cursor: not-allowed;
+}
+.log-social img{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .login-card {
+        padding: 0px;
+    }
+    .country_code{
+        width: 15%;
+    }
+    .otp_container input{
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        border-radius: 0.4rem;
+        margin-right: 10px !important;
+    }
+}
+@media screen and (max-width: 425px) {
+    .auth .img_float {
+        display: none;
+    }
+}
+@media screen and (max-width: 375.5px) {
+    .phone_field{
+        width: 75%;
+    }
+}

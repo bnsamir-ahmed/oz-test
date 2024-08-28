@@ -1,0 +1,33 @@
+.what-get-transparent {
+    background: #fff;
+}
+
+.what-get .bold-head {
+    font-size: var(--font-size-41);
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.what-get .text-content {
+    color: var(--secondary-color2);
+    font-size: 16px;
+}
+
+/* .features {
+    text-align: left;
+} */
+
+.features .bold-head {
+    font-size: var(--font-size-23);
+}
+
+.features .services-icons {
+    text-align: left !important;
+}
+
+.membership-types .large-head {
+    font-size: var(--font-size-41);
+    margin-bottom: 35px;
+}

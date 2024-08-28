@@ -1,0 +1,99 @@
+.title-feed-header {
+    /*padding: 40px 70px 80px;*/
+    margin: 60px auto;
+}
+
+.title-feed-header .news-feed-head {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-36);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 69.6px */
+}
+
+.title-feed-header .name-feed {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-58);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.title-feed-header .category-head {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.title-feed-header .category-head .category-name {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 24px */
+    opacity: 0.7;
+    text-transform: capitalize;
+    margin-left: 16px;
+}
+
+/*END*/
+/*Start*/
+.news-details {
+    /*border-top: 1px solid #BDBDBD;*/
+    /*border-bottom: 1px solid #BDBDBD;*/
+
+}
+
+.news-details .image-header {
+    padding: 56px 0;
+    border-top: 1.5px solid #BDBDBD;
+    border-bottom: 1.5px solid #BDBDBD;
+}
+
+.news-details .details-image {
+    width: 100%;
+}
+
+.news-details .box-details {
+    padding: 60px 55px;
+
+}
+
+.news-details .box-details h3 {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-23);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.news-details .box-details p {
+    color: var(--primary-color);
+    text-align: left;
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 27.6px */
+    opacity: 0.4;
+}
+
+.news-details .box-details .btn {
+    margin-top: 60px;
+}
+
+@media screen and (max-width:767px) {
+    .vector-news{
+        display: none;
+    }
+}

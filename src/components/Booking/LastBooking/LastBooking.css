@@ -1,0 +1,125 @@
+.last-booking .book-card {
+    margin: 32px auto;
+    border: 0;
+    border-right: 0;
+}
+
+.last-booking .book-card .card-title {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 31.2px */
+}
+
+.last-booking .book-card .list-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.last-booking .book-card .list-options .list-option-item {
+    color: var(--secondary-color2);
+    font-family: Questrial;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%; /* 20.8px */
+    margin: auto 20px;
+}
+
+.last-booking .book-card .card-text {
+    color: rgba(0, 0, 0, 0.40);
+    text-align: justify;
+    font-family: Questrial;
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 13.2px */
+}
+
+.last-booking .book-card .btn-bg-white {
+    margin: 0;
+    width: 104px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: var(--font-size-13);
+}
+
+.last-booking .book-card .btn-bg-white:hover {
+    color: var(--neturals-color2)
+}
+
+.last-booking .book-card .price-hour {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 24px */
+}
+
+.last-booking .book-card .card-footer {
+    background-color: transparent;
+    border-top: 0;
+}
+
+.last-booking .btn-cards-more {
+    display: flex;
+    margin: auto;
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 15.6px */
+    text-decoration: none;
+    margin: auto;
+}
+
+.last-booking .btn-cards-more img {
+    margin-left: 8px;
+}
+
+.last-booking .h2-text-box {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-52);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0;
+    line-height: 120%;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.last-booking .fav-event {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.book-card .lazy-load-image-loaded {
+    width: 100%
+}
+
+.book-card .lazy-load-image-loaded img {
+    width: 100%
+}
+
+@media screen and (max-width:575px) {
+    .last-booking .h2-text-box{
+        font-size: var(--font-size-16);
+    }
+    
+}

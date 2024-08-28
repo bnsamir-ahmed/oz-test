@@ -1,0 +1,14 @@
+.amenities-list {
+    /* display: flex; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .amenities-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .amenities-list > * {
+    scroll-snap-align: center;
+  }

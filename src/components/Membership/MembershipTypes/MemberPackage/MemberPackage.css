@@ -1,0 +1,61 @@
+.at_oz, .what-get {
+    background-color: #000;
+    color: #FFF;
+}
+
+.at_oz .h2-text-box {
+    color: #FFF;
+
+}
+
+.at_oz .box-content .p-text-box {
+    color: #FFF;
+
+}
+
+.what-get .bold-head {
+    color: var(--white-color);
+    font-family: var(--couture-font);
+    font-size: 2.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.what-get .text-content {
+    color: var(--white-color);
+    font-family: var(--questrial-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    opacity: 0.7;
+}
+
+.what-get img {
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.bold_desc{
+    color: var(--white-color);
+    font-family: var(--questrial-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.custom-radio{
+    display: flex;
+}
+.custom-radio .price_monthly {
+    border: 1.5px solid var(--white-color) !important;
+    background: transparent;
+}
+.custom-radio .price_monthly .price_body p{
+    color: var(--white-color);
+}
+.black .price_monthly .price_body .refund,
+.black .price_monthly .price_body span{
+    color: white;
+    opacity: .6;
+}

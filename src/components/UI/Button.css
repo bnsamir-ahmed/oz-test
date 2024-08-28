@@ -1,0 +1,256 @@
+.btn_default{
+    font-family: var(--questrial-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+    border-radius: 0;
+    padding: 1rem 3rem;
+    box-shadow: inset 0 0 0 0 var(--semiWhite-color);
+    transition: all .3s ease;
+    text-transform: capitalize;
+    display: inline-block;
+    text-align: center;
+    color: black;
+}
+.btn-default-padding{
+    padding: 1rem 5rem  !important;
+}
+
+.btn_outline{
+    color: var(--neturals-color1);
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 120%;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid var(--neturals-color1);
+}
+.btn_outline:hover{
+    background-color: var(--neturals-color2);
+    color: var(--primary-color);
+}
+.play-modal:hover p {
+    border-bottom: 1px solid var(--white-color);
+} 
+.btn_outline_black {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);    
+    color: var(--primary-color);
+    font-size: var(--font-size-16);
+    font-weight: 600;
+    line-height: 1.25;
+    transition: all 250ms;
+    border-radius: 0;
+}
+
+.btn_outline_black:hover,
+.btn_outline_black:focus {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn_outline_black:active {
+    background-color: var(--semiWhite2-color);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+.btn_outline_black:hover svg path{
+    fill: var(--white-color);
+    transition: all .3 ease;
+}
+.button-outLine {
+    border: 1px solid;
+    border-color: var(--neturals-color2);
+    color: var(--white-color);
+    margin: auto 32px;
+    height: 48px;
+    width: 192px;
+    font-family: var(--questrial-font);
+    background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    padding: 14px;
+}
+
+.button-outLine:hover {
+    cursor: pointer;
+    background-color: var(--neturals-color2);
+    color: var(--primary-color);
+}
+
+.btn-bg-white {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    margin: auto;
+    border-radius: 0;
+}
+
+.btn-bg-white:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--neturals-color2);
+}
+.btn-bg-white:hover .fill_white{
+    fill: var(--white-color);
+}
+.btn-bg-black {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+    border-radius: 0;
+}
+.btn-bg-black:hover{
+    background-color: var(--white-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-bg-black:hover path{
+    fill: var(--primary-color);
+}
+.authFooter_link{
+    font-family: var(--couture-font);
+    font-size: 0.8125rem;
+    color: var(--secondary-color2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    padding: 0;
+}
+.authFooter_link:hover{
+    color: var(--lightBlack-color);
+}
+.auth_btn_padding{
+    padding: .62rem 3.12rem;
+}
+.signup_title{
+    font-family: var(--couture-font);
+    color: var(--lightBlack-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.signup_title:hover{
+    color: var(--black-color);
+}
+.forgetPassText{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.ex_link{
+    padding: 0;
+    color: var(--secondary-color2);
+    font-family: var(--questrial-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-decoration: underline;
+}
+.btn_underline{
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Questrial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration-line: underline;
+}
+.more_people{
+    width: 72px;
+    height: 72px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0px 4px 14px rgba(65, 65, 65, 0.15);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-color);
+    font-family: Couture;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.outline_grey{
+    border-color: var(--secondary-color2);
+    color: var(--secondary-color2);
+}
+.terms_link{
+    color: rgba(34, 34, 34, 1);
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration: underline;
+}
+.edit_photo{
+    color: #000;
+    font-family: Couture;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.spec_padding{
+    padding: .6rem 3rem
+}
+.course_btn{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    padding: 12px !important;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid  #000;
+    box-shadow: -4px 4px 20px 0px rgba(32, 180, 134, 0.12);
+}
+.white_bg_btn{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.white_bg_btn:hover{
+    background-color: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+.rate_btn{
+    color: var(--white-color);
+    text-decoration: underline;
+}
+/* Media Query */
+@media screen and (max-width: 575px) {
+    .btn_default{
+        padding: 1rem 1.5rem;
+    }
+    .spec_padding{
+        padding: .6rem 1rem
+    }
+}
+@media screen and (max-width: 375px) {
+    .btn_default{
+        padding: 1rem;
+    }
+    .spec_padding{
+        padding: .6rem
+    }
+} 

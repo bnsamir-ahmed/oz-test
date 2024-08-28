@@ -1,0 +1,66 @@
+.head-content-left-shape {
+    /* height: 140px; */
+
+}
+
+.joinus-form .box-apply-member {
+    padding: 26px 35px;
+    background: #fff;
+}
+
+.box-apply-member .name-price {
+    margin: 32px 0;
+}
+
+.box-apply-member h3 {
+    color: #BDBDBD;
+    font-family: Couture;
+    font-size: var(--font-size-23);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+}
+
+.box-apply-member h2 {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 43.2px */
+}
+
+.box-apply-member .member_discount {
+    color: #BDBDBD;
+    font-family: Questrial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+}
+
+.box-apply-member .current_price {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+}
+
+.box-apply-member .amenties-select {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 180%; /* 28.8px */
+    margin-top: 32px;
+}
+
+.box-apply-member .amenties-select li {
+    list-style: decimal-leading-zero;
+    margin-bottom: 8px;
+}
+
+

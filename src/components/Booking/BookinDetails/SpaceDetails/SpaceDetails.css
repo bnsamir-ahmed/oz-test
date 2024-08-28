@@ -1,0 +1,173 @@
+/* .space-details .space-description {
+    padding: 70px 85px;
+} */
+
+.space-details .space-description .h2-description {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 31.2px */
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.space-details .space-description .p-description {
+    color: var(--primary-color);
+    text-align: justify;
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 21.6px */
+    opacity: 0.4;
+}
+/* 
+.space-details .catering {
+    padding: 0px 85px;
+} */
+
+.space-details .catering .h2-catering {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-29);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 34.8px */
+    margin-bottom: 16px;
+}
+
+.space-details .catering .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.space-details .catering .form-check-label {
+    color: var(--primary-color);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%; /* 20.8px */
+}
+
+
+.space-details .catering .form-check-input {
+    width: 20px;
+    height: 20px;
+    border-color: var(--black-color);
+    margin: 0;
+    border-radius: 0;
+}
+
+.space-details .catering .form-check-input:checked {
+    background-color: var(--lightBlack-color);
+    border-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 0;
+}
+
+.space-details .catering .form-check-input:focus {
+    box-shadow: none;
+}
+/* 
+.space-details .space-price {
+    padding: 70px 85px 0;
+
+}
+
+.space-details .space-facilities {
+    padding: 24px 85px;
+}
+
+.space-details .space-capacity {
+    padding: 24px 85px;
+} */
+
+.space-details .space-price, .space-facilities, .space-capacity .h2-description {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 31.2px */
+}
+
+.space-details .space-price .price-list {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.space-details .space-price .price-list span {
+    color: var(--primary-color);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 110%; /* 22px */
+}
+
+.space-details .space-price .price-list .discount-price {
+    color: #BDBDBD;
+    font-style: normal;
+    margin-right: 24px;
+}
+
+.space-details .space-facilities .facilities-list {
+    margin-top: 32px;
+}
+
+.space-details .space-facilities .facilities-list ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.space-details .space-facilities .facilities-list ul li {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 16.8px */
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.space-details .space-capacity span {
+    color: rgba(0, 0, 0, 0.40);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-18);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 21.6px */
+    margin-top: 32px;
+}
+.space-details .space-facilities .facilities-list img{
+    width: 56px;
+    height: 56px;
+    object-fit: scale-down;
+}
+@media screen and (max-width: 768px) {
+    .space-details .space-facilities .facilities-list img{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .space-details .space-facilities .facilities-list ul li{
+        margin-right: 36px;
+    }
+}

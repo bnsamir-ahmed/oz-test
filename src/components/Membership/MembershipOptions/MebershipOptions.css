@@ -1,0 +1,165 @@
+.Individual-types .card {
+    /*box-shadow: rgba(0, 0, 0, 0.45) 0 25px 20px -20px;*/
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+.Individual-types .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.Individual-types .card-title {
+    font-weight: var(--font-weight-bold);
+    margin: 16px auto;
+    color: #000;
+    font-family: Couture;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+}
+
+.Individual-types .btn-bg-white {
+    margin: 16px auto;
+}
+
+/*END*/
+/*Start Become a member Section*/
+.become-member .large-head {
+    line-height: 79px;
+
+}
+
+.caption-rotate {
+    position: absolute;
+    right: 55%;
+    top: 165px;
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-66);
+    line-height: 120%;
+    /* identical to box height, or 100px */
+    letter-spacing: 0;
+    /* Primary 1 */
+    color: var(--primary-color);
+    opacity: 0.2;
+    filter: invert(75%);
+    transform: rotate(90deg);
+}
+
+/*END*/
+/*Start community-creators*/
+.community-creators .large-head {
+    font-size: var(--font-size-41);
+    line-height: 49px;
+}
+
+/*END*/
+/*Start membership one option */
+.membership-types .large-head {
+    font-size: var(--font-size-41);
+    margin-bottom: 10px;
+}
+
+.membership-types .card-body {
+    background: #FFFFFF;
+    /*box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);*/
+    box-shadow: none;
+}
+
+.membership-types .card-title {
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-26);
+    line-height: 120%;
+    color: var(--primary-color);
+}
+
+.membership-types .card {
+    background: #FFFFFF;
+    /*box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);*/
+    border: none;
+}
+
+.membership-types .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.membership-types .card-title {
+    font-weight: var(--font-weight-bold);
+}
+
+.become-member-slider .shape-right img {
+    right: 0;
+    top: 0;
+}
+
+.desc-membership {
+    margin-top: 80px;
+    margin-bottom: 32px;
+    padding-left: 70px;
+}
+
+.desc-membership .large-head {
+    color: var(--primary-color) !important;
+    font-family: Couture;
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 31.2px */
+}
+
+.desc-membership p {
+    color: var(--primary-color);
+
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%; /* 20.8px */
+    opacity: 0.5;
+}
+/*END*/
+
+.membershipOptionsList .card-header span.discount {
+    color: #BDBDBD;
+    font-family: Questrial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-decoration: line-through;
+}
+.membershipOptionsList .card-header span.priceafter{
+    color:  #000;
+    font-family: Couture;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.selectDate_plan input[type='checkbox'] {
+    border: transparent;
+    box-shadow: none !important;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+.selectDate_plan input[type='checkbox']:checked{
+    background-color: var(--primary-color);
+    background-image: url('../../../assets/images/icons/checkboxplan.svg');
+}
+.selectDate_plan label {
+    color:  #000;
+    text-align: center;
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+} 

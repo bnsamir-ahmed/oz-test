@@ -1,0 +1,58 @@
+.locations .lazy-load-image-loaded {
+    width: 100%;
+}
+
+.box-office .lazy-load-image-loaded {
+    width: 100%;
+
+}
+
+.navigator .p-name {
+    font-family: Questrial;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%; /* 20.8px */
+    width: 50%;
+}
+
+.border-all {
+    border: 1.5px solid var(--secondary-color2);
+}
+
+.locations-houses .box-office {
+    padding: 16px;
+}
+
+.locations-houses .location-contact .h2-text-box {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-36);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 43.2px */
+    margin-bottom: 16px;
+}
+
+.locations-houses .location-contact .government {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 24px */
+    opacity: 0.7;
+}
+@media screen and (max-width: 1200px) {
+    .locations-houses .location-contact .h2-text-box {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 575.5px) {
+    .change_dir{
+        flex-direction: column;
+    }
+    .locations-houses .location-contact .h2-text-box {
+        font-size: 22px;
+    }
+}

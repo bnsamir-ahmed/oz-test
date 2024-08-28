@@ -1,0 +1,100 @@
+.events-show {
+    margin: 32px 0;
+
+}
+
+.events-show .card {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.events-show .title-explore {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.events-show .share-button {
+    margin-left: 8px;
+}
+
+.events-show .single-event-slider .cards-event-buttons {
+    text-align: center;
+}
+
+.events-show .single-event-slider .cards-event-buttons .button-outLine {
+    width: 85%;
+}
+
+.events-show .single-event-slider .card-img-top {
+    height: 400px;
+}
+
+.details-event {
+    margin: 24px 8px;
+}
+
+.details-event img {
+    width: auto;
+    margin-right: 8px;
+}
+
+.details-event span {
+    color: rgba(0, 0, 0, 0.50);
+
+    font-family: Questrial;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%;
+}
+
+.events-show .multiple-event-slider .cards-event-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.events-show .single-event-slider {
+    /*margin-top: 32px;*/
+    padding-right: 70px;
+}
+
+.events-show .multiple-event-slider {
+    margin-top: 32px;
+}
+
+.events-show .multiple-event-slider .details-event {
+    display: none !important;
+}
+
+.events-show .single-event-slider .fav-event {
+    display: none;
+}
+
+.events-show .multiple-event-slider .fav-event {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.single-event-slider .slick-slide {
+    margin: 0 !important;
+}
+
+.single-margin {
+    margin: 32px 0;
+}
+.img_style{
+    height: 856px !important;
+    object-fit: cover !important;
+}
+.multi_img_style{
+    height: 400px !important;
+    object-fit: cover !important;
+}
+.multiple-event-slider  .slick-list{
+    height: 1100px !important;
+}

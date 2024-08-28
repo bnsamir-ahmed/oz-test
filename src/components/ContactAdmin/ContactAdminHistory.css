@@ -1,0 +1,33 @@
+.history{
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.10);
+}
+.p-text-history{
+    color: rgba(0, 0, 0, 0.40);
+    text-align: justify;
+    font-family: Questrial;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.date-history{
+    color:  #BDBDBD;
+    font-family: Questrial;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.date-title{
+    color:  #000;
+    font-family: Couture;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.history_tabs .booking_nav .nav-link,
+.history_tabs .booking_nav .nav-item{
+    border: none !important;
+}

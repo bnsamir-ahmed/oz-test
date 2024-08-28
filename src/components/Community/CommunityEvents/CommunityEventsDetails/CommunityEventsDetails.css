@@ -1,0 +1,92 @@
+.community-events-details .box-content {
+    padding: 120px 60px;
+}
+
+.amenities-box-details {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.amenities-box-details .amenities-box {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.amenities-box-details .amenities-box .amenities-text {
+    margin-left: 16px;
+    opacity: .7;
+}
+
+.status-event {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-23);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    text-transform: uppercase;
+    /*margin-right: 16px;*/
+}
+
+.status-event span {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%;
+    opacity: .7;
+    text-transform: capitalize;
+}
+
+.event_text {
+    color: var(--primary-color);
+    text-align: justify;
+    font-family: Questrial;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.7;
+    opacity: .4;
+    margin-top: 24px;
+    margin: 0;
+}
+
+.event-type-details {
+    margin: 32px auto;
+}
+
+.community-events-details .slick-slide {
+    margin: 0 !important;
+}
+
+.community-events-details .slick-dots {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    right: 20px;
+}
+
+.community-events-details .cards-event-buttons .btn-bg-white, .share-button {
+    margin: auto 8px !important;
+}
+
+.gallery-show {
+    padding: 60px 0;
+}
+
+.vector{
+    position: absolute;
+    left: -70px;
+        
+}
+@media screen and (max-width:599px) {
+    .attend-btn{
+        width: 145px;
+    }
+    
+} 

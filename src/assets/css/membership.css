@@ -1,0 +1,58 @@
+/*Start Become a member Section*/
+.become-member .large-head{
+    line-height: 79px;
+
+}
+.caption-rotate{
+    position: absolute;
+    right: 55%;
+    top: 200px;
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-66);
+    line-height: 120%;
+    /* identical to box height, or 100px */
+    letter-spacing: 0.1em;
+    /* Primary 1 */
+    color: var(--primary-color);
+    opacity: 0.5;
+    transform: rotate(90deg);
+}
+/*END*/
+/*Start community-creators*/
+.community-creators .large-head{
+    font-size: var(--font-size-41);
+    line-height: 49px;
+}
+/*END*/
+/*Start membership types*/
+.membership-types .large-head{
+    font-size: var(--font-size-41);
+    margin-bottom: 10px;
+}
+.membership-types .card-body{
+    background: #FFFFFF;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+}
+.membership-types .card-title{
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-26);
+    line-height: 120%;
+    color: var(--primary-color);
+}
+/*END*/
+/*Start Our Locations*/
+.locations .location-slider{
+    font-family: questrial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+}
+.locations .slick-dots{
+    text-align: end;
+}

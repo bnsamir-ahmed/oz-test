@@ -1,0 +1,113 @@
+.gallery-show {
+    background-color: #000;
+    padding: 132px 0;
+    color: #fff;
+}
+
+.gallery-show .head-date h2 {
+    margin-left: 70px;
+    font-family: Couture;
+    font-size: var(--font-size-52);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 62.4px */
+}
+
+.gallery-show .filterButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 125px 0;
+    text-transform: uppercase;
+}
+
+
+.gallery-show .btn-filter-gallery {
+    color: var(--neturals-color2);
+
+    /* 32 r */
+    font-family: Questrial;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+}
+
+.gallery-show .active {
+    border: 0;
+    border-bottom: 2px solid var(--white-color) !important;
+    border-radius: 0;
+}
+
+.gallery-item img {
+    opacity: 0.7
+
+}
+
+ .gallery-show .gallery-description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+} 
+
+
+
+
+
+.gallery-show .gallery-description {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.gallery-show .position-relative:hover .hover-description {
+    display: none;
+}
+
+.gallery-show .position-relative:hover .gallery-description {
+    opacity: 1;
+}
+
+.gallery-show .gallery-description h3 {
+    color: #FFF;
+    font-family: Couture;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 49.2px */
+    margin-bottom: 8px;
+}
+
+.gallery-show .gallery-description span {
+    color: var(--accent-color);
+    font-family: Questrial;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+}
+
+@media screen and (max-width:599px) {
+.gallery-show .filterButtons {
+    flex-direction: column;
+}
+.text-gallery {
+    bottom: 130px;
+    left: 20px;
+}
+.gallery-show .gallery-description h3 {
+    font-size: 20px;
+}  
+}
+
+@media screen and (min-width:599px) and (max-width:1024px) {
+.gallery-show .gallery-description h3 {
+    font-size: 30px;
+}
+}

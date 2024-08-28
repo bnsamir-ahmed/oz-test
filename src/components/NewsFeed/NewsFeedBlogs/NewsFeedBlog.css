@@ -1,0 +1,46 @@
+.feed {
+    /* border-top: 1px solid #BDBDBD; */
+    margin: 60px 0;
+}
+
+.newsfeeds {
+    border-top: 1px solid #BDBDBD;
+    padding: 60px 0;
+}
+
+
+.newsfeeds .card {
+    background: var(--neturals-color1) !important;
+    border: 0 !important;
+}
+
+
+.newsfeeds .card-title {
+    font-family: Couture;
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    margin: 12px 0;
+    color: var(--primary-color);
+}
+
+.newsfeeds .card-text {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    opacity: 0.7;
+}
+
+
+.newsfeeds .feed-category {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Couture;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+}

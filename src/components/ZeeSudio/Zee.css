@@ -1,0 +1,144 @@
+.Schedule{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Schedule .ant-segmented .ant-segmented-item {
+    margin: 0 30px !important;
+    /* transition: unset !important; */
+    border-radius: 0 !important;
+    /* transform: unset !important; */
+    transition: transparent 0.1s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+
+}
+.Schedule .ant-segmented .ant-segmented-item-selected{
+    background-color: transparent !important;
+    color: #D0DF00 !important;
+    /* box-shadow: unset !important; */
+} 
+.Schedule .ant-segmented .ant-segmented-thumb {
+    background-color: transparent !important;
+}
+.Schedule .ant-segmented .ant-segmented-item:active,
+.Schedule .ant-segmented .ant-segmented-item:hover{
+    color: #D0DF00 !important;
+    background-color: transparent !important;
+}
+.Schedule .ant-table-wrapper .ant-table-pagination {
+    display: none !important;
+}
+.Schedule .ant-table-wrapper .ant-table-thead tr th,
+.Schedule .ant-table-wrapper table{
+    text-align: center !important;
+    background-color: transparent !important;
+    color: #fff !important;
+    border-radius: unset !important;
+}
+.Schedule .ant-table-wrapper .ant-table-thead tr th{
+    background-color: #2C323A !important;
+    padding: 30px !important;
+    border: 1px solid #3D4248 !important;
+}
+.Schedule .ant-table-row>.ant-table-cell-row-hover {
+    background-color: transparent !important;
+}
+.Schedule .ant-table-wrapper .ant-table{
+    background-color: transparent !important;
+}
+.Schedule .ant-table-wrapper .ant-table-tbody>tr>td {
+    color:  #fff !important;
+    border: 1px solid #3D4248 !important;
+}
+.Schedule .ant-table-wrapper .ant-table-tbody>tr>:nth-child(2){
+    color: #D0DF00 !important;
+}
+.Schedule .ant-table-wrapper .ant-table-tbody>tr>:nth-child(3) {
+    font-weight: 700;
+    font-size: 18px !important;
+}
+.rounded-img{
+    border-radius: 50% !important;
+}
+.ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+    background-color: transparent !important;
+}
+
+.border-bottom-black{
+    border-bottom: 1px solid #000;
+}
+.border-solid{
+    border-top:  1px solid #0000002b;
+    border-bottom: 1px solid #0000002b;
+
+}
+.bg-gymDetails{
+    background-color: #fff;
+    /* border-radius: 10px; */
+    /* height: 608px; */
+}
+.steps-payment .ant-steps.ant-steps-navigation .ant-steps-item {
+    overflow:  hidden !important;
+}
+.steps-payment .ant-steps.ant-steps-navigation .ant-steps-item::before {
+    background-color: #000 !important;
+}
+.radio_payment.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+    box-shadow: none;
+}
+.radio_payment{
+    width: 16px;
+    height: 16px;
+    border-color: var(--black-color);
+    box-shadow: none;
+}
+.radio_payment.form-check-input:focus {
+    border-color: var(--black-color);
+    outline: 0;
+    box-shadow: none !important;
+}
+.ant-steps .ant-steps-item-process .ant-steps-item-icon ,
+.ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background-color: var(--black-color);
+    border-color: var(--black-color);
+}
+.ant-steps .ant-steps-item-finish .ant-steps-item-icon >.ant-steps-icon {
+    color: var(--white-color);
+}
+.ant-steps.ant-steps-navigation {
+    border-bottom: 1px solid #BDBDBD;
+}
+.ant-ribbon.ant-ribbon-placement-end {
+    inset-inline-end: 0px;
+}
+.video_control{
+    width: 100%;
+    height: 616px;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+    .Schedule .ant-segmented .ant-segmented-item {
+        margin: 0 0 !important;
+    }
+    .Schedule .ant-segmented .ant-segmented-group{
+        flex-direction: column !important;
+    }
+    .Schedule .ant-segmented .ant-segmented-thumb {
+        background-color: unset !important;
+    }
+    .Schedule .ant-segmented .ant-segmented-item-selected {
+        background-color: unset !important;
+        color: #D0DF00 !important;
+        box-shadow: unset !important;
+    }
+    .video_control{
+        height: 100%
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+    .Schedule .ant-segmented .ant-segmented-item {
+        margin: 0 0 !important;
+    }
+}

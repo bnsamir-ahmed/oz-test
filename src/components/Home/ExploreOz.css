@@ -1,0 +1,38 @@
+.ExploreOz .book-oz span ,
+.ExploreOz .book-oz {
+    height: auto;
+}
+.img-book{
+    width: 100%;    
+    display: block;
+}
+.img-book.none{
+    display: none;
+}
+
+.ExploreOz .explore_link{
+    color: black;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 400;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+.ExploreOz .nav-pills .nav-link.active{
+    color: #fff;
+    background-color: black;
+    border-radius: 0 !important;
+    /* padding-right: 50px; */
+
+
+}
+.oz_service video{
+    height: 400px !important;
+}
+
+@media screen and (max-width:576px) {
+.ExploreOz .explore_link {
+    font-size: 20px;
+}
+    
+}

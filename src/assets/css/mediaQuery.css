@@ -1,0 +1,407 @@
+@media screen and (max-width: 992px) {
+    .column_reverse{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 1024) {
+    .booking-space .book-title {
+        font-size: 29px;
+    }
+}
+
+/* Styles for devices with a width up to 768px (mobile devices) */
+@media screen and (max-width:575px) {
+.navigator svg {
+    display: none;
+}
+.title-name {
+    font-size: 25px !important;
+}
+.btn-subHeader-responsive{
+    width: 130px !important;
+    height: 48px !important;
+}
+}
+
+@media (max-width: 768px) {
+    /* CSS rules for mobile devices */
+    /*Start Default Classes*/
+    .sun-border {
+        margin: 0;
+    }
+
+    .locations .slick-dots {
+        bottom: 8%;
+        left: unset;
+        width: 100%;
+    }
+    .box-locations{
+        justify-content: center !important ;
+    }
+
+    .h2-text {
+        font-size: var(--font-size-41);
+    }
+
+    .box-content .h2-text-box {
+        font-size: var(--font-size-26);
+        text-align: center;
+    }
+
+    .image-box {
+        padding: 0;
+    }
+
+    .title-name {
+        font-size: 32px;
+        padding: .7rem;
+    }
+
+    .navigator .p-name {
+        width: 100%;
+        margin: auto;
+        margin-bottom: auto;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .box-content .p-text-box {
+        margin-bottom: 0;
+    }
+
+    .nav-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+/* 
+
+    .head-content-left-shape {
+        height: 200px;
+    } */
+
+    /* Home Page */
+    /*Start Header Component*/
+    .box .text-wrapper-2 {
+        font-size: 26px;
+    }
+
+    .box .p {
+        width: 95%;
+    }
+
+    /*END Header Component*/
+    /*Start Mono Block Components*/
+    .monoBlock .text-h1 {
+        font-size: 26px;
+    }
+
+    .monoBlock .text-p {
+        text-align: justify;
+    }
+
+    /*End Mono Block Components*/
+    /*Start Public Events Component*/
+    .events .p-text-box {
+        font-size: 16px;
+    }
+
+    /*End Public Events Component*/
+    /*    Start News Letter Component */
+    .newsLetters .form__field {
+        width: 75%;
+    }
+
+    /*    END News Letter Component*/
+    /*    House Page*/
+    /*    Start House Component*/
+    .locations-houses .box-office {
+        padding: 0;
+        margin: 16px 0;
+    }
+
+    .locations-houses .location-contact {
+        padding: 16px 0
+    }
+
+    .btn-explore {
+        margin-bottom: 16px;
+    }
+
+    .locations-houses .box-office img {
+        padding: 0;
+    }
+
+    .nav-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /*margin: auto;*/
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+    }
+
+    .nav-head .button-outLine {
+        margin: 16px auto;
+    }
+
+    .next-compound .h4-text {
+        font-size: 12px;
+    }
+
+    .next-compound .map-point {
+        width: 16px;
+        height: 16px;
+        margin: auto 4px;
+    }
+
+    /*    End House Component*/
+    /* Start Private Events*/
+
+    .private-events-details .h2-text-box {
+        text-align: left;
+    }
+
+    .private-events-details .places {
+        margin-top: 1rem;
+    }
+
+    .private-events-details .image-box {
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    /* END Private Events*/
+
+    .login-card form .group-check {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    /*    End Login Page*/
+    /*Start Community Feed */
+
+    .community-header .box .p {
+        width: 90%;
+    }
+
+    .box-content .h2-text-box {
+        text-align: left;
+    }
+
+    /*Start News Feed */
+    .news-header .group-2 {
+        left: 10px;
+    }
+
+    .title-feed-header .name-feed {
+        font-size: 26px;
+    }
+
+    .news-details .image-header {
+        padding: 8px 0;
+    }
+
+    .news-details .box-details h3 {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .news-details .box-details {
+        padding: 30px 30px;
+    }
+
+    /*End News Feed */
+    /*Start Community Events */
+    .com-events .group-2 {
+        left: 10px;
+    }
+
+    .events-show .single-event-slider {
+        padding: 0;
+    }
+
+    .events-show .single-event-slider .cards-event-buttons .button-outLine {
+        width: 65%;
+    }
+
+    .slider-card .card-text {
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .events-show .title-explore {
+        font-size: 16px;
+
+    }
+
+    .multiple-event-slider .slick-slide {
+        width: 100%;
+    }
+
+    /*End Community Events */
+    .booking-space .book-title {
+        font-size: 26px;
+        text-align: center;
+
+    }
+
+    .booking-space .btn-spaces-filter {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    /*    END */
+    /*    Start client component */
+    .partners .head-content .h3-text {
+        font-size: 18px;
+    }
+
+    /*    End client component  */
+    /*    Strat About */
+    .about-group {
+        transform: translate(0%, 40%);
+    }
+
+    .about-group .an-innovative-co {
+        width: 100%;
+        line-height: .5;
+    }
+
+    .about-group .p {
+        width: 100%;
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    /* .about-section .box-content-black {
+        padding: 39px 10px 59px;
+    } */
+
+    .head-amenities .text-h2 {
+        font-size: 32px;
+    }
+
+    .what-get img {
+        margin: auto;
+    }
+
+}
+
+/* Styles for devices with a width between 769px and 1024px (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* CSS rules for tablets */
+    /*Start Default Classes*/
+    .px-60 {
+        padding: 30px 10px;
+    }
+
+    .image-box {
+        padding: 0;
+    }
+
+    .box-locations {
+        margin: 25px 0px;
+    }
+
+    .h2-text {
+        font-size: 42px;
+    }
+    .locations .slick-dots {
+        left: -1%;
+    }
+
+    .box-content .h2-text-box {
+        font-size: var(--font-size-26);
+    }
+
+    /*End Default Classes*/
+    /*Start Footer*/
+    .social-links a img {
+        margin: auto 16px;
+    }
+
+
+    /*END Footer*/
+    /*Start Public Events Component*/
+    .events .card-title {
+        font-size: 20px;
+    }
+
+    /*END Public Events Component*/
+    /*Start Community*/
+    .community-events-details .box-content {
+        padding: 10px 10px;
+    }
+
+    /*END Community*/
+    /*Start membership*/
+    .membership-types .card-title {
+        font-size: 18px;
+    }
+
+    /*END membership*/
+    /*Start .locations*/
+    .locations-houses .location-contact .h2-text-box {
+        font-size: 32px;
+    }
+
+    .box-office .btn-explore {
+        margin-bottom: 16px;
+    }
+
+    /*    END */
+    /*    Start Mono Block*/
+    .monoBlock-white .text-h1 {
+        font-size: 42px;
+    }
+
+    /*    END Mono Block*/
+    /*    Start Private Events*/
+    .private-events-head {
+        margin: auto;
+    }
+
+    /*    END*/
+    /*    Start Booking*/
+
+    .space-details .space-description {
+        padding: 10px 10px;
+    }
+
+    .space-details .space-description .h2-description {
+        font-size: 22px;
+    }
+
+    .space-details .space-description .p-description {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .space-details .space-price, .space-facilities {
+        padding: 10px;
+    }
+
+    .space-details .space-facilities {
+        padding: 10px;
+    }
+
+    .space-details .space-capacity {
+        padding: 10px;
+    }
+
+    .space-details .catering {
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .locations .slick-dots{
+        bottom: 16%;
+    }
+    .box-locations {
+        margin: 25px 0px;
+    }
+}

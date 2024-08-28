@@ -1,0 +1,14 @@
+.partners .head-content .h3-text{
+    color: var(--primary-color);
+    font-family:Couture;
+    font-size:  var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+    line-height: 120%;
+    text-align: center;
+    white-space: nowrap;
+}
+/* .partners .border-right{
+    border: none !important;
+} */

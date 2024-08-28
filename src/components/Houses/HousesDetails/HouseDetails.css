@@ -1,0 +1,45 @@
+.nav-head .links-margin{
+    color: #000;
+    font-family: Couture;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.house-details .map-point {
+    display: none !important;
+}
+
+.next-compound {
+    padding: 75px 0px;
+    border-top: 1.5px solid #BDBDBD;
+    /*border-bottom: 1.5px solid #BDBDBD;*/
+}
+
+.next-compound .h4-text {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 24px */
+    text-align: center;
+}
+@media screen and (max-width: 1200px) {
+    .houses .title-name {
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .houses .change_dir{
+        flex-direction: column;
+    }
+    .houses .links-margin{
+        margin: auto 1rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .houses .change_dir_sm{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,65 @@
+.memberships-compared {
+    padding: 60px 75px;
+}
+
+.memberships-compared .large-head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-26);
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.table-compared > :not(caption) > * > * {
+    padding: 1.5rem 1.5rem;
+}
+
+.table-head {
+    font-family: couture, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--font-size-18);
+    line-height: 120%;
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.table-item {
+    font-family: questrial, sans-serif;
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-16);
+    line-height: 130%;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.table-compared .img-check, td {
+    text-align: center;
+}
+
+.buttons-apply td {
+    border: none;
+}
+
+.member_discount {
+    font-family: 'Questrial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-16);
+    line-height: 130%;
+    text-decoration-line: line-through;
+    color: var(--secondary-color2);
+}
+
+.current_price {
+    font-family: 'Couture', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-16);
+    line-height: 120%;
+    color: var(--primary-color);
+}

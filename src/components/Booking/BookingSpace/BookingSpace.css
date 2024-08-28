@@ -1,0 +1,189 @@
+.booking-space {
+    padding: 40px 0;
+}
+
+.booking-space .space-name {
+    color: var(--secondary-color2);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; 
+    margin: auto;
+    text-transform: capitalize;
+    transition: all ease .3s;
+}
+.booking-space .slick-current .space-name{
+    color: var(--primary-color);
+}
+
+.booking-space .slick-next:hover, .slick-prev:hover {
+    box-shadow: none;
+
+}
+
+.booking-space .slick-prev::before {
+    content: url('../../../assets/images/icons/leftbook.svg') !important;
+    border: 1px solid var(--secondary-color2);
+    padding: 16px;
+    font-size: 20px !important;
+}
+
+.booking-space .slick-next::before {
+    content: url('../../../assets/images/icons/rightbook.svg') !important;
+    border: 1px solid var(--secondary-color2);
+    padding: 16px;
+    font-size: 20px !important;
+
+}
+
+.booking-space .slick-arrow {
+    border-radius: 0;
+    background-color: transparent !important;
+}
+
+.booking-space-margin {
+    margin-top: 57px;
+}
+
+.booking-space .book-title {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-52);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+    padding: 25px 32px;
+}
+
+.booking-space .btn-filter {
+    text-transform: uppercase;
+}
+
+
+.booking-space .icon-filter {
+    margin-right: 24px;
+}
+
+.card-img-top{
+    object-fit: fill;
+}
+
+.booking-space .book-card {
+    margin: 32px auto;
+    border: 0;
+    border-right: 0;
+    height: 544px;
+}
+.booking-space .book-card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.booking-space .book-card .card-title {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-26);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%;
+}
+
+.booking-space .book-card .list-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.booking-space .book-card .list-options .list-option-item {
+    color: var(--secondary-color2);
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 130%;
+    margin: auto 20px;
+}
+
+.booking-space .book-card .card-text {
+    color: rgba(0, 0, 0, 0.40);
+    text-align: justify;
+    font-family: var(--questrial-font);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%; /* 13.2px */
+}
+
+.booking-space .book-card .btn-bg-white {
+    margin: 0;
+    width: 104px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: var(--font-size-13);
+}
+
+.booking-space .book-card .btn-bg-white:hover {
+    color: var(--neturals-color2)
+}
+
+.booking-space .book-card .price-hour {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-20);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    line-height: 120%; /* 24px */
+}
+
+.booking-space .book-card .card-footer {
+    background-color: transparent;
+    border-top: 0;
+}
+
+.booking-space .btn-cards-more {
+    color: var(--primary-color);
+    font-family: var(--couture-font);
+    font-size: var(--font-size-13);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%;
+    text-decoration: none;
+}
+
+.booking-space .btn-cards-more img {
+    margin-left: 8px;
+}
+
+.booking-space .fav-event {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    cursor: pointer;
+    padding: 0;
+}
+@media screen and (max-width: 1024px) {
+    .booking-space .book-card .price-hour {
+        font-size: var(--font-size-18);
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 992px){
+    .book-card .btn_outline_black{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 575px) {
+    .book-card .btn_outline_black{
+        padding: 1rem 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .booking-space .book-card .price-hour {
+        font-size: var(--font-size-16);
+    }
+}

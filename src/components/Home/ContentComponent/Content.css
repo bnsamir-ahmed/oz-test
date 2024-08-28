@@ -1,0 +1,63 @@
+.bg {
+    background-color: red;
+
+}
+
+.amenities-box {
+    text-align: center;
+    margin: auto 16px;
+}
+
+.amenities-box:first-child {
+    margin-left: 0;
+    margin-right: 16px;
+}
+
+.amenities-box .amenities-text {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: var(--font-size-14);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 120%;
+    margin-top: 8px;
+}
+
+.amenties-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-bg-white:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--neturals-color2);
+}
+
+
+.box-content .achievement-text {
+    font-size: 42px;
+}
+.R-flex{
+    flex-direction: row-reverse;
+}
+.img_content_right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 125px;
+    padding: 0;
+}
+.img_courses_vector{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 125px;
+    padding: 0;
+}
+@media screen and (max-width: 1024px) {
+    .img_content_right,
+    .img_courses_vector{
+        display: none;
+    }
+}

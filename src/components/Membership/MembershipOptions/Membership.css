@@ -1,0 +1,268 @@
+
+.background-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url(../../../assets/images/layer.png);*/
+}
+
+.background-cover-api {
+    width: 100%;
+    opacity: 1;
+}
+
+.slide {
+    height: 100vh;
+}
+
+
+/*.bg-sliderImage .image-slider{*/
+/*    height: 100% !important;*/
+/*}*/
+.become-member-slider .slider {
+    width: 100% !important;
+}
+
+.bg-sliderImage .slick-slide {
+    margin: 0;
+}
+
+.become-member-slider .slider {
+    margin: 0;
+}
+
+.become-member-slider .slick-slide {
+    margin: 0;
+}
+
+.become-member-slider .head-content {
+    position: absolute !important;
+    bottom: 100px;
+    padding-left: 2rem;
+    width: 50%;
+}
+
+.become-member-slider .head-content .hand-write {
+    color: var(--accent-color);
+    line-height: 120%;
+}
+
+.become-member-slider .large-head {
+    color: var(--neturals-color2);
+    line-height: 120%;
+}
+
+.become-member-slider .text-content {
+    color: var(--neturals-color2);
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+
+.description-membership {
+    margin-top: 80px;
+}
+.membershipOptionsList .card{
+    border: 1px solid #0005 !important;
+    background-color: var(--neturals-color1);
+    max-width: 26.0625rem;
+}
+.membershipOptionsList .card-header,
+.membershipOptionsList .card-footer{
+    background-color: transparent;
+    padding: .8rem 1.5rem;
+    border: none;
+}
+.membershipOptionsList .card-header span{
+    color: var(--secondary-color2);
+    font-family: var(--couture-font);
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.membershipOptionsList .card-header h1{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 2.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.membershipOptionsList .card-header p{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #0005;
+}
+.membershipOptionsList .card-header p span{
+    color: var(--secondary-color2);
+    font-family: var(--questrial-font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+    text-transform: uppercase;
+}
+.membershipOptionsList .card-body{
+    padding: .8rem 1.5rem;
+}
+.membershipOptionsList .card-body p{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.membershipOptionsList .card ul{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 2rem;
+    /* border-bottom: 1px solid #0005; */
+}
+.membershipOptionsList .card ul li {
+    padding: 0.75rem 0;
+}
+.membershipOptionsList .card ul li span{
+    color: var(--black-color);
+    font-family: var(--questrial-font);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.membershipOptionsList .card-footer .amenity_title{
+    color: var(--black-color);
+    text-align: center;
+    font-family: var(--couture-font);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.membershipOptionsList .dynamic_p p{
+    color: #000;
+    font-family: var(--questrial-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.monthly-plan{
+    padding: 28px;
+}
+.monthly-plan h1{
+    font-family: var(--couture-font);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.monthly-plan p{
+    font-family: var(--couture-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--secondary-color2);
+    margin-bottom: 24px;
+}
+.monthly-plan span{
+    font-family: var(--questrial-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--secondary-color2);
+}
+.price_monthly{
+    background: #FFF;
+    /* box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.10); */
+}
+.price_monthly .price_body p{
+    color: var(--black-color);
+    font-family: var(--couture-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.price_monthly .price_body span{
+    font-family: var(--questrial-font);
+    color: var(--black-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.price_monthly .price_body .refund{
+    font-family: var(--questrial-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    opacity: .6;
+}
+.ant-radio-button-wrapper {
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+    padding-inline: 0;
+    margin-bottom: 1rem;
+    box-shadow: none;
+}
+.ant-radio-button-wrapper:first-child,
+.ant-radio-button-wrapper:last-child{
+    border-inline-start: 1px solid transparent;
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+    border-start-end-radius: 0;
+    border-end-end-radius: 0;
+}
+.ant-radio-button-wrapper:not(:first-child)::before {
+    background-color: transparent;
+}
+.modal-content{
+    background-color: #F0F2F4;
+}
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover ,
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
+    background: transparent;
+    border-color: var(--black-color);
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+    background-color: var(--black-color);
+}
+.mainPlan{
+    color: #BDBDBD;
+    font-family: var(--couture-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+.price-promo p{
+    color: #000;
+    font-family: var(--couture-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+@media screen and (max-width: 575px) {
+    .monthly-plan {
+        padding: 20px;
+    }
+}

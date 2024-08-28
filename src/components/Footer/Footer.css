@@ -1,0 +1,154 @@
+/**************Small Footer Style ***********/
+footer {
+    border-top: 1.5px solid var(--secondary-color2);
+}
+
+.footer-text {
+    font-family: var(--questrial-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-11);
+    line-height: 120%;
+    color: var(--secondary-color2);
+    display: flex;
+    align-items: center;
+}
+
+.footer-links .links-derictions {
+    align-items: center;
+    justify-content: end;
+}
+
+footer a {
+    font-family: var(--questrial-font);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-18);
+    line-height: 120%;
+    align-items: center;
+    color: var(--neturals-color1);
+    margin: 0 16px;
+    text-decoration: none;
+    letter-spacing: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/*END Footer*/
+
+/*Website Footer*/
+.footer-section {
+    background-color: var(--primary-color);
+}
+
+.footer-single-col p {
+    font-family: var(--questrial-font);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-16);
+    line-height: 130%;
+    color: var(--neturals-color2);
+}
+
+.footer-single-col span {
+    font-family: var(--questrial-font);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-13);
+    line-height: 120%;
+    color: var(--neturals-color2);
+}
+
+.footer-section a {
+    font-size: 12px;
+}
+
+.footer-section h3 {
+    font-family: var(--questrial-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white-color);
+}
+
+.footer-section ul a {
+    font-family: var(--questrial-font);
+
+}
+
+.footer-section  .links-footer {
+    color: var(--neturals-color2);
+    text-align: center;
+    font-family: var(--questrial-font);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+.links-booking{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.footer-bottom a:hover {
+    transition: 1s;
+    color: var(--semantic-color1);
+    transform: scale(1.1);
+}
+
+.footer-section .nav-link {
+    padding: 0;
+}
+
+.footer-single-col .list-unstyled {
+    line-height: 40px;
+    font-family: var(--questrial-font);
+}
+
+.social-links {
+    margin: auto;
+}
+.links-footer{
+    padding: 0;
+}
+.py_2{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+.copyright{
+    color:  #BDBDBD;
+    font-family: Questrial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+@media screen and (max-width: 991.5px) {
+    .footer-social svg{
+        display: none;
+    }
+    .footer-social{
+        border-top: 1.5px solid var(--secondary-color2);
+        padding: 1rem 0;
+    }
+}
+@media screen and (max-width: 575.5px) {
+    .auth_footer .d-flex{
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .sm-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .authFooter_link{
+        margin: 0;
+    }
+}

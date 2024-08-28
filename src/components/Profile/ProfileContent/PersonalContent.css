@@ -1,0 +1,210 @@
+
+.profile-edit .form__field {
+    margin: 12px 0px 0px 12px;
+}
+.profile-edit .form__field.ant {
+    margin: 0px 0px 0px 12px;
+}
+.profile-edit .form-control{
+    border-radius: 0;
+    box-shadow: none;
+}
+.profile-edit .form-control:focus{
+    background-color: transparent;
+    box-shadow: none;
+}
+.profile-edit .input-group-text{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.profile-edit .form-control:disabled,
+.profile-edit input:disabled {
+    background-color: transparent;
+    color: var(--secondary-color2);
+    font-family: Questrial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.head-form {
+    color: var(--primary-color);
+    font-family: Couture;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 34.8px */
+    margin: 40px auto;
+
+}
+
+.profile-edit .btn-bg-white {
+    padding: 0;
+}
+
+.profile-edit .btn-bg-white:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.array-field .remove-array {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background: transparent;
+    margin: auto 8px;
+}
+
+.array-field .add_array {
+    border: 0;
+    background: transparent;
+}
+
+.profile-edit p {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    margin-bottom: 22px;
+}
+
+.modal-otp h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: goldenHopes;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 62.4px */
+    margin-bottom: 24px;
+}
+
+.modal-otp h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Couture;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+    margin-bottom: 48px;
+
+}
+
+.modal-otp span {
+    color: var(--primary-color);
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+.modal-otp span a {
+    color: var(--accent-color);
+
+    /* 16 b */
+    font-family: Couture;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.modal-otp .btn-bg-white {
+    text-align: center;
+    margin-top: 32px;
+    width: 328px;
+    height: 42px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #000;
+    border-radius: 0;
+}
+
+.modal-otp .btn-bg-white:hover {
+    color: #000;
+}
+
+.modal-otp .otpbox {
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #BDBDBD;
+    /*box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.12) inset;*/
+    width: 64px !important;
+    height: 64px;
+    margin-right: 16px;
+    color: #0047BB;
+    font-family: Couture;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    margin-bottom: 40px;
+
+}
+
+.otp-body .modal-content {
+    /*padding: 153px 128px;*/
+    border: 0;
+    border-radius: 0;
+
+}
+
+.otp-container {
+    background-color: #fff;
+}
+
+.otp-body {
+    padding: 75px;
+}
+.input-group{
+    align-items: center;
+}
+.favoriates .ant-tabs-nav::before{
+    border-bottom: 1px solid #BDBDBD;
+}
+.favoriates .ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+    justify-content: center;
+}
+.favoriates .ant-tabs .ant-tabs-tab {
+    color: #BDBDBD;
+    text-align: center;
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+.favoriates .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.favoriates .ant-tabs .ant-tabs-tab-btn:focus:not(:focus-visible){
+    color: #000;
+}
+.favoriates .ant-tabs .ant-tabs-ink-bar {
+    background: #000;
+}
+@media screen and (max-width: 768px) {
+    .favoriates .ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+        justify-content: start;
+    }
+}
+@media screen and (max-width: 576px) {
+    .auth_btn_padding {
+        padding: 0.62rem 2.12rem;
+    }
+}
+@media screen and (max-width: 425px) {
+    .head-form {
+        flex-wrap: wrap;
+    }
+    .head-form h2{
+        font-size: 1.3rem;
+    }
+}

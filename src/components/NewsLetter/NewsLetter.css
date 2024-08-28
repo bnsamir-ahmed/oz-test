@@ -1,0 +1,41 @@
+.monoBlock{
+    background-color: #000000;
+    padding: 140px 0;
+}
+.text-h1{
+    color: var(--neturals-color1);
+    font-family: Couture;
+    font-size: var(--font-size-66);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0;
+    line-height: 120%;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 32px;
+}
+
+.text-p{
+    color: var(--neturals-color1);
+    font-family: Questrial;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    letter-spacing: 0;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+
+.newsLetters .form__field{
+    color: #fff;
+    width: 50%;
+
+}
+
+.newsLetters .form__group{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
