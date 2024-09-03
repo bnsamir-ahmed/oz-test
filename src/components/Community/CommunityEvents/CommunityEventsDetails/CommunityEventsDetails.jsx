@@ -73,6 +73,8 @@ const CommunityEventsDetails = () => {
         if(token){
             try{
                 const result = await checkEvent(token, userId, id);
+                console.log(result);
+                
                 if(result.bookable){
                     navigatePayment(eventDetails.default_price);
                 } else{
@@ -152,57 +154,57 @@ const CommunityEventsDetails = () => {
         lazyLoad: true,
     };
     
-    const compareTime = (eventEnd, eventId) => {
+    // const compareTime = (eventEnd, eventId) => {
         
-        const currentTime = new Date();
-        const eventEndTime = new Date(eventEnd);
+    //     const currentTime = new Date();
+    //     const eventEndTime = new Date(eventEnd);
 
-        const currentHour = currentTime.getHours();
-        const eventHour = eventEndTime.getHours();
-        const isSameDay = currentTime.getDate() === eventEndTime.getDate();
+    //     const currentHour = currentTime.getHours();
+    //     const eventHour = eventEndTime.getHours();
+    //     const isSameDay = currentTime.getDate() === eventEndTime.getDate();
         
-        if (isSameDay) {
+    //     if (isSameDay) {
             
-            if(currentTime.setHours(currentHour + 12) < eventEndTime.setHours(eventHour + 12) ){
+    //         if(currentTime.setHours(currentHour + 12) < eventEndTime.setHours(eventHour + 12) ){
 
-                if(eventId === null){
-                    return (
-                        <Button 
-                        tagType='link'
-                        className="btn button-outLine btn-bg-white attend-btn m-0"
-                        onClick={attend}>Attend</Button>
-                    )
-                }else{
-                    return (
-                        <Button 
-                        tagType='link'
-                        className="btn button-outLine btn-bg-white attend-btn m-0"
-                        onClick={cancel}>cancel</Button>
-                    )
-                }
-            }
-        }
+    //             if(eventId === null){
+    //                 return (
+    //                     <Button 
+    //                     tagType='link'
+    //                     className="btn button-outLine btn-bg-white attend-btn m-0"
+    //                     onClick={attend}>Attend</Button>
+    //                 )
+    //             }else{
+    //                 return (
+    //                     <Button 
+    //                     tagType='link'
+    //                     className="btn button-outLine btn-bg-white attend-btn m-0"
+    //                     onClick={cancel}>cancel</Button>
+    //                 )
+    //             }
+    //         }
+    //     }
 
-        if ((eventDetails && eventEndTime) > currentTime) {
+    //     if ((eventDetails && eventEndTime) > currentTime) {
 
-            if(eventId === null){
-                return (
-                    <Button 
-                    tagType='link'
-                    className="btn button-outLine btn-bg-white attend-btn m-0"
-                    onClick={attend}>Attend</Button>
-                )
-            }else{
-                return (
-                    <Button 
-                    tagType='link'
-                    className="btn button-outLine btn-bg-white attend-btn m-0"
-                    onClick={cancel}>cancel</Button>
-                )
-            }
-        }
+    //         if(eventId === null){
+    //             return (
+    //                 <Button 
+    //                 tagType='link'
+    //                 className="btn button-outLine btn-bg-white attend-btn m-0"
+    //                 onClick={attend}>Attend</Button>
+    //             )
+    //         }else{
+    //             return (
+    //                 <Button 
+    //                 tagType='link'
+    //                 className="btn button-outLine btn-bg-white attend-btn m-0"
+    //                 onClick={cancel}>cancel</Button>
+    //             )
+    //         }
+    //     }
 
-    };
+    // };
     
     return (
         <>
@@ -372,7 +374,11 @@ const CommunityEventsDetails = () => {
                                 </span>
 
                             <div className="cards-event-buttons d-flex justify-content-center align-items-center">
-                                {compareTime(eventDetails.end, eventDetails.event_attend_id)}
+                                {/* {compareTime(eventDetails.end, eventDetails.event_attend_id)} */}
+                                <Button 
+                        tagType='link'
+                        className="btn button-outLine btn-bg-white attend-btn m-0"
+                        onClick={attend}>Attend</Button>
                                     
                                 <div className='mx-4'>
                                     <ShareButton border={true} shareUrl={url}title={eventDetails.event_name} description={eventDetails.description} />

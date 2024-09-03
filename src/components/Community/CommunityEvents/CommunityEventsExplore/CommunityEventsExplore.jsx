@@ -26,6 +26,7 @@ const CommunityEventsExplore = () => {
 
     return (
         <>
+        {console.log(eventsData)}
             <div className="navigator-feed">
                 <div className='container-fluid'>
                     <div className='d-flex'>

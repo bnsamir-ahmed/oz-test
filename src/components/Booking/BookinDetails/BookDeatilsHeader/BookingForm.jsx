@@ -13,6 +13,7 @@ import { Modal, message } from 'antd';
 import { addMonths, isAfter, subMonths } from 'date-fns';
 
 const BookingForm = ({venueDetails, reschedule, services, venue_id}) => {
+console.log(venueDetails);
 
 
     const [messageApi, contextHolder] = message.useMessage();
@@ -155,6 +156,7 @@ const BookingForm = ({venueDetails, reschedule, services, venue_id}) => {
             services: services || [],
             membershipPackageOffer: clacPackage(type),
             price: venueDetails?.price > venueDetails?.price_discounted ? venueDetails?.price_discounted : venueDetails?.price,
+            priceBooking:venueDetails.price,
             service_price : services.reduce((sum, item) => sum + item.price, 0),
             fullDay: venueDetails.default_price_per === 'day' ? 'Full Day' : '',
         };

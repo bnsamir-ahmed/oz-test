@@ -6,7 +6,7 @@ import { getVenueById } from '../../../apis/Booking';
 import { AuthContext } from '../../../apis/context/AuthTokenContext';
 import { useQuery } from "@tanstack/react-query";
 
-const BookingDetails = () => {
+const   BookingDetails = () => {
 
     const { id } = useParams();
     const { token } = useContext(AuthContext);

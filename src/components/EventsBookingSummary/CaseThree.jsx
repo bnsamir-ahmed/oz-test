@@ -1,10 +1,9 @@
 import moment from "moment";
 
 const CaseThree = ( {bookingResult, branch} ) => {
-    const calcTax = (price) => {
-        const tax = price * 14 / 100;
-        return tax;
-    }
+  // const priceAsNumber =  bookingResult?.taxes ;  
+  // const Round = Math.round(priceAsNumber * 100 / 100 ).toFixed(2);
+  
 
   return (
     <div className="w-100 bg_white">
@@ -50,14 +49,16 @@ const CaseThree = ( {bookingResult, branch} ) => {
             <div className="d-flex align-items-center justify-content-between line">
               <span className="date-period">Tax {'14'}%</span>
               <span className="location">
-                {Math.floor(calcTax(bookingResult?.price))} {' '}
+                {/* {Round} */}
+                {bookingResult?.taxes}
                 EGP
               </span>
             </div>
             <div className="d-flex align-items-center justify-content-between item-box">
               <span className="item-total">Total Price:</span>
               <span className="item-total-price">
-              {Math.floor(bookingResult?.price) + Math.floor(calcTax(bookingResult?.price))} {' '}
+              {/* {Math.floor(bookingResult?.price) + Math.floor(calcTax(bookingResult?.price))}  */}
+              {bookingResult?.payload?.price}
                 EGP
               </span>
             </div>

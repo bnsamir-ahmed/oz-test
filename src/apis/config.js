@@ -232,3 +232,35 @@ export const getNewsLetter = async (email) => {
     const response = await axios(config);
     return response.data;
 }
+
+
+export const payMent = async ({invoiceid , amount, firstname , lastname , email , address1 , address2 , city , state , postcode , country , phonenumber  }) => {
+    const formData = new FormData();
+    formData.append('invoiceid' , invoiceid);
+    formData.append('amount' , amount);
+    formData.append('firstname' , firstname);
+    formData.append('lastname' , lastname);
+    formData.append('email' , email);
+    formData.append('address1' , address1);
+    formData.append('address2' , address2); 
+    formData.append('city' , city);
+    formData.append('state' , state);
+    formData.append('postcode' , postcode);
+    formData.append('country' , country);
+    formData.append('phonenumber' , phonenumber);
+
+    const config = {
+        method: 'post',
+        url: `${process.env.REACT_APP_API_URL}/payment.php`,
+        data: formData,
+        credentials: 'include' ,
+        maxContentLength: Infinity,
+        maxBodyLength: Infinity,
+        
+        
+    };
+    
+
+    const response = await axios(config);
+    return response.data;
+}

@@ -72,7 +72,9 @@ const AuthProvider = ({ children }) => {
             avatar: userDetails?.avatar,
             first_name: userDetails?.first_name,
             last_name: userDetails?.last_name,
-            phone_number: userDetails?.phone_number}));
+            phone_number: userDetails?.phone_number,
+            //  address1:userDetails?.
+            }));
 
         setToken(authDetails.access_token);
         setUserId(authDetails.user_id);

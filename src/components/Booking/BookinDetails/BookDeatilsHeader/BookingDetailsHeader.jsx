@@ -20,7 +20,6 @@ const BookingDetailsHeader = ({ venueDetails, services, reschedule, isPending })
     return (
         <>
             <div className='position-relative booking_details'>
-
                 <AddToFavButton is_favorite={venueDetails?.is_favorite} id={venueDetails?.id} add_fav={true} type={'booking'} />
 
                 <MainHeaderWrapper
