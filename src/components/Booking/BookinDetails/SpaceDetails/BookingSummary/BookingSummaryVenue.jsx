@@ -16,9 +16,7 @@ const BookingSummaryVenue = () => {
 
   const bookingData = JSON.parse(localStorage.getItem("BookingOZDetails")) || {};
   const bookingServices = JSON.parse(localStorage.getItem("BookingOZServices"));
-  const userProfileData = JSON.parse(localStorage.getItem("userProfileData"));
-  console.log(userProfileData);
-  
+  const userProfileData = JSON.parse(localStorage.getItem("userProfileData"));  
   const [promo_code_id, setPromo_code_id] = useState(0);
   const [promo_discount, setPromo_discount] = useState(0);
   const [price, setPrice] = useState(0);

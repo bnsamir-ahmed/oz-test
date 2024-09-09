@@ -1,6 +1,7 @@
 import moment from "moment";
 
 const CaseThree = ({ bookingResult, bookingData, branch }) => {
+  
 
   const calcTax = (price, discount, total) => {
     if ((price === discount) && (price === total)) {
@@ -79,14 +80,16 @@ const CaseThree = ({ bookingResult, bookingData, branch }) => {
               {bookingResult?.discount !== 0 && (<div className="d-flex align-items-center justify-content-between item-box ">
                 <span className="item-name">{'Promo Code'}</span>
                 <span className={`item-price`}>
-                  {bookingResult?.discount}
+                  {bookingResult?.payload?.post?.promo_discount}
                   {' '}EGP
                 </span>
               </div>)}
               {bookingResult?.discount !== 0 && (<div className="d-flex align-items-center justify-content-between item-box ">
                 <span className="item-name">{'Total'}</span>
                 <span className={`item-price`}>
-                  {bookingResult?.price}
+                {bookingResult?.payload?.post?.total_price}
+
+                  {/* {bookingResult?.price} */}
                   {' '}EGP
                 </span>
               </div>)}
@@ -95,14 +98,16 @@ const CaseThree = ({ bookingResult, bookingData, branch }) => {
             <div className="d-flex align-items-center justify-content-between line">
               <span className="date-period">Tax {'14'}%</span>
               <span className="location">
-                {Math.floor(calcTax(bookingResult?.payload?.booking_price, bookingResult?.payload?.booking_discount, +bookingResult?.payload?.total_price))} {' '}
+                {bookingResult?.payload?.taxs}
+                {/* {Math.floor(calcTax(bookingResult?.payload?.booking_price, bookingResult?.payload?.booking_discount, +bookingResult?.payload?.total_price))} {' '} */}
                 EGP
               </span>
             </div>
             <div className="d-flex align-items-center justify-content-between item-box">
               <span className="item-total">Total Price:</span>
               <span className="item-total-price">
-                {calcTotal(bookingResult?.payload?.booking_price, bookingResult?.payload?.booking_discount, +bookingResult?.payload?.total_price)}
+                {bookingResult?.payload?.post?.total_price}
+                {/* {calcTotal(bookingResult?.payload?.booking_price, bookingResult?.payload?.booking_discount, +bookingResult?.payload?.total_price)} */}
                 {' '}EGP
               </span>
             </div>

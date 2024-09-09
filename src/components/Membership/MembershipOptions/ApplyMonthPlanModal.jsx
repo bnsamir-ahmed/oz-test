@@ -32,10 +32,10 @@ const ApplyMonthPlanModal = ({show, onHide, type, details, planName}) => {
                 <div className='price_body'>
                     <p className='mb-2'>Monthly</p>
                     <div className='d-flex align-items-center mb-3'>
-                        <p className='priceafter mb-0'><span className="discount">{details?.price}/month</span> {calcDiscount(details?.price, details?.discount, details?.discount_type)} EGP / month</p>
+                        <p className='priceafter mb-0'>{calcDiscount(details?.price, details?.discount, details?.discount_type)} </p>
                         <span className='ms-2'>inclusive of VAT</span>
                     </div>
-                    <p className='mb-0 refund'>No refund if you cancel.</p>
+                    {/* <p className='mb-0 refund'>No refund if you cancel.</p> */}
                 </div>
             </div>
           ),
@@ -47,10 +47,10 @@ const ApplyMonthPlanModal = ({show, onHide, type, details, planName}) => {
                 <div className='price_body'>
                     <p className='mb-2'>6 Months</p>
                     <div className='d-flex align-items-center mb-3'>
-                        <p className='priceafter mb-0'><span className="discount">{details?.price * 6}/6 month</span> {details?.price_6_month} EGP / 6 Month</p>
+                        <p className='priceafter mb-0'><span className="discount">{details?.price }</span> {details?.price_6_month} </p>
                         <span className='ms-2'>inclusive of VAT</span>
                     </div>
-                    <p className='mb-0 refund'>No refund if you cancel.</p>
+                    {/* <p className='mb-0 refund'>No refund if you cancel.</p> */}
                 </div>
             </div>
           ),
@@ -62,10 +62,10 @@ const ApplyMonthPlanModal = ({show, onHide, type, details, planName}) => {
                 <div className='price_body'>
                     <p className='mb-2'>Annual</p>
                     <div className='d-flex align-items-center mb-3'>
-                        <p className='priceafter mb-0'><span className="discount">{details?.price * 12}/Annual</span> {details?.price_12_month} EGP / Annual</p>
+                        <p className='priceafter mb-0'><span className="discount">{details?.price * 12}</span> {details?.price_12_month} EGP </p>
                         <span className='ms-2'>inclusive of VAT</span>
                     </div>
-                    <p className='mb-0 refund'>No refund if you cancel.</p>
+                    {/* <p className='mb-0 refund'>No refund if you cancel.</p> */}
                 </div>
             </div>
           ),

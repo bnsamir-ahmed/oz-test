@@ -1,11 +1,11 @@
 import moment from "moment";
 
-const CaseThree = ( {bookingResult, branch} ) => {
+const CaseThree = ({ bookingResult, branch }) => {
 
-    const calcTax = (price) => {
-        const tax = price * 14 / 100;
-        return tax;
-    }
+  const calcTax = (price) => {
+    const tax = price * 14 / 100;
+    return tax;
+  }
 
   return (
     <div className="w-100 bg_white">
@@ -15,7 +15,7 @@ const CaseThree = ( {bookingResult, branch} ) => {
             <h2>
               {bookingResult?.status === 'paid' ? 'Receipt' : 'Amount Due'}
               <br /><span style={{
-                fontFamily:'roboto'
+                fontFamily: 'roboto'
               }}>#</span>{bookingResult?.id}
             </h2>
             <div className="d-flex align-items-center justify-content-between">
@@ -41,11 +41,24 @@ const CaseThree = ( {bookingResult, branch} ) => {
                   {bookingResult?.price_before_discount} {' '}EGP
                 </span>
               </div>
-              {bookingResult?.price_before_discount !== bookingResult?.price ? (<div className="d-flex align-items-end justify-content-end item-box ">
-                <span className={`item-price`}>
-                  {bookingResult?.price} {' '}EGP
-                </span>
-              </div>) : ''}
+
+              <div className="d-flex align-items-center justify-content-between item-box ">
+                <span className="item-name">promo code</span>
+                {(!bookingResult?.post?.promo_code_id  || bookingResult?.post?.promo_code_id !== "") &&
+                 (
+                  <div className="d-flex align-items-end justify-content-end item-box ">
+                    <span className={`item-price`}>
+                      {bookingResult?.payload?.post.promo_discount} EGP
+                    </span>
+                  </div>
+                ) }
+
+
+                {/* <span className={`item-price ${bookingResult?.price_before_discount !== bookingResult?.price ? 'promoApplided light' : ''}`}>
+                  {bookingResult?.price_before_discount} {' '}EGP
+                </span> */}
+              </div>
+
             </div>
 
             <div className="d-flex align-items-center justify-content-between line">
@@ -73,8 +86,8 @@ const CaseThree = ( {bookingResult, branch} ) => {
               <span>Start : {moment(bookingResult?.payload?.pro_current_start).format("dddd, MMM. D, YYYY")} </span>
               <span>End : {moment(bookingResult?.payload?.pro_current_end).format("dddd, MMM. D, YYYY")}</span>
               <span>Duration : {bookingResult?.payload?.pro_current_months} Months</span>
-
-              {bookingResult?.payment_method === 'cash' && (<span>Cash notes: Total payment due in 2 days.</span>)}
+              {console.log(bookingResult)}
+              {/* {bookingResult?.payment_method === 'cash' && (<span>Cash notes: Total payment due in 2 days.</span>)} */}
             </div>
           </div>
         </div>

@@ -475,11 +475,11 @@ const Header = ({ showBlackNav, show }) => {
                     Contact Admin
                   </Button>
                 </li>
-                <li className="drop_event border-dropdown px-3 py-2">
+                {/* <li className="drop_event border-dropdown px-3 py-2">
                   <Button className="p-0" tagType="link" to={"#!"}>
                     Rewards
                   </Button>
-                </li>
+                </li> */}
                 <li
                   onClick={(e) => {
                     e.stopPropagation();
