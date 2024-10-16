@@ -439,7 +439,7 @@ const Header = ({ showBlackNav, show }) => {
                         Community
                       </Button>
                     </li>
-                    <li>
+                    {/* <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
                         className="p-0"
@@ -448,7 +448,7 @@ const Header = ({ showBlackNav, show }) => {
                       >
                         Events
                       </Button>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 <li className="drop_event border-dropdown px-3 py-2">

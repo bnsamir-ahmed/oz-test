@@ -84,7 +84,6 @@ import BookingSummaryEvents from './components/EventsBookingSummary/BookingSumma
 import BookingSummaryMembership from './components/Membership/BookingSummaryMembership';
 
 function App() {
-
     useEffect(() => {
       AOS.init({
         duration: 1500,
@@ -142,17 +141,17 @@ function App() {
           { path:'membership-bookingSummary', element: <BookingSummaryMembership />},
           { path:'spaces', element: <Spaces />},
           { path:'community', element: <Community />},
-          { path:'community/events', element: <CommunityEventsExplore />},
-          { path:'events/:name/:id', element: <CommunityEventsDetails />},
-          { path:'event-bookingSummary', element: <BookingSummaryEvents />},
+          // { path:'community/events', element: <CommunityEventsExplore />},
+          // { path:'events/:name/:id', element: <CommunityEventsDetails />},
+          // { path:'event-bookingSummary', element: <BookingSummaryEvents />},
           { path:'community/newsfeed', element: <NewsFeed />},
           { path:'community/newsfeed/singleFeed/:id', element: <SingleNewFeed />},
           { path:'private', element: <PrivateEvents />},
           { path:'houses', element: <Houses />},
           { path:'houses/:id', element: <HouseDetails />},
-          { path:'booking', element: <Booking />},
-          { path:'bookingDetails/:id', element: <BookingDetails />},
-          { path:'mybookingDetails/:id', element: <MyBookingDetails />},
+          // { path:'booking', element: <Booking />},
+          // { path:'bookingDetails/:id', element: <BookingDetails />},
+          // { path:'mybookingDetails/:id', element: <MyBookingDetails />},
           { path:'RescheduleBooking/:id', element: <RescheduleBooking />},
           { path:'myplanDetials/:id', element: <MyplanDetials />},
           { path:'myeventDetails/:id', element: <MyEventDetails/>},
