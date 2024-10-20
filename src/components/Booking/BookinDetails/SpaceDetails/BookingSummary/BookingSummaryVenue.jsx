@@ -15,6 +15,8 @@ import "./BookingSummary.css";
 const BookingSummaryVenue = () => {
 
   const bookingData = JSON.parse(localStorage.getItem("BookingOZDetails")) || {};
+  // console.log(bookingData);
+  
   const bookingServices = JSON.parse(localStorage.getItem("BookingOZServices"));
   const userProfileData = JSON.parse(localStorage.getItem("userProfileData"));  
   const [promo_code_id, setPromo_code_id] = useState(0);
@@ -82,6 +84,7 @@ const BookingSummaryVenue = () => {
       
     }
   }
+
   useEffect(() => {
     const calcPrice = () => {
       if (bookingData.membershipPackageOffer) {

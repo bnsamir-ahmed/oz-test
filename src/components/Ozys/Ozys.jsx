@@ -50,8 +50,8 @@ const Ozys = () => {
                             </div>
                         )
                     })}
-
                 </div>
+        
             </section>
         </>
     )

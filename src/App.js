@@ -157,7 +157,7 @@ function App() {
           { path:'myeventDetails/:id', element: <MyEventDetails/>},
           { path:'bookingDetails/bookNow', element: <BookingSummaryVenue />},
           { path:'community/galleryshow', element: <Gallery />},
-          { path:'ozys', element: <Ozys />},
+          // { path:'ozys', element: <Ozys />},
           { path:'amenities', element: <Amenities />},
           { path:'talentmarket', element: <TalentMarket />},
           { path:'projectDetails/:id', element: <ServiceDetails />},

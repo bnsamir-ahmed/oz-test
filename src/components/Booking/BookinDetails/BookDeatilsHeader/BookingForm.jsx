@@ -13,7 +13,6 @@ import { Modal, message } from 'antd';
 import { addMonths, isAfter, subMonths } from 'date-fns';
 
 const BookingForm = ({venueDetails, reschedule, services, venue_id}) => {
-console.log(venueDetails);
 
 
     const [messageApi, contextHolder] = message.useMessage();

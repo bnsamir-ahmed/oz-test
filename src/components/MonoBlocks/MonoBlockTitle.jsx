@@ -46,7 +46,7 @@ const MonoBlockTitle = ({ configData, pending }) => {
                 )}
               </div>
               <div className="flex-sm-row flex-column my-3 justify-content-center align-items-center text-center">
-                <Button
+                {/* <Button
                   tagType="link"
                   className={`btn button-outLine col`}
                   to={"/booking"}
@@ -54,8 +54,8 @@ const MonoBlockTitle = ({ configData, pending }) => {
                   data_aos_delay='200'
                 >
                   Booking
-                </Button>
-                <Button
+                </Button> */}
+                {/* <Button
                   tagType="link"
                   className={`btn button-outLine my-3 col`}
                   to={"/community/events"}
@@ -63,7 +63,7 @@ const MonoBlockTitle = ({ configData, pending }) => {
                   data_aos_delay='250'
                 >
                   events
-                </Button>
+                </Button> */}
                 <Button
                   tagType="link"
                   className={`btn button-outLine col`}

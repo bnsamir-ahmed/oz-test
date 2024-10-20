@@ -10,6 +10,7 @@ import { getInovice } from '../../apis/config';
 import { AuthContext } from "../../apis/context/AuthTokenContext";
 import { useNavigate } from "react-router-dom";
 import { getBranchById } from "../../apis/config";
+import { payMent } from "../../apis/config";
 
 const BookingSummaryMembership = () => {
 
@@ -17,12 +18,26 @@ const BookingSummaryMembership = () => {
   const [current, setCurrent] = useState(0);
   const [branch, setBransh] = useState('');
   const [bookingResult, setBookingResult] = useState({});
+  console.log(bookingResult);
+  
   const [messageApi, contextHolder] = message.useMessage();
   const [invoice, setInvoice] = useState({});
   const paymentDetails = JSON.parse(localStorage.getItem("selectedPlanOZ"));
+  // console.log(paymentDetails);
+  
+  const userProfileData = JSON.parse(localStorage.getItem("userProfileData"));  
+  // const bookingData = JSON.parse(localStorage.getItem("BookingOZDetails")) || {};
+  // const bookingServices = JSON.parse(localStorage.getItem("BookingOZServices"));
+
+  // const [servicePrice, setservicePrice] = useState(bookingServices?.reduce((sum, item) => sum + item.price, 0));
+
+
+
+  // const [price, setPrice] = useState(0);
   const [inputValue, setInputValue] = useState();
   const [promo_code_id, setPromo_code_id] = useState(0);
   const [promo_discount, setPromo_discount] = useState(0);
+
 
   const navigate = useNavigate();
 
@@ -37,10 +52,57 @@ const BookingSummaryMembership = () => {
   const getPromoValue = (value) => {
     setPromo_discount(value);
   };
+  const handlePayment = async () => {
+    try{
+      const res = await payMent ({
+        invoiceid: bookingResult.id, 
+        amount: bookingResult?.price, 
+        firstname: userProfileData.first_name, 
+        lastname: userProfileData.last_name, 
+        email: userProfileData.email, 
+        address1: 'address1', 
+        address2: 'd', 
+        city: 'd', 
+        state: 'd', 
+        postcode: 'd', 
+        country: 'd', 
+        phonenumber: userProfileData.phone_number
+    });
+      window.location.href = res.data.link;
+
+      
+    }catch(error){
+      console.log(error);
+      
+    }
+  }
   useEffect(() => {
     getBranchById(token, branchId).then((res) => {
       setBransh(res.name);
     });
+    // const calcPrice = () => {
+    //   if (bookingData.membershipPackageOffer) {
+    //     const price = bookingData.membershipPackageOffer.price;
+    //     if (price === 0) {
+    //       if (servicePrice) {
+    //         setPrice(servicePrice);
+    //       }
+    //       else {
+    //         setPrice(0);
+    //         setservicePrice(0);
+    //       }
+    //     } else {
+    //       if (servicePrice) {
+    //         setPrice(servicePrice + price);
+    //       } else {
+    //         setPrice(price);
+    //         setservicePrice(0);
+    //       }
+    //     }
+    //   }
+    // };
+    // calcPrice()
+    getInoviceTransaction()
   }, [branchId]);
 
   const steps = [
@@ -69,6 +131,8 @@ const BookingSummaryMembership = () => {
   const bookRequset = async () => {
     try {
       const result = await upgradePlan(token, paymentDetails.planId, paymentDetails.selected_plan_price, 0,promo_code_id, promo_discount);
+      console.log(result);
+      
       Modal.success({
         title: result.status,
         content: result.message_data,
@@ -89,6 +153,8 @@ const BookingSummaryMembership = () => {
   const getInoviceTransaction = async (id, type) => {
     try{
       const result = await getInovice(token, id, type);
+      console.log(result);
+      
       setBookingResult(result);
     }catch(error){
       console.log(error);
@@ -155,12 +221,13 @@ const BookingSummaryMembership = () => {
             </div>
             <div className="text-center">
               {current === steps.length - 1 && (
-                <Button
-                  to="/"
+                  <Button
+                  to= '/'
                   className="button-outLine btn-bg-white"
                   tagType="link"
+                  onClick={inputValue === 'credit' ? handlePayment : undefined}
                 >
-                  Back Home
+                   {inputValue === 'credit' ? 'Pay' : 'Back Home'}
                 </Button>
               )}
             </div>

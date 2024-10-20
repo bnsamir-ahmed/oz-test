@@ -88,10 +88,10 @@ const Home = () => {
         configData={getComponentValue("page_courses")}
         pending={isPending}
       />
-      <RightContentFB
+      {/* <RightContentFB
         configData={getComponentValue("page_ozy")}
         pending={isPending}
-      />
+      /> */}
       <MonoBlockMember
         configData={getComponentValue("page_membership")}
         pending={isPending}

@@ -1,25 +1,26 @@
 import moment from "moment";
 
 const CaseThree = ({ bookingResult, bookingData, branch }) => {
+  console.log(bookingResult);
   
 
-  const calcTax = (price, discount, total) => {
-    if ((price === discount) && (price === total)) {
-      return 0;
-    } else {
-      const tax = total * 14 / 100;
-      return tax;
-    }
-  }
+  // const calcTax = (price, discount, total) => {
+  //   if ((price === discount) && (price === total)) {
+  //     return 0;
+  //   } else {
+  //     const tax = total * 14 / 100;
+  //     return tax;
+  //   }
+  // }
 
-  const calcTotal = (price, discount, total) => {
-    if ((price === discount) && (price === total)) {
-      return 0;
-    } else {
-      const tax = calcTax(price, discount, total);
-      return Math.floor(total + tax).toFixed(2);
-    }
-  }
+  // const calcTotal = (price, discount, total) => {
+  //   if ((price === discount) && (price === total)) {
+  //     return 0;
+  //   } else {
+  //     const tax = calcTax(price, discount, total);
+  //     return Math.floor(total + tax).toFixed(2);
+  //   }
+  // }
 
   const calcDuration = (startMoment, endMoment) => {
     const duration = moment.duration(endMoment.diff(startMoment));
@@ -60,7 +61,7 @@ const CaseThree = ({ bookingResult, bookingData, branch }) => {
                 <span className="item-name">{bookingData?.spaceDetails.title}</span>
                 <span className={`item-price ${((bookingResult?.payload?.booking_price - bookingResult?.payload?.booking_discount) >= 0 && (bookingResult?.payload?.booking_discount !== 0)) ? 'promoApplided light' : ''}`}>
                   {bookingResult?.payload?.booking_price}
-                  {' '}EGP
+                  {' '}EGPnn
                 </span>
               </div>
               {/* {(bookingResult?.payload?.booking_price === bookingResult?.payload?.booking_discount) || ()

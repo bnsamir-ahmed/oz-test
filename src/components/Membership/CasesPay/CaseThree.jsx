@@ -44,14 +44,14 @@ const CaseThree = ({ bookingResult, branch }) => {
 
               <div className="d-flex align-items-center justify-content-between item-box ">
                 <span className="item-name">promo code</span>
-                {(!bookingResult?.post?.promo_code_id  || bookingResult?.post?.promo_code_id !== "") &&
-                 (
-                  <div className="d-flex align-items-end justify-content-end item-box ">
-                    <span className={`item-price`}>
-                      {bookingResult?.payload?.post.promo_discount} EGP
-                    </span>
-                  </div>
-                ) }
+                {(!bookingResult?.post?.promo_code_id || bookingResult?.post?.promo_code_id !== "") &&
+                  (
+                    <div className="d-flex align-items-end justify-content-end item-box ">
+                      <span className={`item-price`}>
+                        {bookingResult?.payload?.post.promo_discount} EGP
+                      </span>
+                    </div>
+                  )}
 
 
                 {/* <span className={`item-price ${bookingResult?.price_before_discount !== bookingResult?.price ? 'promoApplided light' : ''}`}>
@@ -62,16 +62,21 @@ const CaseThree = ({ bookingResult, branch }) => {
             </div>
 
             <div className="d-flex align-items-center justify-content-between line">
-              <span className="date-period">Tax {'14'}%</span>
-              <span className="location">
-                {Math.floor(calcTax(bookingResult?.price))} {' '}
-                EGP
-              </span>
+              {bookingResult?.price == '0' ? (
+                <>
+
+                  <span className="date-period">Tax {'14'}%</span>
+                  <span className="location">
+                    {bookingResult?.taxes}
+                    EGP
+                  </span>
+                </>
+              ) : ''}
             </div>
             <div className="d-flex align-items-center justify-content-between item-box">
               <span className="item-total">Total Price:</span>
               <span className="item-total-price">
-                {Math.floor(bookingResult?.price) + Math.floor(calcTax(bookingResult?.price))} {' '}
+                {Math.floor(bookingResult?.price)}
                 EGP
               </span>
             </div>
@@ -86,8 +91,7 @@ const CaseThree = ({ bookingResult, branch }) => {
               <span>Start : {moment(bookingResult?.payload?.pro_current_start).format("dddd, MMM. D, YYYY")} </span>
               <span>End : {moment(bookingResult?.payload?.pro_current_end).format("dddd, MMM. D, YYYY")}</span>
               <span>Duration : {bookingResult?.payload?.pro_current_months} Months</span>
-              {console.log(bookingResult)}
-              {/* {bookingResult?.payment_method === 'cash' && (<span>Cash notes: Total payment due in 2 days.</span>)} */}
+
             </div>
           </div>
         </div>
