@@ -139,14 +139,14 @@ const MembershipOptions = () => {
                                                                     <div className='ps-3 dynamic_p' dangerouslySetInnerHTML={{ __html: item.website_description }}></div>
                                                                 </div>
                                                                 <div className='card-footer'>
-                                                                    <div className='row row-cols-xxl-4 row-cols-lg-2 g-3' style={{
+                                                                    <div className='row row-cols-xxl-4 row-cols-lg-2 g-3 align-items-center' style={{
                                                                         marginRight: '15px'
                                                                     }}>
                                                                         {item.amenities.slice(0,4).map((item, index)=>{
                                                                             return (
                                                                                 <div className='col d-flex flex-column align-items-center' key={index}>
-                                                                                    <Media type='img' src={item.logo} alt={item.title} className='mb-3' />
-                                                                                    <span className='amenity_title'>{item.title}</span>
+                                                                                    <Media type='img' src={item.logo} alt={item.title} className='mb-3 w-100' />
+                                                                                    <span className='amenity_title fs-6'>{item.title}</span>
                                                                                 </div>
                                                                             )
                                                                         })}
@@ -155,7 +155,7 @@ const MembershipOptions = () => {
                                                                         <Button 
                                                                             tagType='link'
                                                                             to={`/singleMember/${item.id}`}
-                                                                            onClick={()=>{localStorage.setItem('membership', typeDetials?.name)}}
+                                                                            onClick={()=>{localStorage.setItem('membership',  JSON.stringify(typeDetials))}}
                                                                             className='ex_link mb-3'>explore more</Button>
                                                                         <Button 
                                                                             tagType='link'

@@ -5,7 +5,7 @@ import HouseServicesList from "./HouseServicesList";
 const HouseServices = ({location_amenities, dark_theme, isPending}) => {
 
     return (
-        <section id="amenities" className={`p-60 ${dark_theme ? 'dark_theme' : ''}`}>
+        <section id="amenities" className={` ${dark_theme ? 'dark_theme' : ''}`}>
             <div className="position-relative d-md-block d-none">
                 <img
                     type="img" src={vector} className="position-absolute"

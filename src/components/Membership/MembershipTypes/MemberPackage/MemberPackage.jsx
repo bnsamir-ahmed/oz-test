@@ -19,6 +19,7 @@ const MemberPackage = () => {
     const {id} = useParams();
     const [packageDetails, setPackageDetails] = useState({});
     const [membershipType, setMemebershipType] = useState(localStorage.getItem('membership'))
+    const objMemberShip = JSON.parse(membershipType);
     const { token, userId } = useContext(AuthContext);
     const [show, setShow] = useState(false);
     const [valuePlan, setValuePlan] = useState('');
@@ -124,10 +125,11 @@ const MemberPackage = () => {
 
     return (
         <>
+        {/* {console.log(objMemberShip.options.length)} */}
             <MainHeaderWrapper image={packageDetails?.image}>
                 <div className="container-fluid px-70">
                     <div className="col-md-6 col-12">
-                        <h1 className="main_header_title mb-0">{membershipType}</h1>
+                        <h1 className="main_header_title mb-0">{objMemberShip?.name}</h1>
                         <h2 className="head_paragraph mb-3">{packageDetails?.type}</h2>
                         <Paragraph className="description mb-0">{packageDetails?.description}</Paragraph>
                     </div>
@@ -167,7 +169,7 @@ const MemberPackage = () => {
                             <div className='price_body'>
                                 <p className='mb-2'>Monthly</p>
                                 <div className='d-flex align-items-center mb-3'>
-                                    <p className='priceafter mb-0'>15.00 / month</p>
+                                    <p className='priceafter mb-0'>{objMemberShip?.options[0]?.price} / month</p>
                                     <span className='ms-2'>inclusive of VAT</span>
                                 </div>
                                 {/* {item.discount !== '0' && <span className='mb-0 priceafter'>{calcDiscount(item.price, item.discount, item.discount_type)} / {item.time_count} {item.time}</span>} */}
@@ -179,7 +181,7 @@ const MemberPackage = () => {
                                         <div className='price_body'>
                                             <p className='mb-2'>6 Months</p>
                                             <div className='d-flex align-items-center mb-3'>
-                                                <p className='priceafter mb-0'>15.00 / month</p>
+                                                <p className='priceafter mb-0'><span className='text-decoration-line-through'>{objMemberShip?.options[0]?.price * 6}</span> {objMemberShip?.options[0]?.price_6_month} / month</p>
                                                 {/* <span className='ms-2'>inclusive of VAT</span> */}
                                             </div>
                                             {/* {item.discount !== '0' && <span className='mb-0 priceafter'>{calcDiscount(item.price, item.discount, item.discount_type)} / {item.time_count} {item.time}</span>} */}
@@ -191,7 +193,7 @@ const MemberPackage = () => {
                                         <div className='price_body'>
                                             <p className='mb-2'>Annual</p>
                                             <div className='d-flex align-items-center mb-3'>
-                                                <p className='priceafter mb-0'>15.00 / month</p>
+                                                <p className='priceafter mb-0'><span className='text-decoration-line-through '>{objMemberShip?.options[0]?.price * 12}</span> {objMemberShip?.options[0]?.price_12_month} / month</p>
                                                 <span className='ms-2'>inclusive of VAT</span>
                                             </div>
                                             {/* {item.discount !== '0' && <span className='mb-0 priceafter'>{calcDiscount(item.price, item.discount, item.discount_type)} / {item.time_count} {item.time}</span>} */}

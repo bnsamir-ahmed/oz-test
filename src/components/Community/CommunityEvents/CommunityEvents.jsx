@@ -38,12 +38,12 @@ const CommunityEvents = (props) => {
                                 >
                                   {configItem.value}
                                 </Paragraph>
-                                <NavLink
+                                {/* <NavLink
                                   to={"/community/events"}
                                   className="btn button-outLine btn-bg-white mx-3"
                                 >
                                   Explore
-                                </NavLink>
+                                </NavLink> */}
                               </div>
                             </div>
                           )}

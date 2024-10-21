@@ -35,42 +35,42 @@ const  SiteMap  = () => {
     },[token]);
 
     const links = [
-        { name: 'Booking', to: '/booking' },
+        // { name: 'Booking', to: '/booking' },
         { name: 'Membership', to: '/membership' },
-        { name: 'Private Events', to: '/private' },
+        // { name: 'Private Events', to: '/private' },
         { name: 'Community', to: '/community' },   
-        { name: 'Events', to: '/community/events' },
+        // { name: 'Events', to: '/community/events' },
 
     ];
     const links3 = [
-      { name: "Community Newsfeed", to: "/community/newsfeed" },
-      { name: "Community Events", to: "/community/events" },
+      // { name: "Community Newsfeed", to: "/community/newsfeed" },
+      // { name: "Community Events", to: "/community/events" },
       { name: "Gallery", to: "/community/galleryshow" },
     ];
     const links4 = [
-        { name: 'Previous Events', to: '/' },
-        { name: 'Upcoming Events', to: '/' },  
+        // { name: 'Previous Events', to: '/' },
+        // { name: 'Upcoming Events', to: '/' },  
 
     ];
     const links5 = [
-      { name: "My Booking", to: "/profile/mybooking" },
-      { name: "My Events", to: "/profile/myevents" },
+      // { name: "My Booking", to: "/profile/mybooking" },
+      // { name: "My Events", to: "/profile/myevents" },
       { name: "My plan", to: "/profile/myplan" },
       { name: "Favorite", to: "/profile/favoiate" },
       { name: "Issue Reporting", to: "/profile/issueReport" },
     ];
     const links6 = [
       { name: "About OZ", to: "/about" },
-      { name: "Talent Market", to: "/talentmarket" },
+      // { name: "Talent Market", to: "/talentmarket" },
       { name: "Contact Admin", to: "/contactadmin" },
     ];
     const links7 = [
       { name: "Achievements for OZ", to: "/" },
-      { name: "News feed", to: "/community/newsfeed" },
-      { name: "OZ Amenities", to: "/" },
-      { name: "Zee Studio", to: "/" },
-      { name: "OZ Knowledge", to: "/" },
-      { name: "OZY's", to: "/" },
+      // { name: "News feed", to: "/community/newsfeed" },
+      // { name: "OZ Amenities", to: "/" },
+      // { name: "Zee Studio", to: "/" },
+      // { name: "OZ Knowledge", to: "/" },
+      // { name: "OZY's", to: "/" },
     ];
  
  return (
@@ -86,10 +86,10 @@ const  SiteMap  = () => {
        <div className="row">
          <div className="col-xl-3">
            <CardSite title={"Home Page"} links={links} />
-           <CardSite title={"Events"} links={links4} />
+           {/* <CardSite title={"Events"} links={links4} /> */}
          </div>
          <div className="col-xl-3">
-            <div className='site_card mb-4'>
+            {/* <div className='site_card mb-4'>
                 <Paragraph className='title_link'>{'Membership'}</Paragraph>
                 <ul className='p-0 d-flex flex-column'> 
                   {bookingPlaces && bookingPlaces.map((item, index)=>{
@@ -100,7 +100,7 @@ const  SiteMap  = () => {
                     )
                   })}
                 </ul>
-            </div>
+            </div> */}
            <CardSite title={"Profile"} links={links5} />
          </div>
          <div className="col-xl-3">

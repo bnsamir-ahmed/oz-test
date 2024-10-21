@@ -88,13 +88,13 @@ const PublicEventList = ({}) => {
                     <Card.Text className="my-3 dynamic_wraper">
                       {event.description}
                     </Card.Text>
-                    <Button
+                    {/* <Button
                       to={`/events/communityEventsDetails/${event.id}`}
                       className="btn_outline_black "
                       tagType="link"
                     >
                       {event.event_type?.name}
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
               );

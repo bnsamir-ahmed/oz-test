@@ -131,34 +131,34 @@ const Header = ({ showBlackNav, show }) => {
     }) : []
 
   const communityItems = [
-    {
-      key: "1",
-      label: (
-        <li className="drop_event">
-          <Button
-            tagType="link"
-            className="p-0 subMenu"
-            to={"/community/newsfeed"}
-          >
-            <span>Community Newsfeed</span>
-          </Button>
-        </li>
-      ),
-    },
-    {
-      key: "2",
-      label: (
-        <li className="drop_event">
-          <Button
-            tagType="link"
-            className="p-0 subMenu"
-            to={"/community/events"}
-          >
-            <span>Community Events</span>
-          </Button>
-        </li>
-      ),
-    },
+    // {
+    //   key: "1",
+    //   label: (
+    //     <li className="drop_event">
+    //       <Button
+    //         tagType="link"
+    //         className="p-0 subMenu"
+    //         to={"/community/newsfeed"}
+    //       >
+    //         <span>Community Newsfeed</span>
+    //       </Button>
+    //     </li>
+    //   ),
+    // },
+    // {
+    //   key: "2",
+    //   label: (
+    //     <li className="drop_event">
+    //       <Button
+    //         tagType="link"
+    //         className="p-0 subMenu"
+    //         to={"/community/events"}
+    //       >
+    //         <span>Community Events</span>
+    //       </Button>
+    //     </li>
+    //   ),
+    // },
     {
       key: "3",
       label: (
@@ -216,7 +216,7 @@ const Header = ({ showBlackNav, show }) => {
             id="navbarNav"
           >
             <ul className="nav">
-              <li className="nav-item px-3">
+              {/* <li className="nav-item px-3">
                 <Dropdown menu={{ items: bookingItems }}>
                   <NavLink
                     className={`nav-link px-0`}
@@ -229,7 +229,7 @@ const Header = ({ showBlackNav, show }) => {
                     <span>booking</span>
                   </NavLink>
                 </Dropdown>
-              </li>
+              </li> */}
               <li className="nav-item px-3">
                 <Dropdown menu={{ items: membershipItems }}>
                   <NavLink
@@ -244,7 +244,7 @@ const Header = ({ showBlackNav, show }) => {
                   </NavLink>
                 </Dropdown>
               </li>
-              <li className="nav-item px-3 dropdown">
+              {/* <li className="nav-item px-3 dropdown">
                 <NavLink
                   className={`nav-link px-0`}
                   style={({ isActive }) => ({
@@ -255,7 +255,7 @@ const Header = ({ showBlackNav, show }) => {
                 >
                   <span>private events</span>
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item px-3">
                 <Dropdown menu={{ items: communityItems }}>
@@ -271,7 +271,7 @@ const Header = ({ showBlackNav, show }) => {
                   </NavLink>
                 </Dropdown>
               </li>
-              <li className="nav-item px-3 dropdown">
+              {/* <li className="nav-item px-3 dropdown">
                 <Dropdown menu={{ items: eventsItems }}>
                   <NavLink
                     className={`nav-link px-0`}
@@ -284,7 +284,7 @@ const Header = ({ showBlackNav, show }) => {
                     <span>events</span>
                   </NavLink>
                 </Dropdown>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="d-flex justify-content-end align-items-center ">
@@ -389,7 +389,7 @@ const Header = ({ showBlackNav, show }) => {
                   <ul
                     className={`dropdown-explore ${explore ? "" : "show-ex"}`}
                   >
-                    <li>
+                    {/* <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
                         className="p-0"
@@ -398,7 +398,7 @@ const Header = ({ showBlackNav, show }) => {
                       >
                         Booking
                       </Button>
-                    </li>
+                    </li> */}
                     <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
@@ -409,7 +409,7 @@ const Header = ({ showBlackNav, show }) => {
                         Membership
                       </Button>
                     </li>
-                    <li>
+                    {/* <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
                         className="p-0"
@@ -418,7 +418,7 @@ const Header = ({ showBlackNav, show }) => {
                       >
                         Private Events
                       </Button>
-                    </li>
+                    </li> */}
                     <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
@@ -456,11 +456,11 @@ const Header = ({ showBlackNav, show }) => {
                     About OZ
                   </Button>
                 </li>
-                <li className="drop_event border-dropdown px-3 py-2">
+                {/* <li className="drop_event border-dropdown px-3 py-2">
                   <Button className="p-0" tagType="link" to={"/talentmarket"}>
                     Talent Market
                   </Button>{" "}
-                </li>
+                </li> */}
                 <li className="drop_event border-dropdown px-3 py-2">
                   <a
                     className="p-0"
