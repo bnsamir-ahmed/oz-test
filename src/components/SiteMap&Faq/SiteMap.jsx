@@ -56,8 +56,8 @@ const  SiteMap  = () => {
       // { name: "My Booking", to: "/profile/mybooking" },
       // { name: "My Events", to: "/profile/myevents" },
       { name: "My plan", to: "/profile/myplan" },
-      { name: "Favorite", to: "/profile/favoiate" },
-      { name: "Issue Reporting", to: "/profile/issueReport" },
+      // { name: "Favorite", to: "/profile/favoiate" },
+      // { name: "Issue Reporting", to: "/profile/issueReport" },
     ];
     const links6 = [
       { name: "About OZ", to: "/about" },

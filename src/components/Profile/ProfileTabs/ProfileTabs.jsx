@@ -15,6 +15,7 @@ const ProfileTabs = () => {
 
     return (
         <>
+    
                 <div className="container-fluid profile-taps">
                     <div className="row">
                         <div className={`col-md-3 col-2 d-flex flex-column border-right profile_tabs ${sideMenu ? 'profile_nav' : ''}`}>
@@ -52,7 +53,7 @@ const ProfileTabs = () => {
                                         <span className='ms-3'>Change Password</span>
                                     </NavLink>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/mybooking'}
                                         className={`nav-link explore_link_profile p-0`}
@@ -75,8 +76,8 @@ const ProfileTabs = () => {
                                         </svg> 
                                         <span className='ms-3'>My Booking</span>
                                     </NavLink>
-                                </li>
-                                <li className="nav-item">
+                                </li> */}
+                                {/* <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/myevents'}
                                         className={`nav-link explore_link_profile p-0`}
@@ -94,7 +95,7 @@ const ProfileTabs = () => {
                                         </svg>
                                         <span className='ms-3'>My event</span>
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/myplan'}
@@ -111,7 +112,7 @@ const ProfileTabs = () => {
                                         <span className='ms-3'>My Plan</span>
                                     </NavLink>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/favoiate'}
                                         className={`nav-link explore_link_profile p-0`}
@@ -126,8 +127,8 @@ const ProfileTabs = () => {
                                         </svg>
                                         <span className='ms-3'>Favoriate</span>
                                     </NavLink>
-                                </li>
-                                <li className="nav-item">
+                                </li> */}
+                                {/* <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/issueReport'}
                                         className={`nav-link explore_link_profile p-0`}
@@ -143,8 +144,8 @@ const ProfileTabs = () => {
                                         </svg>
                                         <span className='ms-3'>Issue Reporting</span>
                                     </NavLink>
-                                </li>
-                                <li className="nav-item">
+                                </li> */}
+                                {/* <li className="nav-item">
                                     <NavLink 
                                         to={'/profile/privacypolicy'}
                                         className={`nav-link explore_link_profile p-0`}
@@ -178,7 +179,7 @@ const ProfileTabs = () => {
                                         </svg>
                                         <span className='ms-3'>Terms & Conditions</span>
                                     </NavLink>
-                                </li>
+                                </li> */}
                             </Nav>
                         </div>
                         <div className={`col-md-9 col-10 profile_content ${sideMenu ? 'opened ' : ''}`}>

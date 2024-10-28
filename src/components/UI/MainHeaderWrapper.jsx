@@ -38,8 +38,8 @@ const MainHeaderWrapper = (props)=>{
     },[videoIndex]);
 
     return (
-        <div className={`position-relative`}>
-            <div className={`${classes.header_bg} ${props.special_flex}`}>
+        <div className={`position-relative ${props.className}`} >
+            <div className={`${classes.header_bg} ${props.special_flex} `}>
                 {props.video && 
                     <video 
                         className={`${classes.video_bg}`} 

@@ -18,7 +18,7 @@ const BookingSummaryMembership = () => {
   const [current, setCurrent] = useState(0);
   const [branch, setBransh] = useState('');
   const [bookingResult, setBookingResult] = useState({});
-  console.log(bookingResult);
+  // console.log(bookingResult);
   
   const [messageApi, contextHolder] = message.useMessage();
   const [invoice, setInvoice] = useState({});
@@ -34,7 +34,7 @@ const BookingSummaryMembership = () => {
 
 
   // const [price, setPrice] = useState(0);
-  const [inputValue, setInputValue] = useState();
+  const [inputValue, setInputValue] = useState(window.localStorage.getItem('cridetStaus'));
   const [promo_code_id, setPromo_code_id] = useState(0);
   const [promo_discount, setPromo_discount] = useState(0);
 
@@ -123,8 +123,8 @@ const BookingSummaryMembership = () => {
     },
     {
       title: "Invoice details",
-      ContentTitle: bookingResult?.status === 'paid' ? 'Receipt' : 'Amount Due',
-      content: <CaseThree bookingResult={bookingResult} branch={branch}  />,
+      ContentTitle: inputValue === 'credit' ? 'Receipt' : 'Amount Due',
+      content: <CaseThree bookingResult={bookingResult} branch={branch}  inputValue={inputValue} />,
     },
   ];
 
@@ -133,14 +133,15 @@ const BookingSummaryMembership = () => {
       const result = await upgradePlan(token, paymentDetails.planId, paymentDetails.selected_plan_price, 0,promo_code_id, promo_discount);
       console.log(result);
       
-      Modal.success({
-        title: result.status,
-        content: result.message_data,
-        afterClose: ()=>{
-          getInoviceTransaction(result?.transaction_id, 'ManagePro');
-          setCurrent(current + 1);
-        }
-      });
+      // Modal.success({
+      //   title: result.status,
+      //   content: result.message_data,
+      //   afterClose: ()=>{
+      //     getInoviceTransaction(result?.transaction_id, 'ManagePro');
+      //     setCurrent(current + 1);
+      //   }
+      // });
+      
     }catch(error){
       Modal.error({
         title: 'error',
@@ -183,6 +184,7 @@ const BookingSummaryMembership = () => {
 
   return (
     <>
+   
       <div className="container-fluid p-70 steps-payment">
         <div className="px_7" style={{
               textAlign: '-webkit-center'
@@ -222,7 +224,7 @@ const BookingSummaryMembership = () => {
             <div className="text-center">
               {current === steps.length - 1 && (
                   <Button
-                  to= '/'
+                  // to= '/'
                   className="button-outLine btn-bg-white"
                   tagType="link"
                   onClick={inputValue === 'credit' ? handlePayment : undefined}

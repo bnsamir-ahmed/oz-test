@@ -6,14 +6,18 @@ import vector from "../../assets/images/Vector.png";
 import { ContactUs } from '../../apis/User';
 import { AuthContext } from '../../apis/context/AuthTokenContext';
 import { Modal } from 'antd';
+import { notification } from 'antd';
 
 const ContactAdmin = () => {
 
     const { userId } = useContext(AuthContext);
+    const [alertMessage, setAlertMessage] = useState('');
 
     const handleSubmit = async (values) => {
         try {
             const result = await ContactUs(userId, values.subject, values.comment);
+            setAlertMessage(result)
+          
             Modal.success({
                 title: result.message,
                 content: result.message,
@@ -24,6 +28,7 @@ const ContactAdmin = () => {
             });
             
         } catch (error) {
+            
             Modal.error({
                 title: error.response.data.status || "Error",
                 content: error.response.data.message || "An Unknown Error Occurred",
@@ -37,6 +42,7 @@ const ContactAdmin = () => {
 
     return (
         <>
+        {console.log(alertMessage)}
             <section className="login auth my-5">
                 <div className="position-relative">
                     <div className='img_float'>
@@ -68,7 +74,8 @@ const ContactAdmin = () => {
                                     validationSchema={Yup.object().shape({
                                         subject: Yup.string().required(),
                                         comment: Yup.string().required()
-                                    })}>
+                                    })}
+                                    >
                                     {props => {
                                         const {
                                         values,

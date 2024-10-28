@@ -30,6 +30,8 @@ const CommunityNews = (props) => {
 
   return (
     <>
+    {console.log(newsData)}
+    {console.log(props.configData)}
       <Element name="community-newsfeed">
         <section className="news-feed">
           <div className="container-fluid">
@@ -57,12 +59,12 @@ const CommunityNews = (props) => {
                       </React.Fragment>
                     ))
                   )}
-                  {/* <NavLink
+                  <NavLink
                     to={"/community/newsfeed"}
                     className="btn button-outLine btn-bg-white mx-0"
                   >
                     Explore
-                  </NavLink> */}
+                  </NavLink>
                 </div>
               </div>
               <div className="col-lg-8 col-md-7 col-12 border-left img_block">

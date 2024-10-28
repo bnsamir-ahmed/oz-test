@@ -123,6 +123,12 @@
  .food_mobile {
      display: none;
  }
+ .img_float_line{
+    position: absolute;
+    right: 0%;
+    bottom: -15%;
+
+ }
 @media screen and (max-width: 1250px) {
     .food{
         display: none;

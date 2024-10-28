@@ -200,10 +200,11 @@ const ExploreOZ = (props) => {
                       )}
                     </Nav.Item>
                   </Nav>
+                  
                   <Button
                     tagType="link"
                     className="btn_outline_black"
-                    to={"/spaces"}
+                    to={"/private"}
                   >
                     Explore More
                   </Button>

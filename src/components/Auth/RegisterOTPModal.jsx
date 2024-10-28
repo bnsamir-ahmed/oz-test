@@ -65,9 +65,9 @@ const RegisterOTPModal = (props) => {
                 <Modal.Header closeButton style={{
                     border: 'none'
                 }}></Modal.Header>
-                    <div className="alert alert-success" role="alert">
+                    {/* <div className="alert alert-success" role="alert">
                         {props.message}
-                    </div>
+                    </div> */}
                     <Modal.Body className={`justify-content-center align-items-center p-5`}>
                         <div className="head-content text-center pb-3">
                             <Paragraph className="hand-write mb-0">Please,</Paragraph>

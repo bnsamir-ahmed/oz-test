@@ -3,6 +3,7 @@ import "./Content.css";
 import Button from "../../UI/Button";
 import Paragraph from "../../UI/Paragraph";
 import { Skeleton } from "antd";
+import line from '../../../assets/images/line-yellow.svg'
 
 const RightContentNewFeed = ({ configData, pending }) => {
   return (
@@ -17,6 +18,7 @@ const RightContentNewFeed = ({ configData, pending }) => {
               </div>
             </div>
           </div>
+        
           <div className="row border-of-section position-relative ">
             {pending ? (
               <>
@@ -39,7 +41,7 @@ const RightContentNewFeed = ({ configData, pending }) => {
                 </React.Fragment>
               ))
             )}
-            <div className="col-lg-4 col-md-5 col-sm-12 col-xs-6 m-auto">
+            <div className="col-lg-4 col-md-5 col-sm-12 col-xs-6 m-auto position-relative">
               <div className="box-content p-lg-4 p-3">
                 {pending ? (
                   <>
@@ -72,6 +74,9 @@ const RightContentNewFeed = ({ configData, pending }) => {
                   Explore
                 </Button>
               </div>
+            <div className="img_float_line bottom-50">
+            <img className="opacity-50 w-100" type="img" src={line} alt="shape" />
+          </div>
             </div>
           </div>
         </div>

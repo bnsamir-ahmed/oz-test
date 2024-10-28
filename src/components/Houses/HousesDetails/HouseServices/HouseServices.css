@@ -18,7 +18,17 @@
 
 .features {
     text-align: left;
-    padding: 0 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* border: 1px solid #fff; */
+    padding: 0 20px;
+    /* justify-content: space-between; */
+    /* justify-content:; */
+    /* padding: 0 40px; */
+}
+.features-member
+.fs-20{
+    font-size: 20px !important;
 }
 
 .features .bold-head {
@@ -43,7 +53,10 @@
 
 .features img {
     text-align: left !important;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    width: 10%;
+    object-fit: cover;
+    padding: 20px 0;
 }
 
 .membership-types .large-head {
@@ -59,10 +72,10 @@
 
 @media screen and (max-width:575px) {
 .features {
-    text-align: center;
+    /* text-align: center; */
 }
 .features .text-content {
-    text-align: center;
+    /* text-align: center; */
 }
 .features img {
      transform: scale(.8);

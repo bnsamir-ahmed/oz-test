@@ -1,6 +1,8 @@
 import moment from "moment";
+import { useState } from "react";
 
-const CaseThree = ({ bookingResult, branch }) => {
+const CaseThree = ({ bookingResult, branch  }) => {
+  const [cridet , setCredit] = useState(window.localStorage.getItem('cridetStaus'))
 
   const calcTax = (price) => {
     const tax = price * 14 / 100;
@@ -9,11 +11,12 @@ const CaseThree = ({ bookingResult, branch }) => {
 
   return (
     <div className="w-100 bg_white">
+    
       <div className="row" >
         <div className="col-lg-6 col-md-6 col-sm-12 order-summary">
           <div className="order-details">
             <h2>
-              {bookingResult?.status === 'paid' ? 'Receipt' : 'Amount Due'}
+              {cridet === 'credit' ? 'Receipt' : 'Amount Due'}
               <br /><span style={{
                 fontFamily: 'roboto'
               }}>#</span>{bookingResult?.id}

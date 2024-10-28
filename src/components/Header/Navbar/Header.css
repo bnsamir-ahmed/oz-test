@@ -380,6 +380,9 @@ nav.btn.show {
     } */
 }
 @media screen and (max-width: 426px) {
+    .title-name{
+        font-size: 29px !important;
+    }
     .links-margin {
         margin: auto 0.3rem;
         font-weight: 600;

@@ -31,7 +31,7 @@ const Footer = () => {
                         </div>
                         <div className="col-xxl-9 col-xl-10 col-lg-9 col-md-9 py-sm-0 py-5">              
                             <div className=''>
-                                <div className="d-flex justify-content-center align-items-center flex-wrap">
+                                <div className="d-flex justify-content-center align-items-center flex-wrap flex-coulmn-mob">
                                     {/* <Link to='/booking' className="links-footer">Booking</Link> */}
                                     <Link to='/membership' className="links-footer">Membership</Link>
                                     <Link to='/community' className="links-footer">Community</Link>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="col-xl-2 col-lg-4 col-md-12">
                     <div className="footer-social">
                         <div className="d-flex justify-content-center align-items-center ">  
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="170" viewBox="0 0 2 170" fill="none">
+                            <svg className="line-footer-mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="170" viewBox="0 0 2 170" fill="none">
                                 <path d="M1 0L1.00001 170" stroke="#BDBDBD" stroke-width="1.5"/>
                             </svg>
                             <div className="social-links d-flex align-items-center">

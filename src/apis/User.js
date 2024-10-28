@@ -220,7 +220,7 @@ export const ContactUs = async (userId, subject, message) => {
 
     const response = await axios(config);
         
-    return response.data.data;
+    return response.data;
 };
 
 export const getNotificationList = async (token, type ) => {

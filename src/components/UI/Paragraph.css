@@ -462,6 +462,9 @@ p.list-option-item{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.justify{
+    text-align: justify;
+}
 @media screen and (max-width: 1440px) {
     .paragraph_black{
         font-size: var(--font-size-40);
@@ -509,8 +512,9 @@ p.list-option-item{
     .head_feature{
         font-size: var(--font-size-66);
     }
-    .text-two{
-        font-size: 2rem;
+    .justify-29{
+        font-size: 1.6rem;
+        text-align: justify;
     }
     .main_section_title {
         font-size: 39px;

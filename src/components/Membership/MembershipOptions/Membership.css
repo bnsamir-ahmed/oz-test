@@ -239,10 +239,20 @@
 .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover ,
 .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled){
     background: transparent;
-    border-color: var(--black-color);
+    border-color: var(--black-color) !important;
+
+    /* border-color: unset; */
+}
+/* .ant-radio-group-solid.active-border{
+    
+} */
+ .ant-radio-button-wrapper-checked.custom-checked {
+    border-color: var(--black-color) !important;
+    /* border: none !important; */
+    /* box-shadow: none !important; */
 }
 .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
-    background-color: var(--black-color);
+    /* background-color: var(--black-color); */
 }
 .mainPlan{
     color: #BDBDBD;

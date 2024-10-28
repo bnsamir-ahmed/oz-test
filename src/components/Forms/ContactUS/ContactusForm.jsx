@@ -17,8 +17,8 @@ const ContactusForm = () => {
         return  <option value={value} key={key}>{value}</option>
     });
     const Obj =siteConfig &&  Object.entries(siteConfig.profile_dropdown?.fid_4.data);
-     console.log(siteConfig?.profile_dropdown?.fid_7.data);
-     console.log(Obj);
+    //  console.log(siteConfig?.profile_dropdown?.fid_7.data);
+    //  console.log(Obj);
      
 
     const optionList = siteConfig && Object.entries(siteConfig.profile_dropdown?.fid_4.data).map(item => {
@@ -47,6 +47,8 @@ const ContactusForm = () => {
                 closable: true,
                 maskClosable: true,
             });
+            console.log(result);
+            
 
         } catch (error) {
             Modal.error({

@@ -31,14 +31,15 @@ const  DataProvider = ({children})=>{
 
   return (
     <DataContext.Provider
-      value={{
-        ResetPageName,
-        isPending,
-        data,
-        error,
-        getComponentValue,
-      }}
+    value={{
+      ResetPageName,
+      isPending,
+      data,
+      error,
+      getComponentValue,
+    }}
     >
+      {/* {console.log(data)} */}
       {children}
     </DataContext.Provider>
   );

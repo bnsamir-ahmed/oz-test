@@ -7,17 +7,17 @@ const OzysHeader = () => {
     const videosArr = [
         {
             id: '1',
-            video: '',
+            image: 'https://dashboard.ozcoworkingpark.com/assets/logos/oz_logo.png',
             title: 'Paul'
         },
         {
             id: '2',
-            video: '',
+            image: 'https://dashboard.ozcoworkingpark.com/assets/logos/oz_logo.png',
             title: 'Papa\' Jones'
         },
         {
             id: '3',
-            video: '',
+            image: 'https://dashboard.ozcoworkingpark.com/assets/logos/oz_logo.png',
             title: 'City Drink'
         },
     ]

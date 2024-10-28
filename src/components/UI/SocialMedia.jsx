@@ -1,27 +1,46 @@
 import React, { useState, useContext, useEffect } from "react";
 import { DataContext } from '../../apis/context/SiteDataContext';
+import { useQuery, useQueryClient, QueryClient } from "@tanstack/react-query";
+import { config } from "../../apis/config";
+export const queryClient = new QueryClient();
 
 const SocialMedia = ({footer}) => {
+    const [pageName, setPageName] = useState("social");
+ 
+    const { isPending, data, error } = useQuery({
+      queryKey: ["page", pageName],
+      queryFn: ({ signal }) => config(pageName, signal),
+    });
+  
+    useEffect(()=>{
+      queryClient.invalidateQueries({
+        queryKey: ["page"],
+        exact: true,
+      });
+    }, [pageName]);
+
 
     const [socialData, setSocialData] = useState([]);
-    const {config} = useContext(DataContext);
+    // const {config} = useContext(DataContext);
 
-    useEffect(()=>{
-        const getSocial = async () => {
-            try {
-                const res = await config('social');
-                setSocialData(res)
-            }catch (error){
+    // useEffect(()=>{
+    //     const getSocial = async () => {
+    //         try {
+    //             const res = await config('social');
+                
+    //             setSocialData(res)
+    //             // console.log(socialData , ';;s;;;;');
+    //         }catch (error){
 
-            }
-        }
-        getSocial();
+    //         }
+    //     }
+    //     getSocial();
         
-    },[]);
+    // },[]);
 
     return (
         <>
-            {socialData && socialData.map((configItem , index)=>(
+            {data && data.map((configItem , index)=>(
                 <React.Fragment key={index}>
                     {configItem.key === "facebook_url" && 
                         <a className="media-link" href={configItem.value} target="_blank">

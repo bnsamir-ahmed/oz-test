@@ -69,3 +69,7 @@
     z-index: 9;
     transition: all .3s ease-in-out;
 }
+/* .header_bg_none::before{
+    background: unset !important;
+
+} */

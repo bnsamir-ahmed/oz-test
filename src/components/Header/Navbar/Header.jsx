@@ -244,18 +244,18 @@ const Header = ({ showBlackNav, show }) => {
                   </NavLink>
                 </Dropdown>
               </li>
-              {/* <li className="nav-item px-3 dropdown">
-                <NavLink
-                  className={`nav-link px-0`}
-                  style={({ isActive }) => ({
-                    borderBottom: isActive ? `2px solid black` : "none",
-                  })}
-                  to={"/private"}
-                  end
-                >
-                  <span>private events</span>
-                </NavLink>
-              </li> */}
+                <li className="nav-item px-3 dropdown">
+                  <NavLink
+                    className={`nav-link px-0`}
+                    style={({ isActive }) => ({
+                      borderBottom: isActive ? `2px solid black` : "none",
+                    })}
+                    to={"/private"}
+                    end
+                  >
+                    <span>private events</span>
+                  </NavLink>
+                </li>
 
               <li className="nav-item px-3">
                 <Dropdown menu={{ items: communityItems }}>

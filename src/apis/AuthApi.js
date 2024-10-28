@@ -154,5 +154,5 @@ export const inquiry = async (first_name,
         };
 
     const response = await axios(config);
-    return response.data.data;
+    return response.data;
 };

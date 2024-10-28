@@ -29,10 +29,10 @@ const Community = () => {
         configData={getComponentValue("newsfeed")}
         pending={isPending}
       />
-      <CommunityEvents
+      {/* <CommunityEvents
         configData={getComponentValue("event")}
         pending={isPending}
-      />
+      /> */}
       <CommunityGallery
         configData={getComponentValue("gallery")}
         pending={isPending}

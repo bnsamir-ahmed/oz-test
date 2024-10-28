@@ -56,9 +56,11 @@ const MembershipOptions = () => {
             time: item.time,
             time_count: item.time_count,
             discount: item.discount,
-            item: item
+            item: item,
+            amenities:typeDetials?.options[0]?.amenities
        } 
        localStorage.setItem('selectedPlanOZ', JSON.stringify(selectedPlan));
+       
        setPlanId(item.id);
        if(token){
             if(item.time === 'day'){
@@ -87,6 +89,7 @@ const MembershipOptions = () => {
     
     return (
         <>
+        {/* {console.log()} */}
             <MainHeaderWrapper image={typeDetials?.logo}>
                 <div className="container-fluid px-70">
                     <div className="col-md-6 col-12">
@@ -120,6 +123,7 @@ const MembershipOptions = () => {
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div className='pt-5'>
                                     <div className="membershipOptionsList container-fluid">
                                         <div className='row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 g-3'>
@@ -127,25 +131,27 @@ const MembershipOptions = () => {
                                                 typeDetials.options.map((item, index)=>{
                                                     return(
                                                         <div className='col d-flex justify-content-center' key={index}>
-                                                            <div className='card h-100 w-100'>
-                                                                <div className='card-header'>
+                                                            <div className='card h-100 w-100 '>
+                                                                <div className='card-header bor position-relative'>
                                                                     <span>{typeDetials?.name}</span>
                                                                     <h1 className='py-3'>{item.type}</h1>
                                                                     <span className={`px-2 ${item.discount !== '0' ? 'discount' : 'priceafter' }`}>{item.price} / {item.time}</span>
                                                                     {item.discount !== '0' && <span className='mb-0 priceafter'>{calcDiscount(item.price, item.discount, item.discount_type)} / {item.time}</span>}
+                                                                    <span className='border-bottom-card'></span>
                                                                 </div>
+                                                                
                                                                 <div className='card-body'>
                                                                     <Paragraph><img type='img' src={check_yes} alt='check_mark' /> Your Plan Benefits</Paragraph>
                                                                     <div className='ps-3 dynamic_p' dangerouslySetInnerHTML={{ __html: item.website_description }}></div>
                                                                 </div>
                                                                 <div className='card-footer'>
-                                                                    <div className='row row-cols-xxl-4 row-cols-lg-2 g-3 align-items-center' style={{
+                                                                    <div className='row row-cols-xxl-4 row-cols-lg-2 ' style={{
                                                                         marginRight: '15px'
                                                                     }}>
                                                                         {item.amenities.slice(0,4).map((item, index)=>{
                                                                             return (
-                                                                                <div className='col d-flex flex-column align-items-center' key={index}>
-                                                                                    <Media type='img' src={item.logo} alt={item.title} className='mb-3 w-100' />
+                                                                                <div className='col d-flex flex-column align-items-center p-0' key={index}>
+                                                                                    <Media type='img' src={item.logo} alt={item.title} className='mb-3 w-100 img-cover' />
                                                                                     <span className='amenity_title fs-6'>{item.title}</span>
                                                                                 </div>
                                                                             )

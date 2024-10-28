@@ -129,7 +129,7 @@ footer a {
     line-height: 120%;
 }
 @media screen and (max-width: 991.5px) {
-    .footer-social svg{
+    .footer-social .line-footer-mobile{
         display: none;
     }
     .footer-social{
@@ -141,6 +141,10 @@ footer a {
     .auth_footer .d-flex{
         flex-wrap: wrap !important;
         justify-content: center !important;
+    }
+    .flex-coulmn-mob{
+        flex-direction: column !important;
+        
     }
 }
 @media screen and (max-width: 390px) {

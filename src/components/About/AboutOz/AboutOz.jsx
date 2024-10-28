@@ -6,6 +6,7 @@ import axios from "axios";
 import Paragraph from "../../UI/Paragraph";
 import HouseServices from "../../Houses/HousesDetails/HouseServices/HouseServices";
 import { Skeleton } from "antd";
+import line from '../../../../src/assets/images/line-yellow.svg'
 
 const AboutOz = (props) => {
   const [amenities, setamenities] = useState([]);
@@ -72,9 +73,9 @@ const AboutOz = (props) => {
             </div>
           </div>
         </div>
-        {/* <div className="img_float">
-            <img className="opacity-50 w-100" type="img" src={vector} alt="shape" />
-          </div> */}
+        <div className="img_float_line">
+            <img className="opacity-50 w-100" type="img" src={line} alt="shape" />
+          </div>
       </section>
 
       <section className="about-section body-dark">
@@ -103,7 +104,7 @@ const AboutOz = (props) => {
               )}
             </div>
 
-            <div className="col-lg-6 col-md- col-12 box-content-black m-auto ms-auto ps-lg-0">
+            <div className="col-lg-6 col-md- col-12 box-content-black m-auto ms-auto ps-lg-0  position-relative ">
               <div className="box-content p-lg-4 p-3">
                 {props.pending ? (
                   <Skeleton active paragraph={{ rows: 3 }} />
@@ -126,9 +127,11 @@ const AboutOz = (props) => {
                 )}
               </div>
             </div>
+          <span className="line-about"></span>
           </div>
+
           {/* ? */}
-          <div className="row">
+          <div className="row     position-relative">
             <div className="col-lg-6 col-md- col-12 box-content-black my-auto">
               <div className="box-content px-xl-5 px-3">
                 {props.pending ? (
@@ -174,8 +177,10 @@ const AboutOz = (props) => {
                 ))
               )}
             </div>
+          <span className="line-about"></span>
+
           </div>
-          <div className="row py-5">
+          <div className="row py-5     position-relative">
             <div className="col-xl-6 col-12">
               <div className="row">
                 <div className="col-xl-12 col-lg-6 my-auto">
@@ -282,8 +287,10 @@ const AboutOz = (props) => {
                 </div>
               </div>
             </div>
+            <span className="line-about"></span>
+
           </div>
-          <div className="row py-5 justify-content-between">
+          <div className="row py-5 justify-content-between     position-relative">
             <div className="col-lg-8">
               <div className="row g-3">
                 <div className="col-xl-5 col-12">
@@ -358,8 +365,9 @@ const AboutOz = (props) => {
                 ))
               )}
             </div>
+            {/* <span className="line-about"></span> */}
           </div>
-          <div className="row g-3 py-5">
+          <div className="row g-3 py-5     position-relative">
             <div className="col-lg-6 col-12">
               <div className="box-content p-xl-5 p-3">
                 {props.pending ? (
@@ -428,6 +436,8 @@ const AboutOz = (props) => {
                 ))
               )}
             </div>
+            <span className="line-about"></span>
+
           </div>
           <div className="position-relative food py-5">
             {props.pending && (

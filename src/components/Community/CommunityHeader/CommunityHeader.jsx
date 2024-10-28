@@ -38,14 +38,14 @@ const CommunityHeader = (props) => {
               >
                 News Feed
               </Link>
-              <Link
+              {/* <Link
                 className="nav-link-two links-margin"
                 to={"community-events"}
                 smooth={true}
                 duration={100}
               >
                 Events
-              </Link>
+              </Link> */}
               <Link
                 className="nav-link-two links-margin"
                 to={"community-gallery"}

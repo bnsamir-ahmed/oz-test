@@ -30,7 +30,7 @@ const NewsLetter = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="content-block">
-                                <Paragraph className="white_monoBlock_title">Stay Informed with OZ's Latest Updates</Paragraph>
+                                <Paragraph className="white_monoBlock_title">Join NewsLetter</Paragraph>
                             </div>
                             <Formik 
                                 initialValues={

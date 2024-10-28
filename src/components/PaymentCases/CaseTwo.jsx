@@ -6,6 +6,11 @@ const CaseTwo = ({ getPaymentValue }) => {
   
   const handleCheckboxChange = (e) => {
     getPaymentValue(e.target.value);
+    // console.log(e.target.value);
+    window.localStorage.setItem('cridetStaus' , e.target.value)
+
+
+    
   };
   return (
     <>
