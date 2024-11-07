@@ -96,7 +96,7 @@ const ClassesFilter = ({
                   placeholder={"select class"}
                 >
                   {categories.map((item, index) => (
-                    <Select.Option key={index} value={item.category_id}>
+                    <Select.Option key={index} value={item.id}>
                       {item.title}
                     </Select.Option>
                   ))}

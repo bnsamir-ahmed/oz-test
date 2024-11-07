@@ -797,6 +797,7 @@ span{
 }
 .individual_slider .slick-slide div{
     height: 550px;
+    width: 500px;
 }
 /* .slick_knowledge  .slick-slide > div{
     height: 416px;
@@ -942,6 +943,10 @@ span{
  .bottom-50{
     bottom: -50% !important;
  }
+ .line-h-justify{
+    text-align: justify !important;
+    line-height: 200% !important;
+ }
 /* media query */
 @media screen and (max-width: 1440px) {
     .title-name {
@@ -1022,6 +1027,12 @@ span{
         height: 1px;
         background-color: var(--white-color);
     }
+    .flex-end-sm-none{
+        justify-content: unset !important;
+    }
+    .w-100-sm{
+        width: 100% !important;
+    }
 }
 @media screen and (max-width: 426px) {
     .AmenitiesList_videos video{
@@ -1044,4 +1055,12 @@ span{
 }
 .bg-black{
     background-color: #000 !important;
+}
+.terms-color{
+    color: #00000073;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.lay-out-logo{
+    transform: scale(0.8)
 }

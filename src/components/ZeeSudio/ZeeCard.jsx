@@ -7,6 +7,7 @@ import AddToFavButton from "../UI/AddToFavButton";
 const ZeeCard = ({ item }) => {
   return (
     <div className="card my-2 h-100 text-start card_zee">
+      {/* {console.log(item?.allow_free)}
       {item?.allow_free === 1 ? (<Badge.Ribbon text="Free" color="gold">
         <AddToFavButton is_favorite={item.is_favorite} id={item.id} add_fav={true} type={'zee_studio'} />
 
@@ -33,7 +34,20 @@ const ZeeCard = ({ item }) => {
             }}
           />
         </>
-      )}
+      )} */}
+       
+          <AddToFavButton is_favorite={item.is_favorite} id={item.id} add_fav={true} type={'zee_studio'} />
+
+          <img
+            src={item.image}
+            className="w-100"
+            alt={item.title}
+            style={{
+              height: '352px',
+              objectFit: 'cover'
+            }}
+          />
+       
       <div className="card-body">
 
         <Paragraph className="card-title mb-2 dynamic_wraper_1">
@@ -57,10 +71,16 @@ const ZeeCard = ({ item }) => {
           >
             Explore More
           </Button>
-
+         {item?.allow_free === 1 ?   
+          <Paragraph className="card-title">
+          free
+      </Paragraph>:
           <Paragraph className="card-title">
             {Math.floor(item.price)} Egp
           </Paragraph>
+         
+
+         }
 
         </div>
       </div>

@@ -20,7 +20,7 @@ const LocationsList = ({address, img, addAddress}) => {
                             <h4 className='map-address mb-0 mx-2'>
                                 {address}
                             </h4>
-                            <a className="location-slider " href={`https://www.google.com/maps/dir/${address}`} target='_blank'>git direction</a>
+                            <a className="location-slider " href={`https://www.google.com/maps/dir/${address}`} target='_blank'>get direction</a>
                         </div>
                     )}
             </div>

@@ -35,10 +35,10 @@ const Footer = () => {
                                     {/* <Link to='/booking' className="links-footer">Booking</Link> */}
                                     <Link to='/membership' className="links-footer">Membership</Link>
                                     <Link to='/community' className="links-footer">Community</Link>
-                                    {/* <Link to="/community/events" className="links-footer">Events</Link>  */}
+                                    <Link to="/community/events" className="links-footer">Events</Link> 
                                     <Link to='/faq' className="links-footer">FAQs</Link>
-                                    {/* <Link to='/profile/privacypolicy' className="links-footer">Privacy Policy</Link> */}
-                                    {/* <Link to='/profile/terms&condition' className="links-footer">Term&conditions</Link> */}
+                                    <Link to='/profile/privacypolicy' className="links-footer">Privacy Policy</Link>
+                                    <Link to='/profile/terms&condition' className="links-footer">Term&conditions</Link>
                                     <Link to='/sitemap' className="links-footer">Site Map</Link>
                                 </div> 
                             <Paragraph className='mx-auto mt-4 mb-0 text-center copyright'>© 2023, Made with passion by Macber EG</Paragraph>

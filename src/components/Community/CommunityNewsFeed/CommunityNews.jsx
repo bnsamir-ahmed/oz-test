@@ -30,8 +30,8 @@ const CommunityNews = (props) => {
 
   return (
     <>
-    {console.log(newsData)}
-    {console.log(props.configData)}
+    {/* {console.log(newsData)} */}
+    {/* {console.log(props.configData)} */}
       <Element name="community-newsfeed">
         <section className="news-feed">
           <div className="container-fluid">

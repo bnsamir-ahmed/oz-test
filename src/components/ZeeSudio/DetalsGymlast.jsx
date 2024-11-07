@@ -136,13 +136,13 @@ const DetalsGymlast = ({ details, pending }) => {
                     </Paragraph>
                   </>
                 )}
-                <Button
-                  tagType="link"
-                  onClick={() => navigatePayment(details)}
-                  className="btn button-outLine btn-bg-white"
-                >Book a Class
+                  {/* <Button
+                    tagType="link"
+                    onClick={() => navigatePayment(details)}
+                    className="btn button-outLine btn-bg-white"
+                  >Book a Class
+                  </Button> */}
                   {/* {details.attended === true ? '' : 'Book a Class'} */}
-                </Button>
               </div>
             </div>
             <div className="mt-5 mt-xl-0">

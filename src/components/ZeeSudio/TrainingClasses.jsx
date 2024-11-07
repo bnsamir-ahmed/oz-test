@@ -41,7 +41,7 @@ function TrainingClasses({
               </div>
             </div>
             <div className="col-xl-8 col-md-6 col-sm-12 py-3 py-xl-0 d-flex justify-content-end align-items-center">
-              <Button
+              {/* <Button
                 tagType="link"
                 className="button-outLine px-4 btn-bg-white m-0 me-3 btn-filter text-center font-couture"
                 to={`/gymhistory`}
@@ -67,7 +67,7 @@ function TrainingClasses({
                   />
                 </svg>
                 History
-              </Button>
+              </Button> */}
               <Button
                 tagType="link"
                 className="button-outLine px-4 btn-bg-white m-0 btn-filter text-center font-couture"

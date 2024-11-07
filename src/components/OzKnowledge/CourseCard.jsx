@@ -7,29 +7,17 @@ const CourseCard = ({ coursesDetails }) => {
 
     return (
         <>
+            {/* {console.log(coursesDetails , ';slslslss')} */}
             <div className='card'>
+
                 <div className='card-header header_course'>
-                    {coursesDetails?.allow_free === 1 ?
-                        (<Badge.Ribbon text="Free" color="gold">
-                            <AddToFavButton is_favorite={coursesDetails.is_favorite} id={coursesDetails.id} add_fav={true} type={'zee_knowladge'} />
+                    <AddToFavButton is_favorite={coursesDetails.is_favorite} id={coursesDetails.id} add_fav={true} type={'zee_knowladge'} />
 
-                            <img src={coursesDetails.image} className="card-img-top" alt={coursesDetails.title}
-                                style={{
-                                    height: '229px',
-                                    objectFit: 'cover'
-                                }} />
-                        </Badge.Ribbon>) : (
-                            <>
-                                <AddToFavButton is_favorite={coursesDetails.is_favorite} id={coursesDetails.id} add_fav={true} type={'zee_knowladge'} />
-
-                                <img src={coursesDetails.image} className="card-img-top" alt={coursesDetails.title}
-                                    style={{
-                                        height: '229px',
-                                        objectFit: 'cover'
-                                    }} />
-                            </>
-                        )
-                    }
+                    <img src={coursesDetails.image} className="card-img-top" alt={coursesDetails.title}
+                        style={{
+                            height: '229px',
+                            objectFit: 'cover'
+                        }} />
                     <div className='padge_grey'>
                         <span>{coursesDetails.category?.title}</span>
                     </div>
@@ -41,7 +29,11 @@ const CourseCard = ({ coursesDetails }) => {
                         <span className='rate_count ms-2'>{`(${coursesDetails.rate})`}</span>
                     </div>
                     <div className='d-flex justify-content-between align-items-center pt-4'>
-                        <Paragraph className='courseCardTitle mb-0'>{Math.floor(coursesDetails.price)} EGP</Paragraph>
+                        {coursesDetails?.allow_free === 1 ?
+                            <Paragraph className='courseCardTitle mb-0'> Free</Paragraph> :
+
+                            <Paragraph className='courseCardTitle mb-0'>{Math.floor(coursesDetails.price)} EGP</Paragraph>
+                        }
                         <Button
                             tagType='link'
                             to={`/coursedetails/${coursesDetails.id}`}

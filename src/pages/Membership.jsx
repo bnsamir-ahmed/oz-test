@@ -25,7 +25,7 @@ const Membership = () => {
       />
       <Services />
     </>
-  );
+  );  
 };
 
 export default Membership;

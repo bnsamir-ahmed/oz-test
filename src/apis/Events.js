@@ -44,8 +44,8 @@ export const getEventsList = async (token, userId, branchId) => {
 
     const formData = new FormData();
     formData.append('server_key', process.env.REACT_APP_SERVER_KEY);
-    // formData.append('user_id', userId);
-    // formData.append('branch_id', branchId);
+    formData.append('user_id', userId);
+    formData.append('branch_id', branchId);
 
     const config = {
         method: 'post',

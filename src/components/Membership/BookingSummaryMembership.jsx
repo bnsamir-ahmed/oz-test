@@ -11,9 +11,12 @@ import { AuthContext } from "../../apis/context/AuthTokenContext";
 import { useNavigate } from "react-router-dom";
 import { getBranchById } from "../../apis/config";
 import { payMent } from "../../apis/config";
-
+import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { useNavigation } from "react-router-dom";
 const BookingSummaryMembership = () => {
 
+  const navigates = useNavigation();
   const { token, branchId } = useContext(AuthContext);
   const [current, setCurrent] = useState(0);
   const [branch, setBransh] = useState('');
@@ -137,10 +140,10 @@ const BookingSummaryMembership = () => {
       //   title: result.status,
       //   content: result.message_data,
       //   afterClose: ()=>{
-      //     getInoviceTransaction(result?.transaction_id, 'ManagePro');
-      //     setCurrent(current + 1);
       //   }
       // });
+      getInoviceTransaction(result?.transaction_id, 'ManagePro');
+      setCurrent(current + 1);
       
     }catch(error){
       Modal.error({
@@ -209,7 +212,9 @@ const BookingSummaryMembership = () => {
             >
               {steps[current].content}
 
+          <Link to='/profile/terms&condition' className="align-self-start mt-5 ms-4 terms-color">terms&conditionApply</Link>
               <div className="text-center p-5">
+
                 {current < steps.length - 1 && (
                   <Button
                     tagType="link"
@@ -221,13 +226,15 @@ const BookingSummaryMembership = () => {
                 )}
               </div>
             </div>
+            
             <div className="text-center">
               {current === steps.length - 1 && (
                   <Button
+                  // to={}
                   // to= '/'
                   className="button-outLine btn-bg-white"
                   tagType="link"
-                  onClick={inputValue === 'credit' ? handlePayment : undefined}
+                  onClick={inputValue === 'credit' ? handlePayment : () => navigate('/')}
                 >
                    {inputValue === 'credit' ? 'Pay' : 'Back Home'}
                 </Button>

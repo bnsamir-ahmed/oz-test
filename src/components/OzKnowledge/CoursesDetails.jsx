@@ -15,7 +15,7 @@ const CoursesDetails = () => {
                             </svg>
                         </div>
                     </div>
-                    <div className="col-lg-8 col-md-8 col-6 d-flex justify-content-end me-4">
+                    {/* <div className="col-lg-8 col-md-8 col-6 d-flex justify-content-end me-4">
                             <Button 
                                 tagType='link' 
                                 className="button-outLine px-4 btn-bg-white m-0 me-3 btn-filter text-center font-couture d-flex align-items-center justify-content-center"
@@ -27,7 +27,7 @@ const CoursesDetails = () => {
                             </svg>
                                 History
                             </Button>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             <FilteredCourses />

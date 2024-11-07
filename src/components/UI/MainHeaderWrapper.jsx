@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 const MainHeaderWrapper = (props)=>{
     const [imageIndex, setImageIndex] = useState(0);
     const [videoIndex, setVideoIndex] = useState(0);
+    // const 
 
 
     useEffect(()=>{
@@ -21,24 +22,25 @@ const MainHeaderWrapper = (props)=>{
 
     useEffect(()=>{
         if(props?.getVideoTitle){
-            props.getVideoTitle(props.video[videoIndex]?.title);
+            props.getVideoTitle(props.video[videoIndex]?.value);
         }
         const timer = setInterval(()=>{
             if(props?.video){
                 if(props.video.length > 1){
                     setVideoIndex((prevIndex) => (prevIndex + 1) % props.video.length);
                     if(props.getVideoTitle){
-                        props.getVideoTitle(props.video[videoIndex].title);
+                        props.getVideoTitle(props.video[videoIndex].value);
                     }
                 }
             }
         },5000);
 
         return ()=>clearInterval(timer);
-    },[videoIndex]);
+    },[videoIndex ,  props]);
 
     return (
         <div className={`position-relative ${props.className}`} >
+
             <div className={`${classes.header_bg} ${props.special_flex} `}>
                 {props.video && 
                     <video 

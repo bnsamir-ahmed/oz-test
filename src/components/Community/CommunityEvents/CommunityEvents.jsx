@@ -1,6 +1,5 @@
 import React from "react";
 import PublicEventList from "../../PublicEvents/PublicEventList";
-import { NavLink } from "react-router-dom";
 import Paragraph from "../../UI/Paragraph";
 import { Element } from "react-scroll";
 import { Skeleton } from "antd";
@@ -8,6 +7,7 @@ import { Skeleton } from "antd";
 const CommunityEvents = (props) => {
   return (
     <>
+   
       <Element name="community-events">
         <section className="events community">
           <div className="container-fluid">
@@ -29,7 +29,7 @@ const CommunityEvents = (props) => {
                           )}
                           {configItem.key ===
                             "community_page_event_description" && (
-                            <div className="col-lg-8 col-sm-12 m-auto">
+                            <div className="col-lg-4 col-sm-12 m-auto">
                               <div className="d-lg-flex d-sm-block align-items-center">
                                 <Paragraph
                                   className={
@@ -37,6 +37,7 @@ const CommunityEvents = (props) => {
                                   }
                                 >
                                   {configItem.value}
+                              
                                 </Paragraph>
                                 {/* <NavLink
                                   to={"/community/events"}
@@ -53,7 +54,6 @@ const CommunityEvents = (props) => {
                   </div>
                 </div>
               </div>
-
               <PublicEventList />
             </div>
           </div>

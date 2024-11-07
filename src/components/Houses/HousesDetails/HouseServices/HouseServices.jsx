@@ -6,6 +6,9 @@ const HouseServices = ({location_amenities, dark_theme, isPending}) => {
 
     return (
         <section id="amenities" className={` ${dark_theme ? 'dark_theme' : ''}`}>
+            {/* {console.log(location_amenities)}
+            {console.log(dark_theme)} */}
+
             <div className="position-relative d-md-block d-none">
                 <img
                     type="img" src={vector} className="position-absolute"
@@ -26,11 +29,15 @@ const HouseServices = ({location_amenities, dark_theme, isPending}) => {
                                 <Skeleton paragraph={{ rows: 2}} title={true} active />
                             </div>
                         </div>)
-                    : (location_amenities && location_amenities.length !== 0) && location_amenities.map((service, index) => {
+                    : (location_amenities && location_amenities.length !== 0) && location_amenities?.map((service, index) => {
                         const {id, title, image, logo, description} = service;
                         return (
                             <div className="col-lg-4 col-md-6 col-sm-12 my-5" key={index}>
-                                <HouseServicesList id={id} title={title} img={logo || image} text={description}/>
+                                {/* {console.log(id, title, image, logo, description)} */}
+                                <div className="lay-out-logo">
+                                <HouseServicesList id={id} title={title} img={logo || image} text={description} className='w-unset lay-out-logo'/>
+
+                                </div>
                             </div>
                         )
                     })}

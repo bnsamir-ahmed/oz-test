@@ -61,6 +61,7 @@ function MoreClasses() {
 
   return (
     <>
+    {/* {console.log()} */}
       <HeaderClasses />
       <TrainingClasses
         classesGym={classesGymFilter || []}

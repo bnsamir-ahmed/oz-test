@@ -52,14 +52,17 @@ const FilteredCourses = () => {
                     endDate,
                     priceFrom,
                     priceTo,
-                    id,
                     sellerType,
                     trainerId,
-                    limit,
-                    page, signal);
+                    id,
+                    '10',
+                    page,
+                     signal);
+                   
                 setCourses(result);
+                // localStorage.setItem('number' , courses.length)
             } catch (error) {
-                console.log(error);
+                // console.log(error);
             }
         }
         getCourses();
@@ -102,7 +105,7 @@ const FilteredCourses = () => {
                 const result = await getInstructorsList(token, branchId, 10, 0, signal);
                 setTrainers(result);
             } catch (error) {
-                console.log(error);
+                // console.log(error);
             }
         }
         getInstructors();

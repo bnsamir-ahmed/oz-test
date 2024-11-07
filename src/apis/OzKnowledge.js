@@ -17,6 +17,7 @@ export const KnowledgeHome = async (token, branchId, signal) => {
 
 
   const response = await axios(config);
+  
   return response.data.data;
 }
 
@@ -105,21 +106,22 @@ export const getCoursesList = async (token,
   end_date,
   price_from,
   price_to,
-  category_id,
   seller_type,
   trainer_id,
+  category_id,
   limit,
   page,
   signal) => {
-
+   
   const formData = new FormData();
   formData.append("server_key", process.env.REACT_APP_SERVER_KEY);
   formData.append("category_id", category_id);
   formData.append("limit", limit);
   formData.append("page", page);
+
   formData.append('branch_id', branchId);
 
-  // 
+  
   if (start_date) {
     formData.append("start_date", start_date);
   }
@@ -149,9 +151,48 @@ export const getCoursesList = async (token,
   };
 
   const response = await axios(config);
+  console.log(response.data);
+  
+  // console.log(response.data.data  , page , 
+  //   limit,
+  //   branchId,
+  //   start_date,
+  //   end_date,
+  //   price_from,
+  //   price_to,
+  //   category_id,
+  //   seller_type,
+  //   trainer_id,
+  // );
+  
 
   return response.data.data;
 };
+
+
+// export const getCoursesList = async (token,
+
+//   signal) => {
+
+//   const formData = new FormData();
+//   formData.append("server_key", process.env.REACT_APP_SERVER_KEY);
+
+
+//   const config = {
+//     method: "post",
+//     url: `${process.env.REACT_APP_API_URL}/api/zee_knowledge_courses?access_token=${token}&skip=true`,
+//     data: formData,
+//     maxContentLength: Infinity,
+//     maxBodyLength: Infinity,
+//     signal: signal
+//   };
+
+//   const response = await axios(config);
+//   console.log(response.data);
+  
+
+//   return response.data.data;
+// }
 
 export const getCoursesById = async (token, id, signal) => {
 

@@ -107,7 +107,7 @@ const MembershipTypesSliderCorporate = ({ currentMemberId }) => {
                                         const { id, name, link, description, logo } = listMembershipType;
                                         if (currentMemberId !== id) {
                                             return (
-                                                <div className="col-4 px-2" key={id}>
+                                                <div className="col-xl-4 col-sm-12 px-2" key={id}>
                                                     <MembershipTypesList
                                                         id={id}
                                                         name={name}
@@ -128,7 +128,7 @@ const MembershipTypesSliderCorporate = ({ currentMemberId }) => {
                                         const { id, name, link, description, logo } = listMembershipType;
                                         if (currentMemberId !== id) {
                                             return (
-                                                <div className="col-4 px-2" key={id}>
+                                                <div className="col-xl-4 col-sm-12 px-2" key={id}>
                                                     <MembershipTypesList
                                                         id={id}
                                                         name={name}
@@ -145,7 +145,6 @@ const MembershipTypesSliderCorporate = ({ currentMemberId }) => {
                     </>
                 )
             }
-
             {error && <Paragraph>there is no membership type to display</Paragraph>}
         </>
     );

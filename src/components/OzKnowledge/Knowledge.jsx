@@ -17,7 +17,7 @@ const Knowledge = () => {
     queryKey: ['KnowledgeHome'],
     queryFn: ({signal}) => KnowledgeHome(token, branchId, signal)
   })
-
+ 
   return (
     <>
       <MainHeaderWrapper image={data?.knowladge_slider} height="670px">

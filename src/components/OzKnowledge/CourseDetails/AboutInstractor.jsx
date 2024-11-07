@@ -31,7 +31,7 @@ const AboutInstractor = ({instractor, isPending}) => {
                             {isPending && (<Skeleton paragraph active/>)}
                             <div className='course_details_light_desc opacity-100' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(instractor?.description) }}></div>
                             <div className='d-flex align-items-center  mb-4'>
-                                <div className='d-flex align-items-center'>
+                                {/* <div className='d-flex align-items-center'>
                                     <img src={star} alt='star icon'/>
                                     {isPending && (<Skeleton.Input style={{ width: 80 }} active />)}
                                     <span className='rate mx-2 fw-semibold'>{instractor?.rating}</span> 
@@ -42,7 +42,7 @@ const AboutInstractor = ({instractor, isPending}) => {
                                     {isPending && (<Skeleton.Input style={{ width: 80 }} active />)}
                                     <span className='reviews mx-2 fw-semibold'>{instractor?.courses}</span>
                                     <span className='reviews'>Courses</span>
-                                </div>
+                                </div> */}
                             </div>
                             {/* <Paragraph className='course_details_light_desc mb-4'>
                                 Joe Natoli has launched five successful online courses with Udemy on the topics of User Experience (UX) and User Interface (UI) Design, with more than 180,000+ students enrolled to date.

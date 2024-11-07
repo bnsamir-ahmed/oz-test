@@ -381,10 +381,11 @@ const CommunityEventsDetails = () => {
 
                             <div className="cards-event-buttons d-flex justify-content-center align-items-center">
                                 {/* {compareTime(eventDetails.end, eventDetails.event_attend_id)} */}
-                                <Button
+                                
+                                {/* <Button
                                     tagType='link'
                                     className="btn button-outLine btn-bg-white attend-btn m-0"
-                                    onClick={attend}>Attend</Button>
+                                    onClick={attend}>Attend</Button> */}
 
                                 <div className='mx-4'>
                                     <ShareButton border={true} shareUrl={url} title={eventDetails.event_name} description={eventDetails.description} />

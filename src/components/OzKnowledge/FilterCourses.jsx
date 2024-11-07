@@ -2,6 +2,7 @@ import Paragraph from "../UI/Paragraph";
 import { Select } from 'antd';
 
 const FilterCourses = ({courses_length}) => {
+    
     return (
         <>
             <section className="container-fluid px-70">

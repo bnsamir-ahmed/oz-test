@@ -6,9 +6,13 @@ import { Skeleton } from "antd";
 const JoinCommuinty = ({ configData, details, pending, buttonLink, buttontitle }) => {
   return (
     <>
+    {/* {console.log(buttonLink) }
+    {console.log(buttontitle) } */}
+
       <section className={`monoBlock bg-white`}>
         <div className="container">
           <div className="row">
+
             <div className="col-lg-12">
               <div className="content-block text-center">
                 {pending && <Skeleton active paragraph={{ rows: 3 }} />}
@@ -38,12 +42,12 @@ const JoinCommuinty = ({ configData, details, pending, buttonLink, buttontitle }
                     </Paragraph>
                   </>
                 )}
-                <NavLink
+                {/* <NavLink
                   to={buttonLink}
                   className="btn button-outLine btn-bg-white mx-3"
                 >
                   {buttontitle}
-                </NavLink>
+                </NavLink> */}
               </div>
             </div>
           </div>

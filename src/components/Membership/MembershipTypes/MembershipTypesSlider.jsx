@@ -47,7 +47,7 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
@@ -98,12 +98,13 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
       ) :
         (
           <Slider {...settings} className="individual_slider mb-4">
+        
             {types &&
               types['individual']?.map((listMembershipType) => {
                 const { id, name, logo, link, description } = listMembershipType;
                 if (currentMemberId !== id) {
                   return (
-                    <div className="col-4 px-2" key={id}>
+                    <div className="col-xl-12 px-2" key={id}>
                       <MembershipTypesList
                         className={"t-center-sm"}
                         id={id}
@@ -113,6 +114,7 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
                         description={description}
                         image={logo}
                       />
+                      p
                     </div>
                   )
                 }

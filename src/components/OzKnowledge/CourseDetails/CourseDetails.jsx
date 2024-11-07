@@ -99,16 +99,17 @@ const CourseDetails = () => {
                 </MainHeaderWrapper>
                 {error && (<Alert message={error.message} type="error" showIcon />)}
             </div>
-            <Counter
+            {/* <Counter
                 course_hours={course?.course_hours}
                 total_assignment={course?.total_assignment}
                 video_lessons={course?.video_lessons}
                 student_enrolled={course?.student_enrolled}
-            />
+            /> */}
             <AboutCourse descriptions={course?.descriptions} isPending={isPending} />
             <AboutInstractor instractor={course?.trainer} isPending={isPending} />
             <PopularCourses />
             <LoginAlert show={showLogin} onHide={handelClose} />
+            {/* {console.log(course)} */}
         </>
     )
 };

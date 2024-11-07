@@ -38,6 +38,7 @@ const BecomeMember = ({ configData, pending }) => {
                       {(configItem.key === "membership_page_main_title" ||
                         configItem.key === "home_page_space_title") && (
                         <h2 className="h2-text">{configItem.value}</h2>
+                      
                       )}
                       {configItem.key === "membership_page_sub_title" && (
                         <h2 className="h2-text-box">{configItem.value}</h2>

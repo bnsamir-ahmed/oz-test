@@ -96,9 +96,9 @@ const PlanDetails = () => {
                                 }
                             </div>
                         </div>
-                        <div className='col-lg-4 col-12 p-sm-5 p-3'>
+                        {/* <div className='col-lg-4 col-12 p-sm-5 p-3'>
                             <ProfileActions details={plan}/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

@@ -131,20 +131,20 @@ const Header = ({ showBlackNav, show }) => {
     }) : []
 
   const communityItems = [
-    // {
-    //   key: "1",
-    //   label: (
-    //     <li className="drop_event">
-    //       <Button
-    //         tagType="link"
-    //         className="p-0 subMenu"
-    //         to={"/community/newsfeed"}
-    //       >
-    //         <span>Community Newsfeed</span>
-    //       </Button>
-    //     </li>
-    //   ),
-    // },
+    {
+      key: "1",
+      label: (
+        <li className="drop_event">
+          <Button
+            tagType="link"
+            className="p-0 subMenu"
+            to={"/community/newsfeed"}
+          >
+            <span> Newsfeed</span>
+          </Button>
+        </li>
+      ),
+    },
     // {
     //   key: "2",
     //   label: (
@@ -271,7 +271,7 @@ const Header = ({ showBlackNav, show }) => {
                   </NavLink>
                 </Dropdown>
               </li>
-              {/* <li className="nav-item px-3 dropdown">
+              <li className="nav-item px-3 dropdown">
                 <Dropdown menu={{ items: eventsItems }}>
                   <NavLink
                     className={`nav-link px-0`}
@@ -284,7 +284,7 @@ const Header = ({ showBlackNav, show }) => {
                     <span>events</span>
                   </NavLink>
                 </Dropdown>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div className="d-flex justify-content-end align-items-center ">
@@ -439,7 +439,7 @@ const Header = ({ showBlackNav, show }) => {
                         Community
                       </Button>
                     </li>
-                    {/* <li>
+                    <li>
                       <Button
                         onClick={() => setCloseNav(!closeNav)}
                         className="p-0"
@@ -448,7 +448,7 @@ const Header = ({ showBlackNav, show }) => {
                       >
                         Events
                       </Button>
-                    </li> */}
+                    </li>
                   </ul>
                 </li>
                 <li className="drop_event border-dropdown px-3 py-2">

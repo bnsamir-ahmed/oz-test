@@ -45,6 +45,7 @@ const HomeMembership = ({ configData, pending }) => {
                 )}
               </div>
               <MembershipTypesSlider />
+            
               <div className="col-lg-12 text-center py-4">
                 <Button
                   tagType="link"

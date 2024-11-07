@@ -1,7 +1,8 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MainHeaderWrapper from '../UI/MainHeaderWrapper';
 import Paragraph from '../UI/Paragraph';
+import { fetchOzies , ozy } from '../../apis/config';
 
 const OzysHeader = () => {
     const videosArr = [
@@ -21,17 +22,55 @@ const OzysHeader = () => {
             title: 'City Drink'
         },
     ]
-    const [videos, setVideos] = useState(videosArr);
+    // const [videos, setVideos] = useState(videosArr);
+    const [videos, setVideos] = useState([]);
+    
     const [videoTitle, setVideoTitle] = useState('');
+    const [videoTitles, setVideoTitles] = useState();
+
 
     const getVideoTitle = (title) => {
         setVideoTitle(title);
     }
+    useEffect(()=>{
+        const getData = async ()=>{
+            try{
+                const response = await fetchOzies();
+                // setVideoTitles(response)
+                setVideos(response)
+
+            }catch(error){
+                console.log(error);
+                
+            }
+        }
+        getData();
+    },[])
+    const [ozysList, setOzysList] = useState([]);
+    useEffect(()=>{
+        const ozyList = async () =>{
+            try{
+                const response = await ozy();
+                setOzysList(response)
+                
+            }catch(error){
+                console.log(error);
+                
+            }
+        }
+        ozyList()
+    },[])
+  
+
+    
 
     return (
         <>
+        {/* {console.log(videoTitle) } */}
+        {console.log(videos) }
+
             <div className='position-relative'>
-                <MainHeaderWrapper video={videos} special_flex={`justify-content-center`} getVideoTitle={getVideoTitle}>
+                <MainHeaderWrapper video={videos} media={ozysList} special_flex={`justify-content-center`} getVideoTitle={getVideoTitle}>
                     <div className="container">
                         <div className='d-flex flex-column align-items-center'>
                             <Paragraph className="text-two">{videoTitle}</Paragraph>

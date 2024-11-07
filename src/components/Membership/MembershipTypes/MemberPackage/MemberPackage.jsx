@@ -127,7 +127,7 @@ const MemberPackage = () => {
 
     return (
         <>
-        {console.log(objMemberShip?.options[0]?.amenities)}
+        {/* {console.log(objMemberShip?.options[0]?.amenities)} */}
             <MainHeaderWrapper image={packageDetails?.image}>
                 <div className="container-fluid px-70">
                     <div className="col-md-6 col-12">
@@ -137,13 +137,13 @@ const MemberPackage = () => {
                     </div>
                 </div>
             </MainHeaderWrapper>
-                <section className="at_oz">
+                <section className="at_oz py-5">
                     <div className="container-fluid">
                         <div className="row justify-content-between">
                             <div className=" col-md-6 col-lg-6 col-sm-6 col-xs-6 m-auto ">
                                 <div className="box-content px-60">
                                     <h2 className="h2-text-box">I'LL BE AT OZ</h2>
-                                    ddmmd
+                                 
                                     <p className="p-text-box">{packageDetails?.description}</p>
                                     <div className='ps-3 dynamic_p' dangerouslySetInnerHTML={{ __html: packageDetails?.website_description }}></div>
                                         <Button 
@@ -157,7 +157,7 @@ const MemberPackage = () => {
                             <div className="col-md-6 col-lg-6 col-sm-6 col-xs-6 d-flex justify-content-end">
                                 <Media
                                     type="img"
-                                    className="image-box "
+                                    className="image-box w-100-sm"
                                     src={at_oz}
                                     alt="Our OZ Vision"
                                 />
@@ -165,23 +165,24 @@ const MemberPackage = () => {
                         </div>
                     </div>
                 </section>
-                
+            
                 <HouseServices location_amenities={packageDetails.amenities} dark_theme={true}/>
                 <section className='plans container-fluid py-5'>
-                    <div className='row row-cols-3 custom-radio justify-content-between align-items-center black'>
-                        <div className='col price_monthly p-4' key={'1'}>
+                    <div className='row  custom-radio justify-content-between align-items-center black mx-xl-0 mx-lg-0 mx-md-0  mx-3'>
+                        <div className='col-xl-4 col-lg-4 col-md-6 col-sm12 price_monthly p-4' key={'1'}>
                             <div className='price_body'>
                                 <p className='mb-2'>Monthly</p>
                                 <div className='d-flex align-items-center mb-3'>
                                     <p className='priceafter mb-0'>{objMemberShip?.options[0]?.price} / month</p>
                                     <span className='ms-2'>inclusive of VAT</span>
+                                    {/* <p></p> */}
                                 </div>
                                 {/* {item.discount !== '0' && <span className='mb-0 priceafter'>{calcDiscount(item.price, item.discount, item.discount_type)} / {item.time_count} {item.time}</span>} */}
                                 <p className='mb-0 refund'>No refund if you cancel.</p>
                             </div>
                         </div>
                             
-                                <div className='col price_monthly p-4' key={'2'}>
+                                <div className='col-xl-4 col-lg-4 col-md-6 col-sm12 price_monthly p-4' key={'2'}>
                                         <div className='price_body'>
                                             <p className='mb-2'>6 Months</p>
                                             <div className='d-flex align-items-center mb-3'>
@@ -193,7 +194,7 @@ const MemberPackage = () => {
                                         </div>
                                 </div>
                         
-                                <div className='col price_monthly p-4' key={'3'}>
+                                <div className='col-xl-4 col-lg-4 col-md-6 col-sm12 price_monthly p-4' key={'3'}>
                                         <div className='price_body'>
                                             <p className='mb-2'>Annual</p>
                                             <div className='d-flex align-items-center mb-3'>

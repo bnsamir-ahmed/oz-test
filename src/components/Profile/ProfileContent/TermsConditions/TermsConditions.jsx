@@ -1,16 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchTerms } from '../../../../apis/config';
 
 const TermsConditions = () => {
+    const [terms , setTerms] = useState();
+    useEffect(()=>{
+        const term = async () =>{
+            try{
+                const res = await fetchTerms();
+                setTerms(res?.terms_and_conditions);
+            }catch(error){
+                console.log(error);
+                
+            }
+        }
+        term()
+    },[])
+    const textContent = terms  ? terms.replace(/<\/?[^>]+(>|$)/g, "") : '';
+
+
     return (
         <>
+        {console.log()}
+        
             <section className="profile-edit py-4 px-md-5 px-2">
                 <div className="row align-items-center">
                     <div className="col-lg-12">
                         <div className="head-form">
-                            <h2>Terms & Conditions</h2>
+                            <h2>{textContent}</h2>
                         </div>
                     </div>
-                    <div className="col-lg-12">
+                    {/* <div className="col-lg-12">
                         <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
@@ -35,7 +54,7 @@ const TermsConditions = () => {
                             illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
                             blandit praesent luptatum zzril delenit augue
                         </p>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>

@@ -1,6 +1,22 @@
 import React from 'react';
-
+import { fetchTerms } from '../../../../apis/config';
+import { useEffect , useState } from 'react';
 const PrivacyPolicy = () => {
+    const [terms , setTerms] = useState();
+    useEffect(()=>{
+        const term = async () =>{
+            try{
+                const res = await fetchTerms();
+                setTerms(res?.privacy_policy);
+            }catch(error){
+                console.log(error);
+                
+            }
+        }
+        term()
+    },[])
+    const textContent = terms  ? terms.replace(/<\/?[^>]+(>|$)/g, "") : '';
+
     return (
         <>
             <section className="profile-edit py-4 px-md-5 px-2">
@@ -11,7 +27,8 @@ const PrivacyPolicy = () => {
                         </div>
                     </div>
                     <div className="col-lg-12">
-                        <p>
+                        <p className='line-h-justify'>{textContent}</p>
+                        {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                             tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                             nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -34,7 +51,7 @@ const PrivacyPolicy = () => {
                             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
                             illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
                             blandit praesent luptatum zzril delenit augue
-                        </p>
+                        </p> */}
                     </div>
 
                 </div>

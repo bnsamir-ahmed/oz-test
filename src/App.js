@@ -70,7 +70,7 @@ import Invoice from "./components/UI/Invoice";
 import Knowledge from './components/OzKnowledge/Knowledge';
 import ZeeStudio from "./components/ZeeSudio/ZeeStudio";
 import CoursesHistory from './components/OzKnowledge/CoursesHistory';
-import OZCourses from './components/OzKnowledge/OZCourses';
+import courses from './components/OzKnowledge/OZCourses';
 import CourseDetails from './components/OzKnowledge/CourseDetails/CourseDetails';
 import RouterGuard from './apis/RouterGuard';
 import MoreClasses from "./components/ZeeSudio/MoreClasses";
@@ -82,7 +82,8 @@ import CourseTracting from './components/OzKnowledge/Course Tracting/CourseTract
 import BookCourse from './components/OzKnowledge/BookCourse';
 import BookingSummaryEvents from './components/EventsBookingSummary/BookingSummaryEvents';
 import BookingSummaryMembership from './components/Membership/BookingSummaryMembership';
-
+import OZCourses from "./components/OzKnowledge/OZCourses";
+// import MemspacesberPackage from './path/to/MemspacesberPackage';
 function App() {
     useEffect(() => {
       AOS.init({
@@ -115,8 +116,8 @@ function App() {
               // { path: "myevents", element: <MyEvents /> },
               { path: "myplan", element: <MyPlan /> },
               { path: "favoiate", element: <Favoriates /> },
-              // { path: "privacypolicy", element: <PrivacyPolicy /> },
-              // { path: "terms&condition", element: <TermsConditions /> },
+              { path: "privacypolicy", element: <PrivacyPolicy /> },
+              { path: "terms&condition", element: <TermsConditions /> },
               // { path: "issueReport", element: <IssueReporting /> },
               // { path: "issueType/:case_id", element: <IssueType /> },
               {
@@ -141,8 +142,8 @@ function App() {
           { path:'membership-bookingSummary', element: <BookingSummaryMembership />},
           { path:'spaces', element: <Spaces />},
           { path:'community', element: <Community />},
-          // { path:'community/events', element: <CommunityEventsExplore />},
-          // { path:'events/:name/:id', element: <CommunityEventsDetails />},
+          { path:'community/events', element: <CommunityEventsExplore />},
+          { path:'events/:name/:id', element: <CommunityEventsDetails />},
           // { path:'event-bookingSummary', element: <BookingSummaryEvents />},
           { path:'community/newsfeed', element: <NewsFeed />},
           { path:'community/newsfeed/singleFeed/:id', element: <SingleNewFeed />},
@@ -168,16 +169,16 @@ function App() {
           { path:'replydetails', element: <ContactAdminReply />},
           { path:'sendcontact', element: <RouterGuard element={ContactAdmin} />},
           { path:'invoice', element: <Invoice />},
-          // { path:'knowledge', element: <Knowledge />},
-          // { path:'courses/:id', element: <OZCourses />},
-          // { path:'coursedetails/:id', element: <CourseDetails />},
+          { path:'knowledge', element: <Knowledge />},
+          { path:'courses/:id', element: <OZCourses />},
+          { path:'coursedetails/:id', element: <CourseDetails />},
           // { path:'course-bookingSummary', element: <BookCourse />},
           // { path:'coursesHistory', element: <RouterGuard element={CoursesHistory} />},
           // { path:'coursetracting/:id', element: <CourseTracting />},
-          // { path: "zeestudio", element: <ZeeStudio /> },
-          // { path: "ourgymclasses", element: <MoreClasses /> },
-          // { path: "ourtrainer", element: <OurTrainerPage /> },
-          // { path: "gymdetails/:id", element: <GymDetails /> },
+          { path: "zeestudio", element: <ZeeStudio /> },  
+          { path: "ourgymclasses", element: <MoreClasses /> },
+          { path: "ourtrainer", element: <OurTrainerPage /> },
+          { path: "gymdetails/:id", element: <GymDetails /> },
           // { path: "class-bookingSummary", element: <PaymentGym/> },
           { path: "gymhistory", element: <RouterGuard element={GymHistory} /> },
           // { path:'invoice', element: <Invoice />}

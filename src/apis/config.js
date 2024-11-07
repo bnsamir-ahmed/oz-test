@@ -265,7 +265,55 @@ export const payMent = async ({invoiceid , amount, firstname , lastname , email 
     return response.data;
 }
 
-
-
+// export const ozy = async ( ) => {
+//     const config = {
+//         method: 'get',
+//         url: `https://dashboard.ozcoworkingpark.com/api/ozies`,
+//         headers: {
+//             'Accept': 'application/json',
+//         },
+//     }
    
+//         const response = await axios.get(config);
+//         return response.data.data
+// }
+export const ozy = async () => {
+    const config = {
+        method: 'get',
+        url: `${process.env.REACT_APP_API_CONFIG_URL}/api/ozies`,
+        headers: {
+            'Accept': 'application/json',
+        },
+    };
+
+    const response = await axios(config); // Use axios with the config object correctly
+    return response.data.data;
+   
+};
+
+
+   export const fetchOzies = async () =>{
+    const config = {
+        method: 'get',
+        url: `${process.env.REACT_APP_API_CONFIG_URL}/api/config?page=ozy`,
+        headers: {
+            'Accept': 'application/json',
+        },
+    };
+    const response = await axios(config);
+    return response.data.data;
+   }
+
+   export const fetchTerms = async () =>{
+    const config = {
+        method: 'get',
+        url: `${process.env.REACT_APP_API_CONFIG_URL}/api/settings`,
+        headers: {
+            'Accept': 'application/json',
+        },
+    };
+    const response = await axios(config);
+    
+    return response.data.data;
+   }
  

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import CommunityHeader from "../components/Community/CommunityHeader/CommunityHeader";
 import CommunityNews from "../components/Community/CommunityNewsFeed/CommunityNews";
 import CommunityEvents from "../components/Community/CommunityEvents/CommunityEvents";
@@ -11,12 +11,17 @@ const Community = () => {
 
   const { ResetPageName, isPending, getComponentValue } = useContext(DataContext);
 
+
+
   useEffect(() => {
     ResetPageName("community");
   }, []);
 
+
   return (
     <>
+   
+
       <CommunityHeader
         configData={getComponentValue("header")}
         pending={isPending}
@@ -29,10 +34,10 @@ const Community = () => {
         configData={getComponentValue("newsfeed")}
         pending={isPending}
       />
-      {/* <CommunityEvents
+      <CommunityEvents
         configData={getComponentValue("event")}
         pending={isPending}
-      /> */}
+      />
       <CommunityGallery
         configData={getComponentValue("gallery")}
         pending={isPending}
