@@ -19,14 +19,7 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
   const settings = {
     dots: false,
     arrows: true,
-    slidesToShow:
-      types && types.individual
-        ? types.individual.length > 3
-          ? 3
-          : currentMemberId
-            ? types.individual.length - 1
-            : types.individual.length
-        : 0,
+    slidesToShow: 3,
     infinite: true,
     centerMode: true,
     centerPadding: "50px",
@@ -34,14 +27,7 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
       {
         breakpoint: 1500,
         settings: {
-          slidesToShow:
-            types && types.individual
-              ? types.individual.length > 3
-                ? 3
-                : currentMemberId
-                  ? types.individual.length - 1
-                  : types.individual.length
-              : 0,
+          slidesToShow: 3,
         },
       },
       {
@@ -85,21 +71,22 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
 
   return (
     <>
-      {isPending ? (
-        <div className='row'>
-          {[1, 2, 3].map((n, index) => {
-            return (
-              <div className="col-4 px-2" key={index}>
-                <SkeletonCard />
-              </div>
-            )
-          })}
-        </div>
-      ) :
+      {isPending ?
         (
-          <Slider {...settings} className="individual_slider mb-4">
-        
-            {types &&
+          <div className='row'>
+            {[1, 2, 3].map((n, index) => {
+              return (
+                <div className="col-4 px-2" key={index}>
+                  <SkeletonCard />
+                </div>
+              )
+            })}
+          </div>
+        )
+        :
+        ((types && types['individual'].length > 2) ?
+          (<Slider {...settings} className="individual_slider mb-4">
+            {
               types['individual']?.map((listMembershipType) => {
                 const { id, name, logo, link, description } = listMembershipType;
                 if (currentMemberId !== id) {
@@ -114,12 +101,37 @@ const MembershipTypesSlider = ({ currentMemberId }) => {
                         description={description}
                         image={logo}
                       />
-                      p
                     </div>
                   )
                 }
-              })}
-          </Slider>
+              })
+            }
+          </Slider>)
+          :
+          (
+            <div className="d-flex">
+              {
+                types['individual']?.map((listMembershipType) => {
+                  const { id, name, logo, link, description } = listMembershipType;
+                  if (currentMemberId !== id) {
+                    return (
+                      <div className="col-lg-4 col-md-6 col-12 px-2" key={id}>
+                        <MembershipTypesList
+                          className={"t-center-sm"}
+                          id={id}
+                          name={name}
+                          logo={logo}
+                          link={link}
+                          description={description}
+                          image={logo}
+                        />
+                      </div>
+                    )
+                  }
+                })
+              }
+            </div>
+          )
         )}
       {error && <Paragraph className='empty my-5'>there is no membership type to display</Paragraph>}
     </>

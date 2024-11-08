@@ -20,7 +20,7 @@ const OZCourses = () => {
             });
         }
         getFiltercat()
-    },[id, categories])
+    },[id])
 
     return (
         <>
