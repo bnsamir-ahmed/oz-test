@@ -44,7 +44,7 @@ const SingleCommunityExplore = ({id, img, title, text, category, day, host, cloc
                     </div>
                     <div className="cards-event-buttons d-flex">
                         <Button tagType='link' to={`/events/${title}/${id}`}
-                              className="btn ms-0 button-outLine btn-bg-white attend-btn">Attend</Button>
+                              className="btn ms-0 button-outLine btn-bg-white attend-btn">view</Button>
                         <ShareButton border={true} shareUrl={`${url}/events/${title}/${id}`} title={title} description={text}/>
                     </div>
                 </Card.Body>

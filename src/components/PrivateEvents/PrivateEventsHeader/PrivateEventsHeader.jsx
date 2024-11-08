@@ -78,7 +78,7 @@ const PrivateEventsHeader = (props) => {
                 />
               </svg>
             </div>
-            <div className="col-xxl-4 col-xl-6 col-md-8 col-sm-12">
+            {/* <div className="col-xxl-4 col-xl-6 col-md-8 col-sm-12">
               {isPending ? (
                 <Skeleton paragraph={{ rows: 0 }} active />
               ) : (
@@ -98,7 +98,7 @@ const PrivateEventsHeader = (props) => {
                   })}
                 </Slider>
               )}
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>

@@ -353,7 +353,7 @@ const LogedNav = ({ showBlackNav, token, show }) => {
     return (
         <>
        
-            <Dropdown
+            {/* <Dropdown
                 menu={{
                     items: itemsNotifications
                 }}
@@ -371,7 +371,7 @@ const LogedNav = ({ showBlackNav, token, show }) => {
                         </svg>
                     </Badge>
                 </a>
-            </Dropdown>
+            </Dropdown> */}
             <Dropdown
                 menu={{
                     items: itemsProfile

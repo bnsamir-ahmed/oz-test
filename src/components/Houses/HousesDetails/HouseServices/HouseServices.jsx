@@ -32,9 +32,9 @@ const HouseServices = ({location_amenities, dark_theme, isPending}) => {
                     : (location_amenities && location_amenities.length !== 0) && location_amenities?.map((service, index) => {
                         const {id, title, image, logo, description} = service;
                         return (
-                            <div className="col-lg-4 col-md-6 col-sm-12 my-5" key={index}>
+                            <div className="col-lg-4 col-md-6 col-sm-12 mt-xl-5" key={index}>
                                 {/* {console.log(id, title, image, logo, description)} */}
-                                <div className="lay-out-logo">
+                                <div className="">
                                 <HouseServicesList id={id} title={title} img={logo || image} text={description} className='w-unset lay-out-logo'/>
 
                                 </div>

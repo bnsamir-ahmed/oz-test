@@ -384,7 +384,7 @@ const FilteredCourses = () => {
         
             {/* {console.log(courses)} */}
             <FilterCourses courses_length={courses.length} />
-            <section className="container-fluid px-70 py-5">
+            <section className="container-fluid px-70 py-5 position-relative">
                 <div className='row g-3'>
                     <button className='filter-mob' onClick={handleOpen}> <span className='mx-2'><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.1538 8.61538V10.4615C19.0031 10.4615 19.6923 11.1508 19.6923 12H20.6154V11.0769H21.4102C21.254 10.5261 20.9592 10.0188 20.5471 9.60671C19.9124 8.97198 19.0515 8.61538 18.1538 8.61538Z" fill="#BDBDBD" />

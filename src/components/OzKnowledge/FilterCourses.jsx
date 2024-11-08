@@ -7,13 +7,19 @@ const FilterCourses = ({courses_length}) => {
         <>
             <section className="container-fluid px-70">
                 <div className="row align-items-center justify-content-between">
-                    <div className="col-xxl-3 col-md-4 text-sm-start text-center">
+                    <div className="col-xxl-3 col-md-4 col-sm-6 text-sm-start ">
+                        {courses_length > 0 ? 
+                        
                         <Paragraph className='filter_result mb-0'>
-                            <span className="count">{courses_length}</span> Results Founds</Paragraph>
+                            <span className="count">{courses_length}</span> Results Founds
+                            </Paragraph>
+                        
+                        :'' }
                     </div>
-                    <div className="col-xxl-5 col-lg-7 col-md-8">
+                    <div className="col-xxl-5 col-lg-7 col-md-8 col-sm-6">
                         <div className="row justify-content-end">
                             <div className="col-6">
+                                
                                 <div className="form__group field">
                                     <Select
                                             id='user_type'

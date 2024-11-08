@@ -47,7 +47,7 @@ const Register = () => {
                             <div className="col-lg-6">
                                 <div className="form-card p-md-5 p-3">
                                     <RegisterForm provider={provider} profile={profile} />
-                                    <div className="py-3 log-social d-flex justify-content-center">
+                                    {/* <div className="py-3 log-social d-flex justify-content-center">
                                         <LoginSocialFacebook
                                             appId={process.env.REACT_APP_FB_APP_ID || ''}
                                             onResolve={({ provider, data }) => {
@@ -90,7 +90,7 @@ const Register = () => {
                                         >
                                             <img src={linkedin} alt="LinkedIn"/>
                                         </LoginSocialLinkedin>
-                                    </div>
+                                    </div> */}
                                     <div className="text-center py-4">
                                         <Paragraph className='authFooter_copyright auth_desc mb-0'>Do you already have an account?
                                             <Button className='p-0 signup_title' tagType='link' to={'/login'}>Sign In here</Button>

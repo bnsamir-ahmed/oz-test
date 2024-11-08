@@ -1078,11 +1078,18 @@ span{
     width: 190px;
     display: none;
 }
+.img-card-trainer{
+    height: 352px;
+    object-fit: cover;
+}
 @media screen and (max-width:599px) {
     .filter-mob{
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: -5%;
+/* position: relative; */
     }
     .filter_side{
         display: none;

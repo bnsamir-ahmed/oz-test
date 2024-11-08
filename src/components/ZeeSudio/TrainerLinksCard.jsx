@@ -47,6 +47,7 @@ const TrainerLinksCard = () => {
       return (
         <div className="col-xl-4 col-md-6 col-sm-12 my-2" key={index}>
           <CardTrainerLink
+          classNameImageCard={`img-card-trainer`}
             src={item.image}
             title={item.name.slice(0, 25)}
             desc={item.description.slice(0, 100)}
@@ -60,7 +61,7 @@ const TrainerLinksCard = () => {
   }
   return (
     <>
-      {console.log("llllllllllllllll")}
+      {/* {console.log("llllllllllllllll")} */}
       <div className="container-fluid px-70">
         <div className="row py-5">
           <Paragraph className="paragraph_black">Trainers</Paragraph>

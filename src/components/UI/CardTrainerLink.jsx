@@ -7,7 +7,7 @@ function CardTrainerLink(props) {
   return (
     <>
       <div className="card my-2 h-100 text-start">
-        <Media type="img" src={props.src} className="w-100" alt={""} />
+        <Media type="img" src={props.src} className={`${props.classNameImageCard} w-100`} alt={""} />
         <div className="card-body">
           <Paragraph className="card-title border-bottom-black pb-4">
             {props.title}
