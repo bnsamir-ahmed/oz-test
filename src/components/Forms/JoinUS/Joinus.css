@@ -64,3 +64,11 @@
 }
 
 
+@media screen and (max-width:599px) {
+    .box-apply-member .current_price,
+    .box-apply-member h2{
+        font-size: 16px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}

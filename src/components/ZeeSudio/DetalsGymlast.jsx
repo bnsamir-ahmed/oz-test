@@ -90,12 +90,12 @@ const DetalsGymlast = ({ details, pending }) => {
                     >
                       {details?.descriptions}
                     </Paragraph>
-                    <li
+                    {/* <li
                       className="desc_small_light d-inline hover-paragraph-show"
                       onClick={() => setIsopen(!isOpen)}
                     >
                       {isOpen ? <u>Show Less</u> : <u>Show More...</u>}
-                    </li>
+                    </li> */}
                     <Paragraph className="desc_small light py-2 mt-3">
                       Duration :
                       <span className="desc_small"> {details?.duration}</span>

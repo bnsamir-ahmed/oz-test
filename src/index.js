@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -7,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 import './assets/css/mediaQuery.css';
 
-
+// import * as serviceWorker from './serviceWorker';
 
 if (process.env.NODE_ENV === 'production') {
     console.log = () => {}
@@ -25,3 +26,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// serviceWorker.unregister();

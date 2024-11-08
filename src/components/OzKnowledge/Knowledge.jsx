@@ -20,6 +20,7 @@ const Knowledge = () => {
  
   return (
     <>
+    {/* {console.log(data)} */}
       <MainHeaderWrapper image={data?.knowladge_slider} height="670px">
         <div className={`container-fluid px-70`}>
           <div className="col-xl-6 col-lg-9 col-12">

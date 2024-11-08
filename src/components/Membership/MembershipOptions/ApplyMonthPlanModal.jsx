@@ -27,7 +27,7 @@ const ApplyMonthPlanModal = ({ show, onHide, type, details, planName }) => {
   const options = [
     {
       label: (
-        <div className="price_monthly p-4" key={'1'}>
+        <div className="price_monthly p-xl-4 p-2" key={'1'}>
           <div className="price_body">
             <p className="mb-2">Monthly</p>
             <div className="d-flex align-items-center mb-3">
@@ -41,7 +41,7 @@ const ApplyMonthPlanModal = ({ show, onHide, type, details, planName }) => {
     },
     {
       label: (
-        <div className="price_monthly p-4" key={'2'}>
+        <div className="price_monthly p-xl-4 p-2" key={'2'}>
           <div className="price_body">
             <p className="mb-2">6 Months</p>
             <div className="d-flex align-items-center mb-3">
@@ -55,7 +55,7 @@ const ApplyMonthPlanModal = ({ show, onHide, type, details, planName }) => {
     },
     {
       label: (
-        <div className="price_monthly p-4" key={'3'}>
+        <div className="price_monthly p-xl-4 p-2" key={'3'}>
           <div className="price_body">
             <p className="mb-2">Annual</p>
             <div className="d-flex align-items-center mb-3">

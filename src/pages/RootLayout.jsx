@@ -33,7 +33,7 @@ const RootLayout = ()=>{
             return ()=>{
                 document.body.classList.remove('body_dark');
             }
-        },[location]);
+        },[location , isAboutRoute, isAmenitiesRoute, isGalleryRoute, isSingleMemberRoute]);
 
         const getShowDot = (data) => {
             setShow(data);

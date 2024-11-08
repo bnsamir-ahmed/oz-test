@@ -32,7 +32,7 @@ const CardsGym = () => {
       content = data?.map((item, index) => {
         return (
           <div className="col my-2" key={index}>
-            <ZeeCard isPending={isPending} item={item} />
+            <ZeeCard isPending={isPending} item={item} token={token} />
           </div>
         );
       });

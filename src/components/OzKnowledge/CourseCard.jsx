@@ -2,12 +2,15 @@ import { Rate, Badge } from 'antd';
 import Paragraph from '../UI/Paragraph';
 import Button from '../UI/Button';
 import AddToFavButton from '../UI/AddToFavButton';
+import { AuthContext } from '../../apis/context/AuthTokenContext';
+import { useContext } from 'react';
 
 const CourseCard = ({ coursesDetails }) => {
+    const { token, branchId } = useContext(AuthContext);
 
     return (
         <>
-            {/* {console.log(coursesDetails , ';slslslss')} */}
+            {/* {console.log(token )} */}
             <div className='card'>
 
                 <div className='card-header header_course'>
@@ -29,7 +32,7 @@ const CourseCard = ({ coursesDetails }) => {
                         <span className='rate_count ms-2'>{`(${coursesDetails.rate})`}</span>
                     </div>
                     <div className='d-flex justify-content-between align-items-center pt-4'>
-                        {coursesDetails?.allow_free === 1 ?
+                        {token && coursesDetails?.allow_free === 1 ?
                             <Paragraph className='courseCardTitle mb-0'> Free</Paragraph> :
 
                             <Paragraph className='courseCardTitle mb-0'>{Math.floor(coursesDetails.price)} EGP</Paragraph>

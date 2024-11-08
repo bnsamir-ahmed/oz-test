@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 import Paragraph from "../UI/Paragraph";
 import AddToFavButton from "../UI/AddToFavButton";
 
-const ZeeCard = ({ item }) => {
+const ZeeCard = ({ item , token }) => {
   return (
     <div className="card my-2 h-100 text-start card_zee">
       {/* {console.log(item?.allow_free)}
@@ -71,7 +71,7 @@ const ZeeCard = ({ item }) => {
           >
             Explore More
           </Button>
-         {item?.allow_free === 1 ?   
+         {token && item?.allow_free === 1 ?   
           <Paragraph className="card-title">
           free
       </Paragraph>:

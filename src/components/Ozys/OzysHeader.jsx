@@ -2,7 +2,9 @@
 import { useEffect, useState } from 'react';
 import MainHeaderWrapper from '../UI/MainHeaderWrapper';
 import Paragraph from '../UI/Paragraph';
-import { fetchOzies , ozy } from '../../apis/config';
+import { fetchOzies, ozy } from '../../apis/config';
+import classes from '../UI/MainHeaderWrapper.module.css';
+// import MainHeaderWrapper from '../UI/MainHeaderWrapper';
 
 const OzysHeader = () => {
     const videosArr = [
@@ -24,62 +26,95 @@ const OzysHeader = () => {
     ]
     // const [videos, setVideos] = useState(videosArr);
     const [videos, setVideos] = useState([]);
-    
+
     const [videoTitle, setVideoTitle] = useState('');
     const [videoTitles, setVideoTitles] = useState();
+    const [currentIndex, setCurrentIndex] = useState(0)
 
 
     const getVideoTitle = (title) => {
         setVideoTitle(title);
     }
-    useEffect(()=>{
-        const getData = async ()=>{
-            try{
+    useEffect(() => {
+        const getData = async () => {
+            try {
                 const response = await fetchOzies();
                 // setVideoTitles(response)
                 setVideos(response)
 
-            }catch(error){
+            } catch (error) {
                 console.log(error);
-                
+
             }
         }
         getData();
-    },[])
+    }, [])
     const [ozysList, setOzysList] = useState([]);
-    useEffect(()=>{
-        const ozyList = async () =>{
-            try{
+    useEffect(() => {
+        const ozyList = async () => {
+            try {
                 const response = await ozy();
                 setOzysList(response)
-                
-            }catch(error){
+
+            } catch (error) {
                 console.log(error);
-                
+
             }
         }
         ozyList()
-    },[])
-  
+    }, [])
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentIndex((prevIndex) =>
+                videos.length > 0 ? (prevIndex + 1) % videos.length : 0
+            );
+        }, 3000); // Change every 3 seconds
 
-    
+        return () => clearInterval(timer); // Cleanup on unmount
+    }, [videos]);
+    // const currentItem = videos?.currentIndex?.value
+
+    useEffect(() => {
+        const timerVideo = setInterval(() => {
+            setCurrentIndex((prev) => ozysList.length > 0 ? (prev + 1) % ozysList.length : 0)
+        },3000);
+        return () => clearInterval(timerVideo);
+    }, [ozysList])
 
     return (
         <>
-        {/* {console.log(videoTitle) } */}
-        {console.log(videos) }
+
 
             <div className='position-relative'>
-                <MainHeaderWrapper video={videos} media={ozysList} special_flex={`justify-content-center`} getVideoTitle={getVideoTitle}>
-                    <div className="container">
-                        <div className='d-flex flex-column align-items-center'>
-                            <Paragraph className="text-two">{videoTitle}</Paragraph>
-                            <Paragraph className="text-two">{'X'}</Paragraph>
-                            <Paragraph className="text-two">{'OZ'}</Paragraph>
+                <div className="position-relative"
+                   style={{
+                    backgroundImage: `url(${ozysList[currentIndex]?.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    height: '100vh',
+                }}
+                >
+                    <div className={`${classes.header_bg} justify-content-center`} >
+                        <div className="container index-z">
+                            {/* <video src=""></video> */}
+                            {/* <img
+                                className={`${classes.video_bg}`}
+                                alt="oz video"
+                                src={ozysList[currentIndex]?.image}
+                               
+                            /> */}
+                            <div className='d-flex flex-column align-items-center'>
+                                <Paragraph className="text-two"> {videos[currentIndex]?.value}</Paragraph>
+                                <Paragraph className="text-two">{'X'}</Paragraph>
+                                <Paragraph className="text-two">{'OZ'}</Paragraph>
+                            </div>
+
                         </div>
 
                     </div>
-                </MainHeaderWrapper>
+
+                </div>
             </div>
         </>
     )
