@@ -604,6 +604,8 @@ span{
     margin: 32px 0;
     padding-left: 32px;
     padding-right: 32px;
+    height: 560px;
+    object-fit: cover;
 }
 
 /*END*/
@@ -941,7 +943,7 @@ span{
 
  }
  .bottom-50{
-    bottom: -50% !important;
+    bottom: -35% !important;
  }
  .line-h-justify{
     text-align: justify !important;
@@ -1003,6 +1005,9 @@ span{
     }
 }
 @media (max-width: 576px) {
+    .image-box {
+        height: unset;
+    }
     .t-center-sm{
         text-align: center;
     }
@@ -1089,7 +1094,7 @@ span{
         height: 100%;
     }
     :where(.css-dev-only-do-not-override-2rgkd4).ant-dropdown{
-        inset: 58px -28px auto auto !important;
+        inset: 58px 35px auto auto !important;
     }
     
 }

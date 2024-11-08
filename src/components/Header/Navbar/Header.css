@@ -378,6 +378,9 @@ nav.btn.show {
     /* .Notifications{
         right: -105px !important;
     } */
+    .Notifications {
+        width: 16rem !important;
+    }
 }
 @media screen and (max-width: 426px) {
     .title-name{

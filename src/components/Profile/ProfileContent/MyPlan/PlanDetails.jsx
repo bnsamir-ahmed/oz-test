@@ -71,7 +71,7 @@ const PlanDetails = () => {
                                         return (
                                             <div className='d-flex justify-content-between pb-3 align-items-center' key={index}>
                                                 <Paragraph className='mb-0 amenities'>
-                                                    {item?.title}
+                                                    {item?.name}
                                                 </Paragraph>
                                                 <div style={{
                                                     width: '64px',

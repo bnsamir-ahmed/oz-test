@@ -46,6 +46,7 @@ const MyPlan = ()=>{
     
     return (
         <>
+        {console.log(plans)}
             <Tab.Container id="left-tabs-example"
                 defaultActiveKey={activeTab}
                 className='py-4 px-5'>

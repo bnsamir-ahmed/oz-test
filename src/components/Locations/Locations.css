@@ -21,6 +21,7 @@
 
 .locations .slick-slide img {
     width: 100%;
+    height: 512px;
     object-fit: cover;
     object-position: center;
 }

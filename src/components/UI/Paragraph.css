@@ -522,6 +522,9 @@ p.list-option-item{
     .course_details_desc{
         width: 100%;
     }
+    .grey-span2 {
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 390px) {
     .head_paragraph{
