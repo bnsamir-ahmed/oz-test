@@ -40,15 +40,17 @@ const NewsFeedBlogs = () => {
                                     newsFeedData && newsFeedData['posts'].map((feed) => {
                                         const { id, content, title, banner, category_name } = feed;
                                         return (
-                                            <div key={id}>
-                                                <NewsFeedBlogList
-                                                    id={id}
-                                                    title={title}
-                                                    img={banner}
-                                                    text={content}
-                                                    category={category_name} />
-                                            </div>
-                                        )
+                                          <div key={id}>
+                                            {console.log(newsFeedData)}
+                                            <NewsFeedBlogList
+                                              id={id}
+                                              title={title}
+                                              img={banner}
+                                              text={content}
+                                              category={category_name}
+                                            />
+                                          </div>
+                                        );
                                     })
                                 )
                             }

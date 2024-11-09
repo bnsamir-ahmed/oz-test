@@ -63,7 +63,7 @@ const PublicEventList = ({}) => {
           {eventsData &&
             eventsData.map((event, index) => {
               return (
-                <div className="card image-box" key={index}>
+                <div className="card image-box unset-height" key={index}>
                   <img
                     src={event.gallery[0]?.image}
                     className="card-img-top rounded-0"
@@ -78,7 +78,8 @@ const PublicEventList = ({}) => {
                   />
 
                   <div className="card-body py-4">
-                    <h2 className="dynamic_wraper_1"
+                    <h2
+                      className="dynamic_wraper_1"
                       onClick={() => {
                         navigate(`/events/communityEventsDetails/${event.id}`);
                       }}
