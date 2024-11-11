@@ -6,6 +6,8 @@ import NewsFeedBlogList from "./NewsFeedBlogList";
 import NewsFeedHeader from "../NewsFeedHeader/NewsFeedHeader";
 import { useQuery } from '@tanstack/react-query';
 import { Skeleton } from 'antd';
+import { useContext, useEffect } from 'react';
+import { DataContext } from '../../../apis/context/SiteDataContext';
 
 const NewsFeedBlogs = () => {
 
@@ -13,6 +15,15 @@ const NewsFeedBlogs = () => {
         queryKey: ['newsFeed-posts'],
         queryFn: () => getCommunityNewsFeed('no')
     });
+    const { ResetPageName, isPending: pending, getComponentValue } = useContext(DataContext);
+
+
+
+    useEffect(() => {
+        ResetPageName("community");
+    }, []);
+    // getComponentValue("newsfeed")
+    {/* {console.log(newsFeedData)} */}
 
     return (
         <>
@@ -27,10 +38,10 @@ const NewsFeedBlogs = () => {
                                 (
                                     <div>
                                         <div className="card Card-news">
-                                        <Skeleton.Image active />
-                                            <Skeleton 
-                                                paragraph={{rows: 3}}
-                                                active 
+                                            <Skeleton.Image active />
+                                            <Skeleton
+                                                paragraph={{ rows: 3 }}
+                                                active
                                                 title={true}
                                             />
                                         </div>
@@ -40,15 +51,15 @@ const NewsFeedBlogs = () => {
                                     newsFeedData && newsFeedData['posts'].map((feed) => {
                                         const { id, content, title, banner, category_name } = feed;
                                         return (
-                                          <div key={id}>
-                                            {console.log(newsFeedData)}
-                                            <NewsFeedBlogList
-                                              id={id}
-                                              title={title}
-                                              img={banner}
-                                              text={content}
-                                              category={category_name}
-                                            />
+                                            <div key={id}>
+                                                <NewsFeedBlogList
+                                                    id={id}
+                                                    title={title}
+                                                    img={banner}
+                                                    text={content}
+                                                    category={category_name}
+                                                    />
+                                        
                                           </div>
                                         );
                                     })

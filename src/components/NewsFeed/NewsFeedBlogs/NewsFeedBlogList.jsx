@@ -5,8 +5,12 @@ import {NavLink} from "react-router-dom";
 import Media from "../../Media/Media";
 
 const NewsFeedBlogList = ({id, img, text, title, category}) => {
+// const NewsFeedBlogList = (props) => {
+
     return (
         <>
+        {/* {console.log(props.configData)} */}
+
             <NavLink to={`/community/newsfeed/singleFeed/${id}`}>
                 <Card className="Card-news" key={id}>
                     <Media

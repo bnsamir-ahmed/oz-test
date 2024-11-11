@@ -2,6 +2,7 @@ import React from 'react'
 import Paragraph from '../UI/Paragraph';
 import Button from '../UI/Button';
 
+
 const FooterAuth = () => {
 
     return (
@@ -12,9 +13,12 @@ const FooterAuth = () => {
                         <Paragraph className='mb-0 authFooter_copyright'>© 2023, Made with passion by Macber EG</Paragraph>
                         <div>
                             <Button
+                            to={'profile/privacypolicy'}
                                 tagType='link'
                                 className='authFooter_link'>Privacy Policy</Button>
                             <Button
+                            to={'profile/terms&condition'}
+
                                 tagType='link'
                                 className='authFooter_link'>Term&conditions</Button>
                         </div>

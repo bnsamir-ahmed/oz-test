@@ -1088,6 +1088,9 @@ span{
 .filter-mobile-card{
     display: none;
 }
+.h-70{
+    height: 71vh;
+}
 @media screen and (max-width:599px) {
     .filter-deskTop-card{
         display: none;

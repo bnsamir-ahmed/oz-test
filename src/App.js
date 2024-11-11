@@ -105,6 +105,10 @@ function App() {
           { path: "contactus", element: <Contactus /> },
           { path: "sitemap", element: <SiteMap /> },
           { path: "faq", element: <Faq /> },
+          { path: "privacypolicy", element: <PrivacyPolicy /> },
+          { path: "terms&condition", element: <TermsConditions /> },
+          
+
           {
             path: "profile",
             element: <Profile />,
@@ -116,6 +120,7 @@ function App() {
               // { path: "myevents", element: <MyEvents /> },
               { path: "myplan", element: <MyPlan /> },
               { path: "favoiate", element: <Favoriates /> },
+              // { path: "privacypolicy", element: <PrivacyPolicy /> },
               { path: "privacypolicy", element: <PrivacyPolicy /> },
               { path: "terms&condition", element: <TermsConditions /> },
               // { path: "issueReport", element: <IssueReporting /> },

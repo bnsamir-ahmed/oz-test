@@ -17,8 +17,10 @@ const NewsFeedHeader = () => {
 
     const configData = getComponentValue("newsfeed");
 
+
     return (
         <>
+        {console.log(configData?.[2])}
             <div className="navigator-feed">
                 <Container fluid>
                     <div className="d-flex justify-content-between align-items-center">
@@ -85,15 +87,19 @@ const NewsFeedHeader = () => {
                     </div>
                 </Container>
             </div>
-            <MainHeaderWrapper configData={''} image={newsfeed}>
+            <MainHeaderWrapper configData={''} image={configData && configData[2]?.value}>
                 <div className={`container-fluid px-70 py-5`}>
                     <div className='col-xl-6 col-lg-9 col-12'>
-                        <h2 className="main_header_title mb-0">Community</h2>
                         {isPending ? (
                             <Skeleton active paragraph={{ rows: 3 }} />
                         ) : (
                             configData.map((configItem, index) => (
                                 <React.Fragment key={index}>
+                                      {configItem.key === "community_page_newsfeed_title" && (
+                                          <Paragraph className='main_header_title mb-0'>
+                                            {configItem.value}
+                                        </Paragraph>
+                                    )}
                                     {configItem.key === "community_page_newsfeed_title" && (
                                         <Paragraph className='head_paragraph mb-3'>
                                             {configItem.value}
@@ -111,6 +117,12 @@ const NewsFeedHeader = () => {
                     </div>
                 </div>
             </MainHeaderWrapper>
+
+
+
+
+         
+            
         </>
     );
 };

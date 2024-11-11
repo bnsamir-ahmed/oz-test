@@ -52,8 +52,8 @@ const RootLayout = ()=>{
                         />
                         <Outlet />
                         {!AuthRoutes && <Footer />}
-                        {AuthRoutes && <FooterAuth />}
-
+                        {/* {AuthRoutes && <FooterAuth />} */}
+{console.log(AuthRoutes)}
                     </SiteConfigProvider>
             </DataProvider>
         </AuthProvider>

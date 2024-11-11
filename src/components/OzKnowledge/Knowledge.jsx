@@ -11,6 +11,7 @@ import PopularInstructor from "./PopularInstructor";
 import JoinCommuinty from "../Community/JoinCommuinty/JoinCommuinty";
 
 const Knowledge = () => {
+
   const { token, branchId } = useContext(AuthContext);
 
   const { isPending, error, data } = useQuery({

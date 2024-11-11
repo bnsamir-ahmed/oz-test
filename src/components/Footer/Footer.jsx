@@ -5,12 +5,18 @@ import { Link } from "react-router-dom";
 import SocialMedia from "../UI/SocialMedia";
 import Button from "../UI/Button";
 import Paragraph from "../UI/Paragraph";
-
+import { useContext } from 'react';
+import { AuthContext } from '../../apis/context/AuthTokenContext';
 
 const Footer = () => {
+    // const 
+    const { token, userId } = useContext(AuthContext);
+
 
     return (
         <>
+                {/* {console.log(token)} */}
+
         <footer className="footer-section container-fluid">
             <div className="row align-items-center">
                 <div className="col-xl-10 col-lg-8 col-md-12">
@@ -37,8 +43,15 @@ const Footer = () => {
                                     <Link to='/community' className="links-footer">Community</Link>
                                     <Link to="/community/events" className="links-footer">Events</Link> 
                                     <Link to='/faq' className="links-footer">FAQs</Link>
-                                    <Link to='/profile/privacypolicy' className="links-footer">Privacy Policy</Link>
-                                    <Link to='/profile/terms&condition' className="links-footer">Term&conditions</Link>
+                                    {token ? 
+                                    <Link to={ 'profile/privacypolicy' } className="links-footer">Privacy Policy</Link>:
+                                    <Link to={'/privacypolicy'} className="links-footer">Privacy Policy</Link>
+                                    }
+                                    {token ? 
+
+                                    <Link to='profile/terms&condition' className="links-footer">Term&conditions</Link>:
+                                    <Link to='/terms&condition' className="links-footer">Term&conditions</Link>}
+
                                     <Link to='/sitemap' className="links-footer">Site Map</Link>
                                 </div> 
                             <Paragraph className='mx-auto mt-4 mb-0 text-center copyright'>© 2023, Made with passion by Macber EG</Paragraph>
